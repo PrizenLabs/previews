@@ -8,7 +8,7 @@
 <meta name="description" content="Coffee, all-day breakfasts, lunches and cakes to order at Gracious Grace Cafe, 35 Castella Street, Lilydale. Reserve a table or call 03 9735 2223.">
 <meta property="og:title" content="Concept preview: a new homepage for Gracious Grace Cafe">
 <meta property="og:description" content="A free redesign concept by PrizenLabs, built from graciousgrace.com.au.">
-
+<meta property="og:image" content="img/hero.webp">
 <meta name="theme-color" content="#3b1d0e">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -57,6 +57,12 @@ h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:700;line-height:1.12;m
 .chips{list-style:none;padding:0;margin:28px 0 0;display:flex;flex-wrap:wrap;gap:10px 18px}
 .chips li{display:flex;align-items:center;gap:7px;font-weight:600;font-size:.95rem;color:rgba(255,255,255,.92)}
 .chips .ico{color:#c2410c;background:#fff;border-radius:50%;padding:2px}
+.hero-fig{position:relative;margin:0;justify-self:end;width:100%;max-width:520px}
+.hero-fig img{width:100%;aspect-ratio:4/3.4;object-fit:cover;border-radius:calc(22px + 8px);box-shadow:0 40px 80px -30px rgba(0,0,0,.6);border:6px solid rgba(255,255,255,.12)}
+.hero-badge{position:absolute;left:-18px;bottom:22px;display:flex;gap:12px;align-items:center;background:#fff;color:#2b1d14;padding:12px 16px;border-radius:14px;box-shadow:0 20px 40px -18px rgba(0,0,0,.5);text-decoration:none;font-weight:600;font-size:.95rem}
+.hero-badge .ico{color:#c2410c}
+.hero-badge small{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#6b5646;font-weight:700}
+@media(max-width:959px){.hero-fig{justify-self:stretch;max-width:none}.hero-badge{left:12px;bottom:12px}}
 .quick-card{background:rgba(255,255,255,.96);color:#2b1d14;border-radius:22px;padding:10px;box-shadow:0 30px 60px -20px rgba(0,0,0,.45);display:grid}
 .quick-card a{display:flex;gap:14px;align-items:flex-start;padding:14px;border-radius:calc(22px - 6px);text-decoration:none;font-weight:600;word-break:break-word}
 .quick-card a:hover{background:#f6e7d6}
@@ -150,7 +156,7 @@ h2{font-size:clamp(1.8rem,3.6vw,2.6rem)}
 </div>
 <main>
 
-<section class="hero hero-grad" id="top">
+<section class="hero hero-grad hero-split" id="top">
   <div class="hero-pattern"></div>
   <div class="wrap hero-inner">
     <div class="hero-copy">
@@ -160,7 +166,7 @@ h2{font-size:clamp(1.8rem,3.6vw,2.6rem)}
       <div class="btns"><a class="btn btn-accent" href="https://bookings.obeeapp.com/graciousgrace" target="_blank" rel="noopener"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4" /> <path d="M16 2v4" /> <rect width="18" height="18" x="3" y="4" rx="2" /> <path d="M3 10h18" /></svg>Reserve a Table</a><a class="btn btn-ghost" href="tel:0397352223"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>Call 03 9735 2223</a></div>
       <ul class="chips"><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Fresh, local Yarra Valley produce</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Fully licensed</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Overlooking historic Melba Park</li></ul>
     </div>
-    <div class="quick-card"><a href="tel:0397352223"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg><span><small>Call</small>03 9735 2223</span></a><a href="mailto:info@graciousgrace.com.au"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2" /> <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg><span><small>Email</small>info@graciousgrace.com.au</span></a><a href="https://www.google.com/maps/search/?api=1&amp;query=Gracious+Grace+Cafe%2C+35+Castella+Street%2C+Lilydale%2C+Victoria" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></svg><span><small>Find us</small>35 Castella Street, Lilydale, Victoria</span></a><a href="#contact"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /> <polyline points="12 6 12 12 16 14" /></svg><span><small>Hours</small>Mon - Sat: 8am - 4pm</span></a></div>
+    <figure class="hero-fig"><img src="img/hero.webp" alt="Gracious Grace Cafe" fetchpriority="high"><div class="hero-badge"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /> <polyline points="12 6 12 12 16 14" /></svg><span><small>Open</small>Mon - Sat · 8am - 4pm</span></div></figure>
   </div>
 </section>
 
