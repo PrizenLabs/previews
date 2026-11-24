@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Gracious Grace Cafe | Lilydale Cafe, Catering &amp; Functions · Concept preview</title>
+<meta name="description" content="Coffee, all-day breakfasts, lunches and cakes to order at Gracious Grace Cafe, 35 Castella Street, Lilydale. Reserve a table or call 03 9735 2223.">
+<meta property="og:title" content="Concept preview: a new homepage for Gracious Grace Cafe">
+<meta property="og:description" content="A free redesign concept by PrizenLabs, built from graciousgrace.com.au.">
+
+<meta name="theme-color" content="#3b1d0e">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{margin:0;font-family:'DM Sans',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#2b1d14;background:#fbf7f1;line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:76px}
+@media(min-width:900px){body{padding-bottom:0}}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:700;line-height:1.12;margin:0 0 .5em;letter-spacing:-.01em}
+.cat-auto h1,.cat-auto h2{text-transform:uppercase;letter-spacing:.01em}
+.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
+.ico{width:22px;height:22px;flex:none}.ico-sm{width:18px;height:18px}.ico-xs{width:14px;height:14px}
+.topbar{position:sticky;top:0;z-index:60}
+.pl-banner{background:#111827;color:#e5e7eb;font:500 12.5px/1.3 Inter,system-ui,sans-serif;text-align:center;padding:8px 12px}
+.pl-banner a{color:#fbbf24;font-weight:700;text-decoration:none;white-space:nowrap}
+.hdr{background:rgba(255,255,255,.92);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid #eadfd2}
+.hdr-inner{display:flex;align-items:center;gap:20px;min-height:68px}
+.brand{text-decoration:none;display:flex;align-items:center;min-width:0}
+.logo-img{max-height:48px;width:auto;max-width:190px;object-fit:contain}
+.wordmark{font-family:'Fraunces',serif;font-weight:700;font-size:1.25rem;color:#7c2d12;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nav{display:none;gap:26px;margin-left:auto}
+.nav a{text-decoration:none;font-weight:500;color:#6b5646;font-size:.95rem}.nav a:hover{color:#7c2d12}
+.hdr-cta{margin-left:auto}
+@media(min-width:900px){.nav{display:flex}.hdr-cta{margin-left:8px}}
+@media(max-width:520px){.hdr-cta span{display:none}.hdr-cta{padding:10px 12px}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:700;font-size:1rem;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease,background .15s;border:2px solid transparent;cursor:pointer}
+.btn:hover{transform:translateY(-1px)}
+.btn-accent{background:#c2410c;color:#ffffff;box-shadow:0 8px 24px -10px #c2410c}
+.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff;background:rgba(255,255,255,.06)}
+.btn-ghost:hover{background:rgba(255,255,255,.16)}
+.btn-sm{padding:9px 16px;font-size:.92rem}.btn-lg{padding:16px 28px;font-size:1.05rem}
+.hero{position:relative;color:#fff;overflow:hidden;isolation:isolate}
+.hero-inner{position:relative;display:grid;gap:36px;padding:72px 0 64px;align-items:end}
+@media(min-width:960px){.hero-inner{grid-template-columns:1.35fr .9fr;padding:112px 0 96px;align-items:center}}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,#3b1d0ef0 0%,#3b1d0ebb 48%,#3b1d0e40 100%)}
+@media(max-width:959px){.hero-shade{background:linear-gradient(180deg,#3b1d0ecc,#3b1d0ef2 70%)}}
+.hero-grad{background:radial-gradient(1200px 500px at 85% -10%,#b4530988,transparent 60%),linear-gradient(135deg,#3b1d0e,#8a3b12)}
+.hero-pattern{position:absolute;inset:0;z-index:-1;opacity:.12;background-image:radial-gradient(#fff 1px,transparent 1.2px);background-size:22px 22px;mask-image:linear-gradient(180deg,#000,transparent)}
+.eyebrow{display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:6px 12px;border-radius:999px;margin:0 0 18px}
+.hero h1{font-size:clamp(2.2rem,5.6vw,4rem);margin-bottom:18px;text-wrap:balance}
+.lead{font-size:clamp(1.05rem,1.6vw,1.25rem);color:rgba(255,255,255,.88);max-width:40ch;margin:0 0 28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.chips{list-style:none;padding:0;margin:28px 0 0;display:flex;flex-wrap:wrap;gap:10px 18px}
+.chips li{display:flex;align-items:center;gap:7px;font-weight:600;font-size:.95rem;color:rgba(255,255,255,.92)}
+.chips .ico{color:#c2410c;background:#fff;border-radius:50%;padding:2px}
+.quick-card{background:rgba(255,255,255,.96);color:#2b1d14;border-radius:22px;padding:10px;box-shadow:0 30px 60px -20px rgba(0,0,0,.45);display:grid}
+.quick-card a{display:flex;gap:14px;align-items:flex-start;padding:14px;border-radius:calc(22px - 6px);text-decoration:none;font-weight:600;word-break:break-word}
+.quick-card a:hover{background:#f6e7d6}
+.quick-card .ico{color:#7c2d12;background:#f6e7d6;padding:9px;width:40px;height:40px;border-radius:12px}
+.quick-card small{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:#6b5646;font-weight:700}
+.notice{background:#f6e7d6;border-bottom:1px solid #eadfd2}
+.notice .wrap{display:flex;gap:12px;align-items:flex-start;padding:14px 0;color:#7c2d12;font-weight:500;font-size:.95rem}
+.notice p{margin:0}
+.section{padding:84px 0}
+.section-alt{background:#ffffff;border-block:1px solid #eadfd2}
+.sec-head{max-width:640px;margin-bottom:40px}
+.kicker{font-size:.8rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#c2410c;margin:0 0 10px}
+.kicker-light{color:#fbbf24}
+h2{font-size:clamp(1.8rem,3.6vw,2.6rem)}
+.sub{color:#6b5646;font-size:1.1rem;margin:0}
+.svc-grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+@media(min-width:1000px){.svc-n2,.svc-n4{grid-template-columns:repeat(2,1fr)}.svc-n3,.svc-n5,.svc-n6,.svc-n9{grid-template-columns:repeat(3,1fr)}.svc-n7,.svc-n8{grid-template-columns:repeat(4,1fr)}
+.svc-n5 .svc:nth-child(n+4),.svc-n7 .svc:nth-child(n+5){grid-column:span 1}}
+@media(min-width:1000px){.svc-n5{grid-template-columns:repeat(6,1fr)}.svc-n5 .svc{grid-column:span 2}.svc-n5 .svc:nth-child(n+4){grid-column:span 3}
+.svc-n7{grid-template-columns:repeat(12,1fr)}.svc-n7 .svc{grid-column:span 3}.svc-n7 .svc:nth-child(n+5){grid-column:span 4}}
+.svc{background:#ffffff;border:1px solid #eadfd2;border-radius:22px;padding:26px;transition:transform .2s,box-shadow .2s,border-color .2s}
+.svc:hover{transform:translateY(-3px);box-shadow:0 20px 40px -24px rgba(15,23,42,.35);border-color:transparent}
+.svc-ico{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:#f6e7d6;color:#7c2d12;margin-bottom:18px}
+.svc-ico .ico{width:26px;height:26px}
+.svc h3{font-size:1.22rem;margin-bottom:8px}
+.svc p{margin:0;color:#6b5646;font-size:.98rem}
+.about{display:grid;gap:44px;align-items:center}
+@media(min-width:900px){.about{grid-template-columns:1.1fr .9fr}}
+.about-copy p{color:#6b5646;font-size:1.06rem}
+.ticks{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:10px}
+.ticks li{display:flex;gap:10px;align-items:center;font-weight:600}
+.ticks .ico{color:#fff;background:#c2410c;border-radius:50%;padding:3px}
+.about-fig{margin:0;border-radius:calc(22px + 6px);overflow:hidden;box-shadow:0 30px 60px -30px rgba(0,0,0,.45);aspect-ratio:4/3.4}
+.about-fig img{width:100%;height:100%;object-fit:cover}
+.about-mono{aspect-ratio:1/1;max-width:420px;width:100%;justify-self:center;border-radius:calc(22px + 10px);background:radial-gradient(circle at 30% 20%,#b45309,#3b1d0e);display:grid;place-content:center;text-align:center;color:#fff;box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}
+.about-mono span{font-family:'Fraunces',serif;font-size:7rem;font-weight:700;line-height:1;opacity:.95}
+.about-mono p{margin:10px 24px 0;font-weight:600;opacity:.8}
+.gallery{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
+@media(min-width:800px){.gallery{grid-template-columns:repeat(3,1fr)}.gallery.g2{grid-template-columns:repeat(2,1fr)}.gallery.g4{grid-template-columns:repeat(4,1fr)}}
+.gallery figure{margin:0;border-radius:22px;overflow:hidden;aspect-ratio:1/1;background:#eadfd2}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.gallery figure:hover img{transform:scale(1.04)}
+.cta-band{display:flex;flex-wrap:wrap;gap:22px;align-items:center;justify-content:space-between;background:linear-gradient(135deg,#3b1d0e,#8a3b12);color:#fff;border-radius:calc(22px + 8px);padding:36px clamp(24px,4vw,48px);margin-bottom:44px}
+.cta-band h2{margin:0 0 6px;font-size:clamp(1.5rem,3vw,2.1rem)}
+.cta-band p{margin:0;color:rgba(255,255,255,.82)}
+.contact-grid{display:grid;gap:22px}
+@media(min-width:900px){.contact-grid{grid-template-columns:1.2fr .8fr}}
+.contact-list{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.ci{display:flex;gap:16px;background:#ffffff;border:1px solid #eadfd2;border-radius:22px;padding:22px;word-break:break-word}
+.ci>.ico{color:#7c2d12;background:#f6e7d6;padding:10px;width:44px;height:44px;border-radius:12px}
+.ci h3{font-family:'DM Sans',sans-serif;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:#6b5646;margin:2px 0 6px;font-weight:700}
+.ci p{margin:0}.ci a{font-weight:600;text-decoration:none;color:#2b1d14}
+.ci .maplink{display:inline-flex;align-items:center;gap:6px;margin-top:8px;color:#c2410c;font-size:.92rem}
+.hours-card{background:#ffffff;border:1px solid #eadfd2;border-radius:22px;padding:26px}
+.hours-card h3{display:flex;gap:10px;align-items:center;font-size:1.2rem}
+.hours-card table{width:100%;border-collapse:collapse}
+.hours-card th,.hours-card td{padding:10px 0;border-bottom:1px dashed #eadfd2;text-align:left;font-weight:500}
+.hours-card td{text-align:right;color:#6b5646}
+.hours-card .note{color:#6b5646;font-size:.9rem;margin:12px 0 0}
+.getlive{background:#0b1020;color:#e5e7eb;padding:72px 0}
+.gl-inner{display:grid;gap:32px;align-items:center}
+@media(min-width:900px){.gl-inner{grid-template-columns:1.3fr .7fr}}
+.getlive h2{color:#fff}
+.getlive p{color:#cbd5e1}
+.gl-list{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:8px}
+.gl-list li{display:flex;gap:10px;align-items:center}.gl-list .ico{color:#fbbf24}
+.gl-card{background:#111a33;border:1px solid #23304f;border-radius:18px;padding:28px;text-align:center}
+.gl-price{font-weight:700;color:#fff!important;margin:0 0 16px;font-size:1.1rem}
+.gl-small{font-size:.85rem;margin:14px 0 0}
+.foot{background:#3b1d0e;color:rgba(255,255,255,.8);padding:40px 0 24px;font-size:.95rem}
+.foot a{color:#fff}
+.foot-inner{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between}
+.foot-social{display:flex;gap:16px}
+.foot-legal{border-top:1px solid rgba(255,255,255,.12);margin-top:26px;padding-top:18px;font-size:.8rem;color:rgba(255,255,255,.6)}
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:55;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid #eadfd2;backdrop-filter:blur(8px)}
+.mbar .btn{width:100%}
+@media(min-width:900px){.mbar{display:none}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body class="cat-food">
+<div class="topbar">
+<div class="pl-banner" role="note">Concept preview by PrizenLabs for Gracious Grace Cafe. Not the official site. <a href="#get-it-live">Like it? Get it live in 48h&nbsp;→</a></div>
+<header class="hdr">
+  <div class="wrap hdr-inner">
+    <a href="#top" class="brand"><img src="img/logo.webp" alt="Gracious Grace Cafe logo" class="logo-img"></a>
+    <nav class="nav"><a href="#services">Services</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></nav>
+    <a class="btn btn-accent btn-sm hdr-cta" href="tel:0397352223"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg><span>03 9735 2223</span></a>
+  </div>
+</header>
+</div>
+<main>
+
+<section class="hero hero-grad" id="top">
+  <div class="hero-pattern"></div>
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">Cafe, Catering &amp; Functions · Lilydale</p>
+      <h1>Lilydale&#x27;s Most Elegant &amp; Stylish Cafe</h1>
+      <p class="lead">Serving Lilydale&#x27;s best coffee, scrumptious breakfasts, mouth-watering lunches and cakes to absolutely die for. Our food is made to order, with fresh Yarra Valley produce.</p>
+      <div class="btns"><a class="btn btn-accent" href="https://bookings.obeeapp.com/graciousgrace" target="_blank" rel="noopener"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4" /> <path d="M16 2v4" /> <rect width="18" height="18" x="3" y="4" rx="2" /> <path d="M3 10h18" /></svg>Reserve a Table</a><a class="btn btn-ghost" href="tel:0397352223"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>Call 03 9735 2223</a></div>
+      <ul class="chips"><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Fresh, local Yarra Valley produce</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Fully licensed</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Overlooking historic Melba Park</li></ul>
+    </div>
+    <div class="quick-card"><a href="tel:0397352223"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg><span><small>Call</small>03 9735 2223</span></a><a href="mailto:info@graciousgrace.com.au"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2" /> <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg><span><small>Email</small>info@graciousgrace.com.au</span></a><a href="https://www.google.com/maps/search/?api=1&amp;query=Gracious+Grace+Cafe%2C+35+Castella+Street%2C+Lilydale%2C+Victoria" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></svg><span><small>Find us</small>35 Castella Street, Lilydale, Victoria</span></a><a href="#contact"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /> <polyline points="12 6 12 12 16 14" /></svg><span><small>Hours</small>Mon - Sat: 8am - 4pm</span></a></div>
+  </div>
+</section>
+
+
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">What we do</p>
+      <h2>Food, Drinks, Cakes &amp; Events</h2>
+      <p class="sub">From casual coffees to hearty breakfasts, chic lunches and indulgent cakes, there is something to entice your taste buds.</p>
+    </div>
+    <div class="svc-grid svc-n6">
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2" /> <path d="M7 2v20" /> <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7" /></svg></div>
+        <h3>All-Day Breakfasts</h3>
+        <p>Hearty breakfasts served until 3pm, from eggs on high top sourdough to the Vegan big breakfast and Mark&#x27;s big breakfast.</p>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2" /> <path d="M7 2v20" /> <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7" /></svg></div>
+        <h3>Lunch</h3>
+        <p>Lunch from 12pm, including the Stella burger, Reuben sandwich, risotto and a buffalo chicken salad.</p>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2v2" /> <path d="M14 2v2" /> <path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1" /> <path d="M6 2v2" /></svg></div>
+        <h3>Coffee &amp; Hot Drinks</h3>
+        <p>Cappuccino, latte, macchiato, mocha and more, with alternate milks available, plus hot chocolate made with real Belgium chocolate.</p>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="7" r="2" /> <path d="M7.2 7.9 3 11v9c0 .6.4 1 1 1h16c.6 0 1-.4 1-1v-9c0-2-3-6-7-8l-3.6 2.6" /> <path d="M16 13H3" /> <path d="M16 17H3" /></svg></div>
+        <h3>Cakes to Order</h3>
+        <p>Cakes made especially for you or your special occasion, in a range of styles and flavours. Gluten-free options are available. Call or email to enquire about pricing.</p>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <circle cx="9" cy="7" r="4" /> <path d="M22 21v-2a4 4 0 0 0-3-3.87" /> <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg></div>
+        <h3>Functions &amp; Catering</h3>
+        <p>Birthday parties, social gatherings and corporate functions. We&#x27;re fully licensed, and your event can flow onto the large private deck.</p>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 22h8" /> <path d="M7 10h10" /> <path d="M12 15v7" /> <path d="M12 15a5 5 0 0 0 5-5c0-2-.5-4-2-8H9c-1.5 4-2 6-2 8a5 5 0 0 0 5 5Z" /></svg></div>
+        <h3>Wine, Beer &amp; Cider</h3>
+        <p>Sparkling, white, pink and red wines, plus beers and Gracious Grace ciders in pear, apple, peach and strawberry.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="about">
+  <div class="wrap about">
+    <div class="about-copy">
+      <p class="kicker">About us</p>
+      <h2>Welcome to Gracious Grace Cafe</h2>
+      <p>Our food is fresh, tasty and made to order, using fresh, local Yarra Valley produce. Eat and drink in style overlooking the picturesque, historic Melba Park.</p><p>Whether it&#x27;s a casual coffee, an indulgent cake, a hearty all-day breakfast or a chic lunch, Gracious Grace will entice your taste buds.</p><p>We&#x27;re in Castella Street, right next to the Yarra Ranges Regional Museum.</p>
+      <ul class="ticks"><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Fresh, local Yarra Valley produce</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Fully licensed</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Overlooking historic Melba Park</li></ul>
+    </div>
+    <figure class="about-fig"><img src="img/about.webp" alt="Gracious Grace Cafe" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <div class="wrap">
+    <div class="sec-head"><p class="kicker">Gallery</p><h2>Take a look</h2></div>
+    <div class="gallery g6"><figure><img src="img/gallery-1.webp" alt="Gracious Grace Cafe photo 1" loading="lazy"></figure><figure><img src="img/gallery-2.webp" alt="Gracious Grace Cafe photo 2" loading="lazy"></figure><figure><img src="img/gallery-3.webp" alt="Gracious Grace Cafe photo 3" loading="lazy"></figure><figure><img src="img/gallery-4.webp" alt="Gracious Grace Cafe photo 4" loading="lazy"></figure><figure><img src="img/gallery-5.webp" alt="Gracious Grace Cafe photo 5" loading="lazy"></figure><figure><img src="img/gallery-6.webp" alt="Gracious Grace Cafe photo 6" loading="lazy"></figure></div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="cta-band">
+      <div><h2>Reserve Your Table Today</h2><p>Join us for coffee, breakfast, lunch or cakes on Castella Street, Lilydale.</p></div>
+      <a class="btn btn-accent btn-lg" href="https://bookings.obeeapp.com/graciousgrace" target="_blank" rel="noopener"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4" /> <path d="M16 2v4" /> <rect width="18" height="18" x="3" y="4" rx="2" /> <path d="M3 10h18" /></svg>Reserve a Table</a>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-list"><div class="ci"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg><div><h3>Phone</h3><a href="tel:0397352223">03 9735 2223</a></div></div><div class="ci"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2" /> <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg><div><h3>Email</h3><a href="mailto:info@graciousgrace.com.au">info@graciousgrace.com.au</a></div></div><div class="ci"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></svg><div><h3>Address</h3><p>35 Castella Street, Lilydale, Victoria</p><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Gracious+Grace+Cafe%2C+35+Castella+Street%2C+Lilydale%2C+Victoria" target="_blank" rel="noopener">Open in Google Maps <svg class="ico ico-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></a></div></div></div>
+      <div class="hours-card"><h3><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /> <polyline points="12 6 12 12 16 14" /></svg>Opening hours</h3><table><tr><th>Mon - Sat</th><td>8am - 4pm</td></tr><tr><th>Sunday</th><td>9am - 4pm</td></tr></table></div>
+    </div>
+  </div>
+</section>
+
+<section class="getlive" id="get-it-live">
+  <div class="wrap gl-inner">
+    <div>
+      <p class="kicker kicker-light">PrizenLabs · concept preview</p>
+      <h2>Like this new look for Gracious Grace Cafe?</h2>
+      <p>This concept was built from the content on your current website. We can make it your real site, on your own domain, in 48 hours.</p>
+      <ul class="gl-list">
+        <li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Mobile-first, fast-loading design</li>
+        <li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Your wording, photos and details reviewed with you before launch</li>
+        <li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Hosted on your existing domain</li>
+      </ul>
+    </div>
+    <div class="gl-card">
+      <p class="gl-price">Pricing &amp; next steps</p>
+      <a class="btn btn-accent btn-lg" href="{{OFFER_LINK}}">Get it live in 48h <svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></a>
+      <p class="gl-small">No obligation. Nothing changes on your current site unless you say so.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <div><strong>Gracious Grace Cafe</strong><br>35 Castella Street, Lilydale, Victoria<br><a href="tel:0397352223">03 9735 2223</a></div>
+    <div class="foot-social"><a href="https://www.facebook.com/graciousgracecafe/" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/graciousgracelilydale/" target="_blank" rel="noopener">Instagram</a></div>
+  </div>
+  <div class="wrap foot-legal">
+    <p>Concept preview created by PrizenLabs on 2026-11-24 using content and images from the public website
+    <a href="http://www.graciousgrace.com.au/" rel="nofollow noopener" target="_blank">graciousgrace.com.au</a>. Not affiliated with or endorsed by Gracious Grace Cafe.
+    All business names, text and photos belong to their owner.</p>
+  </div>
+</footer>
+<div class="mbar"><a class="btn btn-accent" href="https://bookings.obeeapp.com/graciousgrace" target="_blank" rel="noopener"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4" /> <path d="M16 2v4" /> <rect width="18" height="18" x="3" y="4" rx="2" /> <path d="M3 10h18" /></svg>Reserve a Table</a></div>
+</body>
+</html>
