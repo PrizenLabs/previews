@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Dance Xplosion | Dance Classes in Southwest Austin · Concept preview</title>
+<meta name="description" content="Dance Xplosion is a learning, training and performing facility in southwest Austin for dancers ages 2-18 in all forms of dance. Enroll online today.">
+<meta property="og:title" content="Concept preview: a new homepage for Dance Xplosion">
+<meta property="og:description" content="A free redesign concept by PrizenLabs, built from dancexplosionaustin.com.">
+<meta property="og:image" content="img/hero.webp">
+<meta name="theme-color" content="#0f1e33">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{margin:0;font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#111827;background:#f7f8fa;line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:76px}
+@media(min-width:900px){body{padding-bottom:0}}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:'Source Serif 4',Georgia,serif;font-weight:700;line-height:1.12;margin:0 0 .5em;letter-spacing:-.01em}
+.cat-auto h1,.cat-auto h2{text-transform:uppercase;letter-spacing:.01em}
+.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
+.ico{width:22px;height:22px;flex:none}.ico-sm{width:18px;height:18px}.ico-xs{width:14px;height:14px}
+.topbar{position:sticky;top:0;z-index:60}
+.pl-banner{background:#111827;color:#e5e7eb;font:500 12.5px/1.3 Inter,system-ui,sans-serif;text-align:center;padding:8px 12px}
+.pl-banner a{color:#fbbf24;font-weight:700;text-decoration:none;white-space:nowrap}
+.hdr{background:rgba(255,255,255,.92);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid #e5e7eb}
+.hdr-inner{display:flex;align-items:center;gap:20px;min-height:68px}
+.brand{text-decoration:none;display:flex;align-items:center;min-width:0}
+.logo-img{max-height:48px;width:auto;max-width:190px;object-fit:contain}
+.wordmark{font-family:'Source Serif 4',serif;font-weight:700;font-size:1.25rem;color:#1e3a5f;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nav{display:none;gap:26px;margin-left:auto}
+.nav a{text-decoration:none;font-weight:500;color:#4b5563;font-size:.95rem}.nav a:hover{color:#1e3a5f}
+.hdr-cta{margin-left:auto}
+@media(min-width:900px){.nav{display:flex}.hdr-cta{margin-left:8px}}
+@media(max-width:520px){.hdr-cta span{display:none}.hdr-cta{padding:10px 12px}.eyebrow{border-radius:12px;letter-spacing:.1em;font-size:.72rem}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:700;font-size:1rem;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease,background .15s;border:2px solid transparent;cursor:pointer}
+.btn:hover{transform:translateY(-1px)}
+.btn-accent{background:#4f46e5;color:#ffffff;box-shadow:0 8px 24px -10px #4f46e5}
+.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff;background:rgba(255,255,255,.06)}
+.btn-ghost:hover{background:rgba(255,255,255,.16)}
+.btn-sm{padding:9px 16px;font-size:.92rem}.btn-lg{padding:16px 28px;font-size:1.05rem}
+.hero{position:relative;color:#fff;overflow:hidden;isolation:isolate}
+.hero-inner{position:relative;display:grid;gap:36px;padding:72px 0 64px;align-items:end}
+@media(min-width:960px){.hero-inner{grid-template-columns:1.35fr .9fr;padding:112px 0 96px;align-items:center}}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,#0f1e33f0 0%,#0f1e33bb 48%,#0f1e3340 100%)}
+@media(max-width:959px){.hero-shade{background:linear-gradient(180deg,#0f1e33cc,#0f1e33f2 70%)}}
+.hero-grad{background:radial-gradient(1200px 500px at 85% -10%,#334e7a88,transparent 60%),linear-gradient(135deg,#0f1e33,#24456f)}
+.hero-pattern{position:absolute;inset:0;z-index:-1;opacity:.12;background-image:radial-gradient(#fff 1px,transparent 1.2px);background-size:22px 22px;mask-image:linear-gradient(180deg,#000,transparent)}
+.eyebrow{display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:6px 12px;border-radius:999px;margin:0 0 18px}
+.hero h1{font-size:clamp(2.2rem,5.6vw,4rem);margin-bottom:18px;text-wrap:balance}
+.lead{font-size:clamp(1.05rem,1.6vw,1.25rem);color:rgba(255,255,255,.88);max-width:40ch;margin:0 0 28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.chips{list-style:none;padding:0;margin:28px 0 0;display:flex;flex-wrap:wrap;gap:10px 18px}
+.chips li{display:flex;align-items:center;gap:7px;font-weight:600;font-size:.95rem;color:rgba(255,255,255,.92)}
+.chips .ico{color:#4f46e5;background:#fff;border-radius:50%;padding:2px}
+.hero-fig{position:relative;margin:0;justify-self:end;width:100%;max-width:520px}
+.hero-fig img{width:100%;aspect-ratio:4/3.4;object-fit:cover;border-radius:calc(12px + 8px);box-shadow:0 40px 80px -30px rgba(0,0,0,.6);border:6px solid rgba(255,255,255,.12)}
+.hero-badge{position:absolute;left:-18px;bottom:22px;display:flex;gap:12px;align-items:center;background:#fff;color:#111827;padding:12px 16px;border-radius:14px;box-shadow:0 20px 40px -18px rgba(0,0,0,.5);text-decoration:none;font-weight:600;font-size:.95rem}
+.hero-badge .ico{color:#4f46e5}
+.hero-badge small{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#4b5563;font-weight:700}
+@media(max-width:959px){.hero-fig{justify-self:stretch;max-width:none}.hero-badge{left:12px;bottom:12px}}
+.quick-card{background:rgba(255,255,255,.96);color:#111827;border-radius:12px;padding:10px;box-shadow:0 30px 60px -20px rgba(0,0,0,.45);display:grid}
+.quick-card a{display:flex;gap:14px;align-items:flex-start;padding:14px;border-radius:calc(12px - 6px);text-decoration:none;font-weight:600;word-break:break-word}
+.quick-card a:hover{background:#e9edf6}
+.quick-card .ico{color:#1e3a5f;background:#e9edf6;padding:9px;width:40px;height:40px;border-radius:12px}
+.quick-card small{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:#4b5563;font-weight:700}
+.notice{background:#e9edf6;border-bottom:1px solid #e5e7eb}
+.notice .wrap{display:flex;gap:12px;align-items:flex-start;padding:14px 0;color:#1e3a5f;font-weight:500;font-size:.95rem}
+.notice p{margin:0}
+.section{padding:84px 0}
+.section-alt{background:#ffffff;border-block:1px solid #e5e7eb}
+.sec-head{max-width:640px;margin-bottom:40px}
+.kicker{font-size:.8rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#4f46e5;margin:0 0 10px}
+.kicker-light{color:#fbbf24}
+h2{font-size:clamp(1.8rem,3.6vw,2.6rem)}
+.sub{color:#4b5563;font-size:1.1rem;margin:0}
+.svc-grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+@media(min-width:1000px){.svc-n2,.svc-n4{grid-template-columns:repeat(2,1fr)}.svc-n3,.svc-n5,.svc-n6,.svc-n9{grid-template-columns:repeat(3,1fr)}.svc-n7,.svc-n8{grid-template-columns:repeat(4,1fr)}
+.svc-n5 .svc:nth-child(n+4),.svc-n7 .svc:nth-child(n+5){grid-column:span 1}}
+@media(min-width:1000px){.svc-n5{grid-template-columns:repeat(6,1fr)}.svc-n5 .svc{grid-column:span 2}.svc-n5 .svc:nth-child(n+4){grid-column:span 3}
+.svc-n7{grid-template-columns:repeat(12,1fr)}.svc-n7 .svc{grid-column:span 3}.svc-n7 .svc:nth-child(n+5){grid-column:span 4}}
+.svc{background:#ffffff;border:1px solid #e5e7eb;border-radius:12px;padding:26px;transition:transform .2s,box-shadow .2s,border-color .2s}
+.svc:hover{transform:translateY(-3px);box-shadow:0 20px 40px -24px rgba(15,23,42,.35);border-color:transparent}
+.svc-ico{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:#e9edf6;color:#1e3a5f;margin-bottom:18px}
+.svc-ico .ico{width:26px;height:26px}
+.svc h3{font-size:1.22rem;margin-bottom:8px}
+.svc p{margin:0;color:#4b5563;font-size:.98rem}
+.about{display:grid;gap:44px;align-items:center}
+@media(min-width:900px){.about{grid-template-columns:1.1fr .9fr}}
+.about-copy p{color:#4b5563;font-size:1.06rem}
+.ticks{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:10px}
+.ticks li{display:flex;gap:10px;align-items:center;font-weight:600}
+.ticks .ico{color:#fff;background:#4f46e5;border-radius:50%;padding:3px}
+.about-fig{margin:0;border-radius:calc(12px + 6px);overflow:hidden;box-shadow:0 30px 60px -30px rgba(0,0,0,.45);aspect-ratio:4/3.4}
+.about-fig img{width:100%;height:100%;object-fit:cover}
+.about-mono{aspect-ratio:1/1;max-width:420px;width:100%;justify-self:center;border-radius:calc(12px + 10px);background:radial-gradient(circle at 30% 20%,#334e7a,#0f1e33);display:grid;place-content:center;text-align:center;color:#fff;box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}
+.about-mono span{font-family:'Source Serif 4',serif;font-size:7rem;font-weight:700;line-height:1;opacity:.95}
+.about-mono p{margin:10px 24px 0;font-weight:600;opacity:.8}
+.gallery{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
+@media(min-width:800px){.gallery{grid-template-columns:repeat(3,1fr)}.gallery.g2{grid-template-columns:repeat(2,1fr)}.gallery.g4{grid-template-columns:repeat(4,1fr)}}
+.gallery figure{margin:0;border-radius:12px;overflow:hidden;aspect-ratio:1/1;background:#e5e7eb}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.gallery figure:hover img{transform:scale(1.04)}
+.cta-band{display:flex;flex-wrap:wrap;gap:22px;align-items:center;justify-content:space-between;background:linear-gradient(135deg,#0f1e33,#24456f);color:#fff;border-radius:calc(12px + 8px);padding:36px clamp(24px,4vw,48px);margin-bottom:44px}
+.cta-band h2{margin:0 0 6px;font-size:clamp(1.5rem,3vw,2.1rem)}
+.cta-band p{margin:0;color:rgba(255,255,255,.82)}
+.contact-grid{display:grid;gap:22px}
+@media(min-width:900px){.contact-grid{grid-template-columns:1.2fr .8fr}}
+.contact-list{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.ci{display:flex;gap:16px;background:#ffffff;border:1px solid #e5e7eb;border-radius:12px;padding:22px;word-break:break-word}
+.ci>.ico{color:#1e3a5f;background:#e9edf6;padding:10px;width:44px;height:44px;border-radius:12px}
+.ci h3{font-family:'Inter',sans-serif;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:#4b5563;margin:2px 0 6px;font-weight:700}
+.ci p{margin:0}.ci a{font-weight:600;text-decoration:none;color:#111827}
+.ci .maplink{display:inline-flex;align-items:center;gap:6px;margin-top:8px;color:#4f46e5;font-size:.92rem}
+.hours-card{background:#ffffff;border:1px solid #e5e7eb;border-radius:12px;padding:26px}
+.hours-card h3{display:flex;gap:10px;align-items:center;font-size:1.2rem}
+.hours-card table{width:100%;border-collapse:collapse}
+.hours-card th,.hours-card td{padding:10px 0;border-bottom:1px dashed #e5e7eb;text-align:left;font-weight:500}
+.hours-card td{text-align:right;color:#4b5563}
+.hours-card .note{color:#4b5563;font-size:.9rem;margin:12px 0 0}
+.getlive{background:#0b1020;color:#e5e7eb;padding:72px 0}
+.gl-inner{display:grid;gap:32px;align-items:center}
+@media(min-width:900px){.gl-inner{grid-template-columns:1.3fr .7fr}}
+.getlive h2{color:#fff}
+.getlive p{color:#cbd5e1}
+.gl-list{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:8px}
+.gl-list li{display:flex;gap:10px;align-items:center}.gl-list .ico{color:#fbbf24}
+.gl-card{background:#111a33;border:1px solid #23304f;border-radius:18px;padding:28px;text-align:center}
+.gl-price{font-weight:700;color:#fff!important;margin:0 0 16px;font-size:1.1rem}
+.gl-small{font-size:.85rem;margin:14px 0 0}
+.foot{background:#0f1e33;color:rgba(255,255,255,.8);padding:40px 0 24px;font-size:.95rem}
+.foot a{color:#fff}
+.foot-inner{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between}
+.foot-social{display:flex;gap:16px}
+.foot-legal{border-top:1px solid rgba(255,255,255,.12);margin-top:26px;padding-top:18px;font-size:.8rem;color:rgba(255,255,255,.6)}
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:55;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid #e5e7eb;backdrop-filter:blur(8px)}
+.mbar .btn{width:100%}
+@media(min-width:900px){.mbar{display:none}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body class="cat-professional">
+<div class="topbar">
+<div class="pl-banner" role="note">Concept preview by PrizenLabs for Dance Xplosion. Not the official site. <a href="#get-it-live">Like it? Get it live in 48h&nbsp;→</a></div>
+<header class="hdr">
+  <div class="wrap hdr-inner">
+    <a href="#top" class="brand"><img src="img/logo.webp" alt="Dance Xplosion logo" class="logo-img"></a>
+    <nav class="nav"><a href="#services">Services</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></nav>
+    <a class="btn btn-accent btn-sm hdr-cta" href="tel:5123019222"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg><span>512-301-9222</span></a>
+  </div>
+</header>
+</div>
+<main>
+
+<section class="hero hero-grad hero-split" id="top">
+  <div class="hero-pattern"></div>
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">Dance Studio &amp; Training · southwest Austin</p>
+      <h1>Learn, train and perform in southwest Austin</h1>
+      <p class="lead">Dance Xplosion is a learning, training and performing facility in southwest Austin for dancers ages 2-18 in all forms of dance. We maintain a safe, professional, high-energy and creative environment.</p>
+      <div class="btns"><a class="btn btn-accent" href="tel:5123019222"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>Call 512-301-9222</a><a class="btn btn-ghost" href="#services">Our services</a></div>
+      <ul class="chips"><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Highly trained instructors</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>3 studio rooms</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Retail store in the lobby</li></ul>
+    </div>
+    <figure class="hero-fig"><img src="img/hero.webp" alt="Dance Xplosion" fetchpriority="high"><div class="hero-badge"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /> <polyline points="12 6 12 12 16 14" /></svg><span><small>Open</small>Mon - Fri · 12pm - 7pm</span></div></figure>
+  </div>
+</section>
+<div class="notice"><div class="wrap"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4" /> <path d="M16 2v4" /> <rect width="18" height="18" x="3" y="4" rx="2" /> <path d="M3 10h18" /></svg><p>December Acro Workshops: Sunday, December 6. December Parents&#x27; Day Out: Monday, December 21, ages 4-10, 9am-4pm.</p></div></div>
+
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">What we do</p>
+      <h2>Classes for Every Dancer</h2>
+      <p class="sub">From preschool creative dance to pointe and hip hop, Dance Xplosion offers all forms of dance.</p>
+    </div>
+    <div class="svc-grid svc-n8">
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" /> <path d="M20 3v4" /> <path d="M22 5h-4" /> <path d="M4 17v2" /> <path d="M5 18H3" /></svg></div>
+        <h3>Ballet, Pointe &amp; Lyrical</h3>
+        <p>Classes in Ballet, Pointe, Lyrical and Contemporary for dancers ages 2-18.</p>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.4 14.4 9.6 9.6" /> <path d="M18.657 21.485a2 2 0 1 1-2.829-2.828l-1.767 1.768a2 2 0 1 1-2.829-2.829l6.364-6.364a2 2 0 1 1 2.829 2.829l-1.768 1.767a2 2 0 1 1 2.828 2.829z" /> <path d="m21.5 21.5-1.4-1.4" /> <path d="M3.9 3.9 2.5 2.5" /> <path d="M6.404 12.768a2 2 0 1 1-2.829-2.829l1.768-1.767a2 2 0 1 1-2.828-2.829l2.828-2.828a2 2 0 1 1 2.829 2.828l1.767-1.768a2 2 0 1 1 2.829 2.829z" /></svg></div>
+        <h3>Jazz, Tap &amp; Hip Hop</h3>
+        <p>Jazz, Tap, Hip Hop, and Leaps &amp; Turns classes, plus School Dance/Drill Team Prep.</p>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <circle cx="9" cy="7" r="4" /> <path d="M22 21v-2a4 4 0 0 0-3-3.87" /> <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg></div>
+        <h3>Musical Theatre &amp; Acro</h3>
+        <p>Musical Theatre and Acro classes, plus Acro workshops for ages 6-18 in two levels.</p>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12h.01" /> <path d="M15 12h.01" /> <path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5" /> <path d="M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1" /></svg></div>
+        <h3>Preschool &amp; Toddler Classes</h3>
+        <p>Preschool Creative Dance, Toddler &amp; Hip Bop, and Superhero Tumble for our youngest dancers.</p>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" /></svg></div>
+        <h3>Family Music Classes</h3>
+        <p>Music classes for kids ages 8 months - 4.5 years, with a parent or guardian who actively participates.</p>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2v4" /> <path d="M16 2v4" /> <rect width="18" height="18" x="3" y="4" rx="2" /> <path d="M3 10h18" /></svg></div>
+        <h3>Camps &amp; Workshops</h3>
+        <p>Summer classes, camps, intensives and workshops, plus Parents&#x27; Day Out with dancing, games, and arts &amp; crafts for ages 4-10.</p>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /> <path d="M22 10v6" /> <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></svg></div>
+        <h3>Master Classes</h3>
+        <p>Guest teachers from around the country hold master classes open to current and future students.</p>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" /> <path d="M3 6h18" /> <path d="M16 10a4 4 0 0 1-8 0" /></svg></div>
+        <h3>Bright Lights Dancewear</h3>
+        <p>A full retail store in the studio lobby with shoes, tights, clothes, gifts and accessories in youth and adult sizes.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="about">
+  <div class="wrap about">
+    <div class="about-copy">
+      <p class="kicker">About us</p>
+      <h2>About Dance Xplosion</h2>
+      <p>Dance Xplosion was opened by lifetime dancer Amber Frishman in 2008. Year-round classes are offered, with the regular schedule held from the end of August through May, and an Annual Recital in the spring.</p><p>Our goal is not to force training and technique, but to teach, nurture and inspire students as they explore dance and music. Our instructors are highly trained and always striving to learn the latest trends and techniques in their genre of dance.</p><p>Our facility has more than 3,300sq feet of space with 3 studio rooms. Each has professional-grade, fully-sprung Marley floors, wall-to-wall mirrors, water fountains, ballet barres and full sound systems.</p>
+      <ul class="ticks"><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Highly trained instructors</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>3 studio rooms</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Retail store in the lobby</li></ul>
+    </div>
+    <figure class="about-fig"><img src="img/about.webp" alt="Dance Xplosion" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <div class="wrap">
+    <div class="sec-head"><p class="kicker">Gallery</p><h2>Take a look</h2></div>
+    <div class="gallery g4"><figure><img src="img/gallery-1.webp" alt="Dance Xplosion photo 1" loading="lazy"></figure><figure><img src="img/gallery-2.webp" alt="Dance Xplosion photo 2" loading="lazy"></figure><figure><img src="img/gallery-3.webp" alt="Dance Xplosion photo 3" loading="lazy"></figure><figure><img src="img/gallery-4.webp" alt="Dance Xplosion photo 4" loading="lazy"></figure></div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="cta-band">
+      <div><h2>Ready to start dancing?</h2><p>Enrollment is open throughout the Fall for ages 2-18, so register online or stop by anytime.</p></div>
+      <a class="btn btn-accent btn-lg" href="tel:5123019222"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>Call 512-301-9222</a>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-list"><div class="ci"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg><div><h3>Phone</h3><a href="tel:5123019222">512-301-9222</a></div></div><div class="ci"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2" /> <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg><div><h3>Email</h3><a href="mailto:info@dancexplosionaustin.com">info@dancexplosionaustin.com</a></div></div><div class="ci"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></svg><div><h3>Address</h3><p>Escarpment Village Shopping Center, 9600 Escarpment Blvd. #750, Austin, TX 78749</p><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Dance+Xplosion%2C+Escarpment+Village+Shopping+Center%2C+9600+Escarpment+Blvd.+%23750%2C+Austin%2C+TX+78749" target="_blank" rel="noopener">Open in Google Maps <svg class="ico ico-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></a></div></div><div class="ci"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /> <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></svg><div><h3>Areas covered</h3><p>southwest Austin</p></div></div></div>
+      <div class="hours-card"><h3><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /> <polyline points="12 6 12 12 16 14" /></svg>Opening hours</h3><table><tr><th>Mon - Fri</th><td>12pm - 7pm</td></tr><tr><th>Sat</th><td>8:30am - 2pm</td></tr></table><p class=note>These are the hours when the front desk staff is available via phone and email. Some classes start before 12pm and/or after 7pm.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="getlive" id="get-it-live">
+  <div class="wrap gl-inner">
+    <div>
+      <p class="kicker kicker-light">PrizenLabs · concept preview</p>
+      <h2>Like this new look for Dance Xplosion?</h2>
+      <p>This concept was built from the content on your current website. We can make it your real site, on your own domain, in 48 hours.</p>
+      <ul class="gl-list">
+        <li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Mobile-first, fast-loading design</li>
+        <li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Your wording, photos and details reviewed with you before launch</li>
+        <li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Hosted on your existing domain</li>
+      </ul>
+    </div>
+    <div class="gl-card">
+      <p class="gl-price">Pricing &amp; next steps</p>
+      <a class="btn btn-accent btn-lg" href="https://buy.stripe.com/eVqdR87kl8JH055b2efYY00">Get it live in 48h <svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></a>
+      <p class="gl-small">No obligation. Nothing changes on your current site unless you say so.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <div><strong>Dance Xplosion</strong><br>Escarpment Village Shopping Center, 9600 Escarpment Blvd. #750, Austin, TX 78749<br><a href="tel:5123019222">512-301-9222</a></div>
+    <div class="foot-social"><a href="https://www.dropbox.com/scl/fi/6jqg4lmlug7phx2r03kue/DXP-Studio-Calendar-Fall-2026-Spring-2027.pdf" target="_blank" rel="noopener">Dropbox</a><a href="https://www.dropbox.com/scl/fi/69fobo7menp6d8nhllbu7/December-2026-Acro-Workshops-Flyers.pdf" target="_blank" rel="noopener">Dropbox</a><a href="https://www.dropbox.com/scl/fi/cn766ppn7p9wwinyyagl2/Download-the-DXP-App-to-Livestream.pdf" target="_blank" rel="noopener">Dropbox</a><a href="http://www.facebook.com/dancexplosion" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/dancexplosionaustin" target="_blank" rel="noopener">Instagram</a></div>
+  </div>
+  <div class="wrap foot-legal">
+    <p>Concept preview created by PrizenLabs on 2026-11-24 using content and images from the public website
+    <a href="https://www.dancexplosionaustin.com/" rel="nofollow noopener" target="_blank">dancexplosionaustin.com</a>. Not affiliated with or endorsed by Dance Xplosion.
+    All business names, text and photos belong to their owner.</p>
+  </div>
+</footer>
+<div class="mbar"><a class="btn btn-accent" href="tel:5123019222"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>Call 512-301-9222</a></div>
+</body>
+</html>

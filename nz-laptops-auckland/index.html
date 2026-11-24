@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>NZLaptops | Refurbished &amp; Ex-Lease Computers · Concept preview</title>
+<meta name="description" content="Specialist refurbished and ex-lease computer wholesaler and retailer. Laptops, PCs, Apple products, peripherals and spare parts for most major brands.">
+<meta property="og:title" content="Concept preview: a new homepage for NZ Laptops">
+<meta property="og:description" content="A free redesign concept by PrizenLabs, built from nzlaptops.co.nz.">
+
+<meta name="theme-color" content="#06302b">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{margin:0;font-family:'DM Sans',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#0f2620;background:#f5faf8;line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:76px}
+@media(min-width:900px){body{padding-bottom:0}}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:'Outfit',Georgia,serif;font-weight:700;line-height:1.12;margin:0 0 .5em;letter-spacing:-.01em}
+.cat-auto h1,.cat-auto h2{text-transform:uppercase;letter-spacing:.01em}
+.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
+.ico{width:22px;height:22px;flex:none}.ico-sm{width:18px;height:18px}.ico-xs{width:14px;height:14px}
+.topbar{position:sticky;top:0;z-index:60}
+.pl-banner{background:#111827;color:#e5e7eb;font:500 12.5px/1.3 Inter,system-ui,sans-serif;text-align:center;padding:8px 12px}
+.pl-banner a{color:#fbbf24;font-weight:700;text-decoration:none;white-space:nowrap}
+.hdr{background:rgba(255,255,255,.92);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid #dcebe5}
+.hdr-inner{display:flex;align-items:center;gap:20px;min-height:68px}
+.brand{text-decoration:none;display:flex;align-items:center;min-width:0}
+.logo-img{max-height:48px;width:auto;max-width:190px;object-fit:contain}
+.wordmark{font-family:'Outfit',serif;font-weight:700;font-size:1.25rem;color:#0f766e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nav{display:none;gap:26px;margin-left:auto}
+.nav a{text-decoration:none;font-weight:500;color:#4b635b;font-size:.95rem}.nav a:hover{color:#0f766e}
+.hdr-cta{margin-left:auto}
+@media(min-width:900px){.nav{display:flex}.hdr-cta{margin-left:8px}}
+@media(max-width:520px){.hdr-cta span{display:none}.hdr-cta{padding:10px 12px}.eyebrow{border-radius:12px;letter-spacing:.1em;font-size:.72rem}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:700;font-size:1rem;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease,background .15s;border:2px solid transparent;cursor:pointer}
+.btn:hover{transform:translateY(-1px)}
+.btn-accent{background:#0d9488;color:#ffffff;box-shadow:0 8px 24px -10px #0d9488}
+.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff;background:rgba(255,255,255,.06)}
+.btn-ghost:hover{background:rgba(255,255,255,.16)}
+.btn-sm{padding:9px 16px;font-size:.92rem}.btn-lg{padding:16px 28px;font-size:1.05rem}
+.hero{position:relative;color:#fff;overflow:hidden;isolation:isolate}
+.hero-inner{position:relative;display:grid;gap:36px;padding:72px 0 64px;align-items:end}
+@media(min-width:960px){.hero-inner{grid-template-columns:1.35fr .9fr;padding:112px 0 96px;align-items:center}}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,#06302bf0 0%,#06302bbb 48%,#06302b40 100%)}
+@media(max-width:959px){.hero-shade{background:linear-gradient(180deg,#06302bcc,#06302bf2 70%)}}
+.hero-grad{background:radial-gradient(1200px 500px at 85% -10%,#14b8a688,transparent 60%),linear-gradient(135deg,#06302b,#0f766e)}
+.hero-pattern{position:absolute;inset:0;z-index:-1;opacity:.12;background-image:radial-gradient(#fff 1px,transparent 1.2px);background-size:22px 22px;mask-image:linear-gradient(180deg,#000,transparent)}
+.eyebrow{display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:6px 12px;border-radius:999px;margin:0 0 18px}
+.hero h1{font-size:clamp(2.2rem,5.6vw,4rem);margin-bottom:18px;text-wrap:balance}
+.lead{font-size:clamp(1.05rem,1.6vw,1.25rem);color:rgba(255,255,255,.88);max-width:40ch;margin:0 0 28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.chips{list-style:none;padding:0;margin:28px 0 0;display:flex;flex-wrap:wrap;gap:10px 18px}
+.chips li{display:flex;align-items:center;gap:7px;font-weight:600;font-size:.95rem;color:rgba(255,255,255,.92)}
+.chips .ico{color:#0d9488;background:#fff;border-radius:50%;padding:2px}
+.hero-fig{position:relative;margin:0;justify-self:end;width:100%;max-width:520px}
+.hero-fig img{width:100%;aspect-ratio:4/3.4;object-fit:cover;border-radius:calc(18px + 8px);box-shadow:0 40px 80px -30px rgba(0,0,0,.6);border:6px solid rgba(255,255,255,.12)}
+.hero-badge{position:absolute;left:-18px;bottom:22px;display:flex;gap:12px;align-items:center;background:#fff;color:#0f2620;padding:12px 16px;border-radius:14px;box-shadow:0 20px 40px -18px rgba(0,0,0,.5);text-decoration:none;font-weight:600;font-size:.95rem}
+.hero-badge .ico{color:#0d9488}
+.hero-badge small{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#4b635b;font-weight:700}
+@media(max-width:959px){.hero-fig{justify-self:stretch;max-width:none}.hero-badge{left:12px;bottom:12px}}
+.quick-card{background:rgba(255,255,255,.96);color:#0f2620;border-radius:18px;padding:10px;box-shadow:0 30px 60px -20px rgba(0,0,0,.45);display:grid}
+.quick-card a{display:flex;gap:14px;align-items:flex-start;padding:14px;border-radius:calc(18px - 6px);text-decoration:none;font-weight:600;word-break:break-word}
+.quick-card a:hover{background:#dff5ef}
+.quick-card .ico{color:#0f766e;background:#dff5ef;padding:9px;width:40px;height:40px;border-radius:12px}
+.quick-card small{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:#4b635b;font-weight:700}
+.notice{background:#dff5ef;border-bottom:1px solid #dcebe5}
+.notice .wrap{display:flex;gap:12px;align-items:flex-start;padding:14px 0;color:#0f766e;font-weight:500;font-size:.95rem}
+.notice p{margin:0}
+.section{padding:84px 0}
+.section-alt{background:#ffffff;border-block:1px solid #dcebe5}
+.sec-head{max-width:640px;margin-bottom:40px}
+.kicker{font-size:.8rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#0d9488;margin:0 0 10px}
+.kicker-light{color:#fbbf24}
+h2{font-size:clamp(1.8rem,3.6vw,2.6rem)}
+.sub{color:#4b635b;font-size:1.1rem;margin:0}
+.svc-grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+@media(min-width:1000px){.svc-n2,.svc-n4{grid-template-columns:repeat(2,1fr)}.svc-n3,.svc-n5,.svc-n6,.svc-n9{grid-template-columns:repeat(3,1fr)}.svc-n7,.svc-n8{grid-template-columns:repeat(4,1fr)}
+.svc-n5 .svc:nth-child(n+4),.svc-n7 .svc:nth-child(n+5){grid-column:span 1}}
+@media(min-width:1000px){.svc-n5{grid-template-columns:repeat(6,1fr)}.svc-n5 .svc{grid-column:span 2}.svc-n5 .svc:nth-child(n+4){grid-column:span 3}
+.svc-n7{grid-template-columns:repeat(12,1fr)}.svc-n7 .svc{grid-column:span 3}.svc-n7 .svc:nth-child(n+5){grid-column:span 4}}
+.svc{background:#ffffff;border:1px solid #dcebe5;border-radius:18px;padding:26px;transition:transform .2s,box-shadow .2s,border-color .2s}
+.svc:hover{transform:translateY(-3px);box-shadow:0 20px 40px -24px rgba(15,23,42,.35);border-color:transparent}
+.svc-ico{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:#dff5ef;color:#0f766e;margin-bottom:18px}
+.svc-ico .ico{width:26px;height:26px}
+.svc h3{font-size:1.22rem;margin-bottom:8px}
+.svc p{margin:0;color:#4b635b;font-size:.98rem}
+.about{display:grid;gap:44px;align-items:center}
+@media(min-width:900px){.about{grid-template-columns:1.1fr .9fr}}
+.about-copy p{color:#4b635b;font-size:1.06rem}
+.ticks{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:10px}
+.ticks li{display:flex;gap:10px;align-items:center;font-weight:600}
+.ticks .ico{color:#fff;background:#0d9488;border-radius:50%;padding:3px}
+.about-fig{margin:0;border-radius:calc(18px + 6px);overflow:hidden;box-shadow:0 30px 60px -30px rgba(0,0,0,.45);aspect-ratio:4/3.4}
+.about-fig img{width:100%;height:100%;object-fit:cover}
+.about-mono{aspect-ratio:1/1;max-width:420px;width:100%;justify-self:center;border-radius:calc(18px + 10px);background:radial-gradient(circle at 30% 20%,#14b8a6,#06302b);display:grid;place-content:center;text-align:center;color:#fff;box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}
+.about-mono span{font-family:'Outfit',serif;font-size:7rem;font-weight:700;line-height:1;opacity:.95}
+.about-mono p{margin:10px 24px 0;font-weight:600;opacity:.8}
+.gallery{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
+@media(min-width:800px){.gallery{grid-template-columns:repeat(3,1fr)}.gallery.g2{grid-template-columns:repeat(2,1fr)}.gallery.g4{grid-template-columns:repeat(4,1fr)}}
+.gallery figure{margin:0;border-radius:18px;overflow:hidden;aspect-ratio:1/1;background:#dcebe5}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.gallery figure:hover img{transform:scale(1.04)}
+.cta-band{display:flex;flex-wrap:wrap;gap:22px;align-items:center;justify-content:space-between;background:linear-gradient(135deg,#06302b,#0f766e);color:#fff;border-radius:calc(18px + 8px);padding:36px clamp(24px,4vw,48px);margin-bottom:44px}
+.cta-band h2{margin:0 0 6px;font-size:clamp(1.5rem,3vw,2.1rem)}
+.cta-band p{margin:0;color:rgba(255,255,255,.82)}
+.contact-grid{display:grid;gap:22px}
+@media(min-width:900px){.contact-grid{grid-template-columns:1.2fr .8fr}}
+.contact-list{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.ci{display:flex;gap:16px;background:#ffffff;border:1px solid #dcebe5;border-radius:18px;padding:22px;word-break:break-word}
+.ci>.ico{color:#0f766e;background:#dff5ef;padding:10px;width:44px;height:44px;border-radius:12px}
+.ci h3{font-family:'DM Sans',sans-serif;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:#4b635b;margin:2px 0 6px;font-weight:700}
+.ci p{margin:0}.ci a{font-weight:600;text-decoration:none;color:#0f2620}
+.ci .maplink{display:inline-flex;align-items:center;gap:6px;margin-top:8px;color:#0d9488;font-size:.92rem}
+.hours-card{background:#ffffff;border:1px solid #dcebe5;border-radius:18px;padding:26px}
+.hours-card h3{display:flex;gap:10px;align-items:center;font-size:1.2rem}
+.hours-card table{width:100%;border-collapse:collapse}
+.hours-card th,.hours-card td{padding:10px 0;border-bottom:1px dashed #dcebe5;text-align:left;font-weight:500}
+.hours-card td{text-align:right;color:#4b635b}
+.hours-card .note{color:#4b635b;font-size:.9rem;margin:12px 0 0}
+.getlive{background:#0b1020;color:#e5e7eb;padding:72px 0}
+.gl-inner{display:grid;gap:32px;align-items:center}
+@media(min-width:900px){.gl-inner{grid-template-columns:1.3fr .7fr}}
+.getlive h2{color:#fff}
+.getlive p{color:#cbd5e1}
+.gl-list{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:8px}
+.gl-list li{display:flex;gap:10px;align-items:center}.gl-list .ico{color:#fbbf24}
+.gl-card{background:#111a33;border:1px solid #23304f;border-radius:18px;padding:28px;text-align:center}
+.gl-price{font-weight:700;color:#fff!important;margin:0 0 16px;font-size:1.1rem}
+.gl-small{font-size:.85rem;margin:14px 0 0}
+.foot{background:#06302b;color:rgba(255,255,255,.8);padding:40px 0 24px;font-size:.95rem}
+.foot a{color:#fff}
+.foot-inner{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between}
+.foot-social{display:flex;gap:16px}
+.foot-legal{border-top:1px solid rgba(255,255,255,.12);margin-top:26px;padding-top:18px;font-size:.8rem;color:rgba(255,255,255,.6)}
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:55;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid #dcebe5;backdrop-filter:blur(8px)}
+.mbar .btn{width:100%}
+@media(min-width:900px){.mbar{display:none}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body class="cat-retail">
+<div class="topbar">
+<div class="pl-banner" role="note">Concept preview by PrizenLabs for NZ Laptops. Not the official site. <a href="#get-it-live">Like it? Get it live in 48h&nbsp;→</a></div>
+<header class="hdr">
+  <div class="wrap hdr-inner">
+    <a href="#top" class="brand"><img src="img/logo.webp" alt="NZ Laptops logo" class="logo-img"></a>
+    <nav class="nav"><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    <a class="btn btn-accent btn-sm hdr-cta" href="#contact" target="_blank" rel="noopener">Browse laptops</a>
+  </div>
+</header>
+</div>
+<main>
+
+<section class="hero hero-grad" id="top">
+  <div class="hero-pattern"></div>
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">Refurbished &amp; Ex-Lease Computers</p>
+      <h1>Refurbished and ex-lease computers, working perfectly</h1>
+      <p class="lead">We are a specialist refurbished and ex-lease computer wholesaler and retailer with an extensive supply of laptops, PCs, peripherals and spare parts for most major brands.</p>
+      <div class="btns"><a class="btn btn-accent" href="#contact" target="_blank" rel="noopener"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></svg>Browse laptops</a><a class="btn btn-ghost" href="#services">Our services</a></div>
+      <ul class="chips"><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Hard drives wiped, clean install</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Full time technicians</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>G.S.T. tax invoices provided</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Custom made boxes for transit</li></ul>
+    </div>
+    
+  </div>
+</section>
+
+
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">What we do</p>
+      <h2>What we supply</h2>
+      <p class="sub">From laptops and PCs to Apple products and spare parts, we deal with almost anything computer related.</p>
+    </div>
+    <div class="svc-grid svc-n7">
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16" /></svg></div>
+        <h3>Refurbished &amp; Ex-Lease Laptops</h3>
+        <p>Browse laptops and notebooks across home office, business, gaming, ultrabooks, 2 in 1 convertibles, mobile workstations and Chromebooks.</p>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z" /> <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" /> <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2" /> <path d="M10 6h4" /> <path d="M10 10h4" /> <path d="M10 14h4" /> <path d="M10 18h4" /></svg></div>
+        <h3>Desktops &amp; Workstations</h3>
+        <p>Choose from all in one desktops, gaming desktops, business PCs, home office PCs, ultra compact PCs and workstations.</p>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7" /> <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" /> <path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4" /> <path d="M2 7h20" /> <path d="M22 7v3a2 2 0 0 1-2 2a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7" /></svg></div>
+        <h3>Apple Products</h3>
+        <p>We stock a full range of Apple products including Macbooks, iMacs, iPads, and iPhones.</p>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z" /> <path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" /> <path d="M12 2v2" /> <path d="M12 22v-2" /> <path d="m17 20.66-1-1.73" /> <path d="M11 10.27 7 3.34" /> <path d="m20.66 17-1.73-1" /> <path d="m3.34 7 1.73 1" /> <path d="M14 12h8" /> <path d="M2 12h2" /> <path d="m20.66 7-1.73 1" /> <path d="m3.34 17 1.73-1" /> <path d="m17 3.34-1 1.73" /> <path d="m11 13.73-4 6.93" /></svg></div>
+        <h3>Spare Parts</h3>
+        <p>Notebook LCD screens, batteries, notebook adapters, DVD drives, keyboards, memory and power supplies, so we can repair your laptop for its foreseeable life.</p>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" /></svg></div>
+        <h3>Laptop Repairs</h3>
+        <p>Our full time technicians can solve just about any computer problem.</p>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22v-5" /> <path d="M9 8V2" /> <path d="M15 8V2" /> <path d="M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z" /></svg></div>
+        <h3>Peripherals &amp; Networking</h3>
+        <p>Docking stations, keyboards and mice, external hard drives, printers, switches, routers and more.</p>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg></div>
+        <h3>Phones &amp; Tablets</h3>
+        <p>Samsung tablets and smartphones, plus mobile phone repairs, accessories and parts.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="about">
+  <div class="wrap about">
+    <div class="about-copy">
+      <p class="kicker">About us</p>
+      <h2>About NZLaptops</h2>
+      <p>We source product locally as well as overseas. Every laptop has its hard drive permanently wiped of any data, then receives a total clean install with the correct drivers, service packs, updates and anti virus protection, so you receive a computer that is virus free and working perfectly.</p><p>Before dispatch, computers are cleaned and packaged professionally in our own custom made boxes to minimise the chance of damage during transit.</p><p>Because our technicians work on laptops day in day out, they offer that knowledge as after sales support. We want our clients fully satisfied with a problem free purchase.</p>
+      <ul class="ticks"><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Hard drives wiped, clean install</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Full time technicians</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>G.S.T. tax invoices provided</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Custom made boxes for transit</li></ul>
+    </div>
+    <div class="about-mono"><span>NL</span></div>
+  </div>
+</section>
+
+
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="cta-band">
+      <div><h2>Looking for something in particular?</h2><p>Feel free to contact us if there is something in particular you are looking for.</p></div>
+      <a class="btn btn-accent btn-lg" href="#contact" target="_blank" rel="noopener"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></svg>Browse laptops</a>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-list"></div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="getlive" id="get-it-live">
+  <div class="wrap gl-inner">
+    <div>
+      <p class="kicker kicker-light">PrizenLabs · concept preview</p>
+      <h2>Like this new look for NZ Laptops?</h2>
+      <p>This concept was built from the content on your current website. We can make it your real site, on your own domain, in 48 hours.</p>
+      <ul class="gl-list">
+        <li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Mobile-first, fast-loading design</li>
+        <li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Your wording, photos and details reviewed with you before launch</li>
+        <li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Hosted on your existing domain</li>
+      </ul>
+    </div>
+    <div class="gl-card">
+      <p class="gl-price">Pricing &amp; next steps</p>
+      <a class="btn btn-accent btn-lg" href="https://buy.stripe.com/eVqdR87kl8JH055b2efYY00">Get it live in 48h <svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></a>
+      <p class="gl-small">No obligation. Nothing changes on your current site unless you say so.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <div><strong>NZ Laptops</strong></div>
+    <div class="foot-social"><a href="http://www.facebook.com/nzlaptops" target="_blank" rel="noopener">Facebook</a></div>
+  </div>
+  <div class="wrap foot-legal">
+    <p>Concept preview created by PrizenLabs on 2026-11-24 using content and images from the public website
+    <a href="https://www.nzlaptops.co.nz/" rel="nofollow noopener" target="_blank">nzlaptops.co.nz</a>. Not affiliated with or endorsed by NZ Laptops.
+    All business names, text and photos belong to their owner.</p>
+  </div>
+</footer>
+<div class="mbar"><a class="btn btn-accent" href="#contact" target="_blank" rel="noopener"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></svg>Browse laptops</a></div>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Sunnyside Art Supplies | Art Store in Calgary · Concept preview</title>
+<meta name="description" content="Your friendly neighbourhood art store in Calgary. Diamond painting and kids paint by numbers. Dogs welcome. Call 403-475-0608.">
+<meta property="og:title" content="Concept preview: a new homepage for Sunnyside Art Supplies">
+<meta property="og:description" content="A free redesign concept by PrizenLabs, built from sunnysideartsupplies.com.">
+<meta property="og:image" content="img/hero.webp">
+<meta name="theme-color" content="#06302b">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{margin:0;font-family:'DM Sans',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#0f2620;background:#f5faf8;line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:76px}
+@media(min-width:900px){body{padding-bottom:0}}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:'Outfit',Georgia,serif;font-weight:700;line-height:1.12;margin:0 0 .5em;letter-spacing:-.01em}
+.cat-auto h1,.cat-auto h2{text-transform:uppercase;letter-spacing:.01em}
+.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
+.ico{width:22px;height:22px;flex:none}.ico-sm{width:18px;height:18px}.ico-xs{width:14px;height:14px}
+.topbar{position:sticky;top:0;z-index:60}
+.pl-banner{background:#111827;color:#e5e7eb;font:500 12.5px/1.3 Inter,system-ui,sans-serif;text-align:center;padding:8px 12px}
+.pl-banner a{color:#fbbf24;font-weight:700;text-decoration:none;white-space:nowrap}
+.hdr{background:rgba(255,255,255,.92);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid #dcebe5}
+.hdr-inner{display:flex;align-items:center;gap:20px;min-height:68px}
+.brand{text-decoration:none;display:flex;align-items:center;min-width:0}
+.logo-img{max-height:48px;width:auto;max-width:190px;object-fit:contain}
+.wordmark{font-family:'Outfit',serif;font-weight:700;font-size:1.25rem;color:#0f766e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nav{display:none;gap:26px;margin-left:auto}
+.nav a{text-decoration:none;font-weight:500;color:#4b635b;font-size:.95rem}.nav a:hover{color:#0f766e}
+.hdr-cta{margin-left:auto}
+@media(min-width:900px){.nav{display:flex}.hdr-cta{margin-left:8px}}
+@media(max-width:520px){.hdr-cta span{display:none}.hdr-cta{padding:10px 12px}.eyebrow{border-radius:12px;letter-spacing:.1em;font-size:.72rem}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:700;font-size:1rem;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease,background .15s;border:2px solid transparent;cursor:pointer}
+.btn:hover{transform:translateY(-1px)}
+.btn-accent{background:#0d9488;color:#ffffff;box-shadow:0 8px 24px -10px #0d9488}
+.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff;background:rgba(255,255,255,.06)}
+.btn-ghost:hover{background:rgba(255,255,255,.16)}
+.btn-sm{padding:9px 16px;font-size:.92rem}.btn-lg{padding:16px 28px;font-size:1.05rem}
+.hero{position:relative;color:#fff;overflow:hidden;isolation:isolate}
+.hero-inner{position:relative;display:grid;gap:36px;padding:72px 0 64px;align-items:end}
+@media(min-width:960px){.hero-inner{grid-template-columns:1.35fr .9fr;padding:112px 0 96px;align-items:center}}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,#06302bf0 0%,#06302bbb 48%,#06302b40 100%)}
+@media(max-width:959px){.hero-shade{background:linear-gradient(180deg,#06302bcc,#06302bf2 70%)}}
+.hero-grad{background:radial-gradient(1200px 500px at 85% -10%,#14b8a688,transparent 60%),linear-gradient(135deg,#06302b,#0f766e)}
+.hero-pattern{position:absolute;inset:0;z-index:-1;opacity:.12;background-image:radial-gradient(#fff 1px,transparent 1.2px);background-size:22px 22px;mask-image:linear-gradient(180deg,#000,transparent)}
+.eyebrow{display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:6px 12px;border-radius:999px;margin:0 0 18px}
+.hero h1{font-size:clamp(2.2rem,5.6vw,4rem);margin-bottom:18px;text-wrap:balance}
+.lead{font-size:clamp(1.05rem,1.6vw,1.25rem);color:rgba(255,255,255,.88);max-width:40ch;margin:0 0 28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.chips{list-style:none;padding:0;margin:28px 0 0;display:flex;flex-wrap:wrap;gap:10px 18px}
+.chips li{display:flex;align-items:center;gap:7px;font-weight:600;font-size:.95rem;color:rgba(255,255,255,.92)}
+.chips .ico{color:#0d9488;background:#fff;border-radius:50%;padding:2px}
+.hero-fig{position:relative;margin:0;justify-self:end;width:100%;max-width:520px}
+.hero-fig img{width:100%;aspect-ratio:4/3.4;object-fit:cover;border-radius:calc(18px + 8px);box-shadow:0 40px 80px -30px rgba(0,0,0,.6);border:6px solid rgba(255,255,255,.12)}
+.hero-badge{position:absolute;left:-18px;bottom:22px;display:flex;gap:12px;align-items:center;background:#fff;color:#0f2620;padding:12px 16px;border-radius:14px;box-shadow:0 20px 40px -18px rgba(0,0,0,.5);text-decoration:none;font-weight:600;font-size:.95rem}
+.hero-badge .ico{color:#0d9488}
+.hero-badge small{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#4b635b;font-weight:700}
+@media(max-width:959px){.hero-fig{justify-self:stretch;max-width:none}.hero-badge{left:12px;bottom:12px}}
+.quick-card{background:rgba(255,255,255,.96);color:#0f2620;border-radius:18px;padding:10px;box-shadow:0 30px 60px -20px rgba(0,0,0,.45);display:grid}
+.quick-card a{display:flex;gap:14px;align-items:flex-start;padding:14px;border-radius:calc(18px - 6px);text-decoration:none;font-weight:600;word-break:break-word}
+.quick-card a:hover{background:#dff5ef}
+.quick-card .ico{color:#0f766e;background:#dff5ef;padding:9px;width:40px;height:40px;border-radius:12px}
+.quick-card small{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:#4b635b;font-weight:700}
+.notice{background:#dff5ef;border-bottom:1px solid #dcebe5}
+.notice .wrap{display:flex;gap:12px;align-items:flex-start;padding:14px 0;color:#0f766e;font-weight:500;font-size:.95rem}
+.notice p{margin:0}
+.section{padding:84px 0}
+.section-alt{background:#ffffff;border-block:1px solid #dcebe5}
+.sec-head{max-width:640px;margin-bottom:40px}
+.kicker{font-size:.8rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#0d9488;margin:0 0 10px}
+.kicker-light{color:#fbbf24}
+h2{font-size:clamp(1.8rem,3.6vw,2.6rem)}
+.sub{color:#4b635b;font-size:1.1rem;margin:0}
+.svc-grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+@media(min-width:1000px){.svc-n2,.svc-n4{grid-template-columns:repeat(2,1fr)}.svc-n3,.svc-n5,.svc-n6,.svc-n9{grid-template-columns:repeat(3,1fr)}.svc-n7,.svc-n8{grid-template-columns:repeat(4,1fr)}
+.svc-n5 .svc:nth-child(n+4),.svc-n7 .svc:nth-child(n+5){grid-column:span 1}}
+@media(min-width:1000px){.svc-n5{grid-template-columns:repeat(6,1fr)}.svc-n5 .svc{grid-column:span 2}.svc-n5 .svc:nth-child(n+4){grid-column:span 3}
+.svc-n7{grid-template-columns:repeat(12,1fr)}.svc-n7 .svc{grid-column:span 3}.svc-n7 .svc:nth-child(n+5){grid-column:span 4}}
+.svc{background:#ffffff;border:1px solid #dcebe5;border-radius:18px;padding:26px;transition:transform .2s,box-shadow .2s,border-color .2s}
+.svc:hover{transform:translateY(-3px);box-shadow:0 20px 40px -24px rgba(15,23,42,.35);border-color:transparent}
+.svc-ico{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:#dff5ef;color:#0f766e;margin-bottom:18px}
+.svc-ico .ico{width:26px;height:26px}
+.svc h3{font-size:1.22rem;margin-bottom:8px}
+.svc p{margin:0;color:#4b635b;font-size:.98rem}
+.about{display:grid;gap:44px;align-items:center}
+@media(min-width:900px){.about{grid-template-columns:1.1fr .9fr}}
+.about-copy p{color:#4b635b;font-size:1.06rem}
+.ticks{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:10px}
+.ticks li{display:flex;gap:10px;align-items:center;font-weight:600}
+.ticks .ico{color:#fff;background:#0d9488;border-radius:50%;padding:3px}
+.about-fig{margin:0;border-radius:calc(18px + 6px);overflow:hidden;box-shadow:0 30px 60px -30px rgba(0,0,0,.45);aspect-ratio:4/3.4}
+.about-fig img{width:100%;height:100%;object-fit:cover}
+.about-mono{aspect-ratio:1/1;max-width:420px;width:100%;justify-self:center;border-radius:calc(18px + 10px);background:radial-gradient(circle at 30% 20%,#14b8a6,#06302b);display:grid;place-content:center;text-align:center;color:#fff;box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}
+.about-mono span{font-family:'Outfit',serif;font-size:7rem;font-weight:700;line-height:1;opacity:.95}
+.about-mono p{margin:10px 24px 0;font-weight:600;opacity:.8}
+.gallery{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
+@media(min-width:800px){.gallery{grid-template-columns:repeat(3,1fr)}.gallery.g2{grid-template-columns:repeat(2,1fr)}.gallery.g4{grid-template-columns:repeat(4,1fr)}}
+.gallery figure{margin:0;border-radius:18px;overflow:hidden;aspect-ratio:1/1;background:#dcebe5}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.gallery figure:hover img{transform:scale(1.04)}
+.cta-band{display:flex;flex-wrap:wrap;gap:22px;align-items:center;justify-content:space-between;background:linear-gradient(135deg,#06302b,#0f766e);color:#fff;border-radius:calc(18px + 8px);padding:36px clamp(24px,4vw,48px);margin-bottom:44px}
+.cta-band h2{margin:0 0 6px;font-size:clamp(1.5rem,3vw,2.1rem)}
+.cta-band p{margin:0;color:rgba(255,255,255,.82)}
+.contact-grid{display:grid;gap:22px}
+@media(min-width:900px){.contact-grid{grid-template-columns:1.2fr .8fr}}
+.contact-list{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.ci{display:flex;gap:16px;background:#ffffff;border:1px solid #dcebe5;border-radius:18px;padding:22px;word-break:break-word}
+.ci>.ico{color:#0f766e;background:#dff5ef;padding:10px;width:44px;height:44px;border-radius:12px}
+.ci h3{font-family:'DM Sans',sans-serif;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:#4b635b;margin:2px 0 6px;font-weight:700}
+.ci p{margin:0}.ci a{font-weight:600;text-decoration:none;color:#0f2620}
+.ci .maplink{display:inline-flex;align-items:center;gap:6px;margin-top:8px;color:#0d9488;font-size:.92rem}
+.hours-card{background:#ffffff;border:1px solid #dcebe5;border-radius:18px;padding:26px}
+.hours-card h3{display:flex;gap:10px;align-items:center;font-size:1.2rem}
+.hours-card table{width:100%;border-collapse:collapse}
+.hours-card th,.hours-card td{padding:10px 0;border-bottom:1px dashed #dcebe5;text-align:left;font-weight:500}
+.hours-card td{text-align:right;color:#4b635b}
+.hours-card .note{color:#4b635b;font-size:.9rem;margin:12px 0 0}
+.getlive{background:#0b1020;color:#e5e7eb;padding:72px 0}
+.gl-inner{display:grid;gap:32px;align-items:center}
+@media(min-width:900px){.gl-inner{grid-template-columns:1.3fr .7fr}}
+.getlive h2{color:#fff}
+.getlive p{color:#cbd5e1}
+.gl-list{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:8px}
+.gl-list li{display:flex;gap:10px;align-items:center}.gl-list .ico{color:#fbbf24}
+.gl-card{background:#111a33;border:1px solid #23304f;border-radius:18px;padding:28px;text-align:center}
+.gl-price{font-weight:700;color:#fff!important;margin:0 0 16px;font-size:1.1rem}
+.gl-small{font-size:.85rem;margin:14px 0 0}
+.foot{background:#06302b;color:rgba(255,255,255,.8);padding:40px 0 24px;font-size:.95rem}
+.foot a{color:#fff}
+.foot-inner{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between}
+.foot-social{display:flex;gap:16px}
+.foot-legal{border-top:1px solid rgba(255,255,255,.12);margin-top:26px;padding-top:18px;font-size:.8rem;color:rgba(255,255,255,.6)}
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:55;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid #dcebe5;backdrop-filter:blur(8px)}
+.mbar .btn{width:100%}
+@media(min-width:900px){.mbar{display:none}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body class="cat-retail">
+<div class="topbar">
+<div class="pl-banner" role="note">Concept preview by PrizenLabs for Sunnyside Art Supplies. Not the official site. <a href="#get-it-live">Like it? Get it live in 48h&nbsp;→</a></div>
+<header class="hdr">
+  <div class="wrap hdr-inner">
+    <a href="#top" class="brand"><span class="wordmark">Sunnyside Art Supplies</span></a>
+    <nav class="nav"><a href="#services">Services</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></nav>
+    <a class="btn btn-accent btn-sm hdr-cta" href="tel:4034750608"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg><span>403-475-0608</span></a>
+  </div>
+</header>
+</div>
+<main>
+
+<section class="hero hero-grad hero-split" id="top">
+  <div class="hero-pattern"></div>
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">Art Supplies Store · Calgary</p>
+      <h1>Your Friendly Neighbourhood Art Store</h1>
+      <p class="lead">Sunnyside Art Supplies is your friendly neighbourhood art store in Calgary.</p>
+      <div class="btns"><a class="btn btn-accent" href="tel:4034750608"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>Call 403-475-0608</a><a class="btn btn-ghost" href="#services">Our services</a></div>
+      <ul class="chips"><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Dogs welcome</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Customer parking behind the store</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Your friendly neighbourhood art store</li></ul>
+    </div>
+    <figure class="hero-fig"><img src="img/hero.webp" alt="Sunnyside Art Supplies" fetchpriority="high"><div class="hero-badge"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /> <polyline points="12 6 12 12 16 14" /></svg><span><small>Open</small>Mon - Sat · 10am - 6pm</span></div></figure>
+  </div>
+</section>
+
+
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">What we do</p>
+      <h2>Our services</h2>
+      <p class="sub">Find something to make, from animals and flowers to landscapes and portraits.</p>
+    </div>
+    <div class="svc-grid svc-n6">
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m14.622 17.897-10.68-2.913" /> <path d="M18.376 2.622a1 1 0 1 1 3.002 3.002L17.36 9.643a.5.5 0 0 0 0 .707l.944.944a2.41 2.41 0 0 1 0 3.408l-.944.944a.5.5 0 0 1-.707 0L8.354 7.348a.5.5 0 0 1 0-.707l.944-.944a2.41 2.41 0 0 1 3.408 0l.944.944a.5.5 0 0 0 .707 0z" /> <path d="M9 8c-1.804 2.71-3.97 3.46-6.583 3.948a.507.507 0 0 0-.302.819l7.32 8.883a1 1 0 0 0 1.185.204C12.735 20.405 16 16.792 16 15" /></svg></div>
+        <h3>Kids Paint by Numbers</h3>
+        <p>A paint by numbers range made for kids, so young artists can get creative.</p>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12l4 6-10 13L2 9Z" /> <path d="M11 3 8 9l4 13 4-13-3-6" /> <path d="M2 9h20" /></svg></div>
+        <h3>Diamond Painting Animals</h3>
+        <p>Diamond painting designs featuring animals.</p>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5a3 3 0 1 1 3 3m-3-3a3 3 0 1 0-3 3m3-3v1M9 8a3 3 0 1 0 3 3M9 8h1m5 0a3 3 0 1 1-3 3m3-3h-1m-2 3v-1" /> <circle cx="12" cy="8" r="2" /> <path d="M12 10v12" /> <path d="M12 22c4.2 0 7-1.667 7-5-4.2 0-7 1.667-7 5Z" /> <path d="M12 22c-4.2 0-7-1.667-7-5 4.2 0 7 1.667 7 5Z" /></svg></div>
+        <h3>Diamond Painting Flowers</h3>
+        <p>Diamond painting designs featuring flowers.</p>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 10v.2A3 3 0 0 1 8.9 16H5a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z" /> <path d="M7 16v6" /> <path d="M13 19v3" /> <path d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5" /></svg></div>
+        <h3>Diamond Painting Landscapes</h3>
+        <p>Diamond painting designs featuring landscapes.</p>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" /> <path d="M20 3v4" /> <path d="M22 5h-4" /> <path d="M4 17v2" /> <path d="M5 18H3" /></svg></div>
+        <h3>Diamond Painting Portraits</h3>
+        <p>Diamond painting designs featuring portraits.</p>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9.06 11.9 8.07-8.06a2.85 2.85 0 1 1 4.03 4.03l-8.06 8.08" /> <path d="M7.07 14.94c-1.66 0-3 1.35-3 3.02 0 1.33-2.5 1.52-2 2.02 1.08 1.1 2.49 2.02 4 2.02 2.2 0 4-1.8 4-4.04a3.01 3.01 0 0 0-3-3.02z" /></svg></div>
+        <h3>Animals, Flowers, Landscapes &amp; Portraits</h3>
+        <p>Browse our collections by subject: animals, flowers, landscapes and portraits.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="about">
+  <div class="wrap about">
+    <div class="about-copy">
+      <p class="kicker">About us</p>
+      <h2>Your Friendly Neighbourhood Art Store</h2>
+      <p>Sunnyside Art Supplies is your friendly neighbourhood art store in Calgary. Our motto says it all: keep calm and make art!</p><p>Dogs are welcome in the store, and there is customer parking behind the building.</p>
+      <ul class="ticks"><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Dogs welcome</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Customer parking behind the store</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Your friendly neighbourhood art store</li></ul>
+    </div>
+    <div class="about-mono"><span>SA</span><p>Calgary</p></div>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <div class="wrap">
+    <div class="sec-head"><p class="kicker">Gallery</p><h2>Take a look</h2></div>
+    <div class="gallery g2"><figure><img src="img/gallery-1.webp" alt="Sunnyside Art Supplies photo 1" loading="lazy"></figure><figure><img src="img/gallery-2.webp" alt="Sunnyside Art Supplies photo 2" loading="lazy"></figure></div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="cta-band">
+      <div><h2>Keep Calm &amp; Make Art!</h2><p>Call 403-475-0608 or email info@sunnysideartsupplies.com to get in touch with Sunnyside Art Supplies.</p></div>
+      <a class="btn btn-accent btn-lg" href="tel:4034750608"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>Call 403-475-0608</a>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-list"><div class="ci"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg><div><h3>Phone</h3><a href="tel:4034750608">403-475-0608</a></div></div><div class="ci"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2" /> <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg><div><h3>Email</h3><a href="mailto:info@sunnysideartsupplies.com">info@sunnysideartsupplies.com</a></div></div><div class="ci"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></svg><div><h3>Address</h3><p>132 - 10th Street N.W. Calgary, Alberta T2N 1V3</p><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Sunnyside+Art+Supplies%2C+132+-+10th+Street+N.W.+Calgary%2C+Alberta+T2N+1V3" target="_blank" rel="noopener">Open in Google Maps <svg class="ico ico-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></a></div></div></div>
+      <div class="hours-card"><h3><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /> <polyline points="12 6 12 12 16 14" /></svg>Opening hours</h3><table><tr><th>Mon - Sat</th><td>10am - 6pm</td></tr><tr><th>Sun</th><td>11am - 5pm</td></tr></table></div>
+    </div>
+  </div>
+</section>
+
+<section class="getlive" id="get-it-live">
+  <div class="wrap gl-inner">
+    <div>
+      <p class="kicker kicker-light">PrizenLabs · concept preview</p>
+      <h2>Like this new look for Sunnyside Art Supplies?</h2>
+      <p>This concept was built from the content on your current website. We can make it your real site, on your own domain, in 48 hours.</p>
+      <ul class="gl-list">
+        <li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Mobile-first, fast-loading design</li>
+        <li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Your wording, photos and details reviewed with you before launch</li>
+        <li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Hosted on your existing domain</li>
+      </ul>
+    </div>
+    <div class="gl-card">
+      <p class="gl-price">Pricing &amp; next steps</p>
+      <a class="btn btn-accent btn-lg" href="https://buy.stripe.com/eVqdR87kl8JH055b2efYY00">Get it live in 48h <svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></a>
+      <p class="gl-small">No obligation. Nothing changes on your current site unless you say so.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <div><strong>Sunnyside Art Supplies</strong><br>132 - 10th Street N.W. Calgary, Alberta T2N 1V3<br><a href="tel:4034750608">403-475-0608</a></div>
+    <div class="foot-social"></div>
+  </div>
+  <div class="wrap foot-legal">
+    <p>Concept preview created by PrizenLabs on 2026-11-24 using content and images from the public website
+    <a href="http://www.sunnysideartsupplies.com/" rel="nofollow noopener" target="_blank">sunnysideartsupplies.com</a>. Not affiliated with or endorsed by Sunnyside Art Supplies.
+    All business names, text and photos belong to their owner.</p>
+  </div>
+</footer>
+<div class="mbar"><a class="btn btn-accent" href="tel:4034750608"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>Call 403-475-0608</a></div>
+</body>
+</html>
