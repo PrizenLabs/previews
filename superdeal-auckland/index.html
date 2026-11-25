@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Super Deal Trading Company | Wholesale, East Tāmaki · Concept preview</title>
+<meta name="description" content="Wholesaling to over 700 retail stores nationwide, with more than 3500 product lines including household, plasticware, stationery and party essentials.">
+<meta property="og:title" content="Concept preview: a new homepage for Superdeal">
+<meta property="og:description" content="A free redesign concept by PrizenLabs, built from superdealnz.co.nz.">
+
+<meta name="theme-color" content="#06302b">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{margin:0;font-family:'DM Sans',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#0f2620;background:#f5faf8;line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:76px}
+@media(min-width:900px){body{padding-bottom:0}}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:'Outfit',Georgia,serif;font-weight:700;line-height:1.12;margin:0 0 .5em;letter-spacing:-.01em}
+.cat-auto h1,.cat-auto h2{text-transform:uppercase;letter-spacing:.01em}
+.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
+.ico{width:22px;height:22px;flex:none}.ico-sm{width:18px;height:18px}.ico-xs{width:14px;height:14px}
+.topbar{position:sticky;top:0;z-index:60}
+.pl-banner{background:#111827;color:#e5e7eb;font:500 12.5px/1.3 Inter,system-ui,sans-serif;text-align:center;padding:8px 12px}
+.pl-banner a{color:#fbbf24;font-weight:700;text-decoration:none;white-space:nowrap}
+.hdr{background:rgba(255,255,255,.92);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid #dcebe5}
+.hdr-inner{display:flex;align-items:center;gap:20px;min-height:68px}
+.brand{text-decoration:none;display:flex;align-items:center;min-width:0}
+.logo-img{max-height:48px;width:auto;max-width:190px;object-fit:contain}
+.wordmark{font-family:'Outfit',serif;font-weight:700;font-size:1.25rem;color:#0f766e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nav{display:none;gap:26px;margin-left:auto}
+.nav a{text-decoration:none;font-weight:500;color:#4b635b;font-size:.95rem}.nav a:hover{color:#0f766e}
+.hdr-cta{margin-left:auto}
+@media(min-width:900px){.nav{display:flex}.hdr-cta{margin-left:8px}}
+@media(max-width:520px){.hdr-cta span{display:none}.hdr-cta{padding:10px 12px}.eyebrow{border-radius:12px;letter-spacing:.1em;font-size:.72rem}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:700;font-size:1rem;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease,background .15s;border:2px solid transparent;cursor:pointer}
+.btn:hover{transform:translateY(-1px)}
+.btn-accent{background:#0d9488;color:#ffffff;box-shadow:0 8px 24px -10px #0d9488}
+.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff;background:rgba(255,255,255,.06)}
+.btn-ghost:hover{background:rgba(255,255,255,.16)}
+.btn-sm{padding:9px 16px;font-size:.92rem}.btn-lg{padding:16px 28px;font-size:1.05rem}
+.hero{position:relative;color:#fff;overflow:hidden;isolation:isolate}
+.hero-inner{position:relative;display:grid;gap:36px;padding:72px 0 64px;align-items:end}
+@media(min-width:960px){.hero-inner{grid-template-columns:1.35fr .9fr;padding:112px 0 96px;align-items:center}}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
+.hero-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,#06302bf0 0%,#06302bbb 48%,#06302b40 100%)}
+@media(max-width:959px){.hero-shade{background:linear-gradient(180deg,#06302bcc,#06302bf2 70%)}}
+.hero-grad{background:radial-gradient(1200px 500px at 85% -10%,#14b8a688,transparent 60%),linear-gradient(135deg,#06302b,#0f766e)}
+.hero-pattern{position:absolute;inset:0;z-index:-1;opacity:.12;background-image:radial-gradient(#fff 1px,transparent 1.2px);background-size:22px 22px;mask-image:linear-gradient(180deg,#000,transparent)}
+.eyebrow{display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:6px 12px;border-radius:999px;margin:0 0 18px}
+.hero h1{font-size:clamp(2.2rem,5.6vw,4rem);margin-bottom:18px;text-wrap:balance}
+.lead{font-size:clamp(1.05rem,1.6vw,1.25rem);color:rgba(255,255,255,.88);max-width:40ch;margin:0 0 28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.chips{list-style:none;padding:0;margin:28px 0 0;display:flex;flex-wrap:wrap;gap:10px 18px}
+.chips li{display:flex;align-items:center;gap:7px;font-weight:600;font-size:.95rem;color:rgba(255,255,255,.92)}
+.chips .ico{color:#0d9488;background:#fff;border-radius:50%;padding:2px}
+.hero-fig{position:relative;margin:0;justify-self:end;width:100%;max-width:520px}
+.hero-fig img{width:100%;aspect-ratio:4/3.4;object-fit:cover;border-radius:calc(18px + 8px);box-shadow:0 40px 80px -30px rgba(0,0,0,.6);border:6px solid rgba(255,255,255,.12)}
+.hero-badge{position:absolute;left:-18px;bottom:22px;display:flex;gap:12px;align-items:center;background:#fff;color:#0f2620;padding:12px 16px;border-radius:14px;box-shadow:0 20px 40px -18px rgba(0,0,0,.5);text-decoration:none;font-weight:600;font-size:.95rem}
+.hero-badge .ico{color:#0d9488}
+.hero-badge small{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#4b635b;font-weight:700}
+@media(max-width:959px){.hero-fig{justify-self:stretch;max-width:none}.hero-badge{left:12px;bottom:12px}}
+.quick-card{background:rgba(255,255,255,.96);color:#0f2620;border-radius:18px;padding:10px;box-shadow:0 30px 60px -20px rgba(0,0,0,.45);display:grid}
+.quick-card a{display:flex;gap:14px;align-items:flex-start;padding:14px;border-radius:calc(18px - 6px);text-decoration:none;font-weight:600;word-break:break-word}
+.quick-card a:hover{background:#dff5ef}
+.quick-card .ico{color:#0f766e;background:#dff5ef;padding:9px;width:40px;height:40px;border-radius:12px}
+.quick-card small{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:#4b635b;font-weight:700}
+.notice{background:#dff5ef;border-bottom:1px solid #dcebe5}
+.notice .wrap{display:flex;gap:12px;align-items:flex-start;padding:14px 0;color:#0f766e;font-weight:500;font-size:.95rem}
+.notice p{margin:0}
+.section{padding:84px 0}
+.section-alt{background:#ffffff;border-block:1px solid #dcebe5}
+.sec-head{max-width:640px;margin-bottom:40px}
+.kicker{font-size:.8rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#0d9488;margin:0 0 10px}
+.kicker-light{color:#fbbf24}
+h2{font-size:clamp(1.8rem,3.6vw,2.6rem)}
+.sub{color:#4b635b;font-size:1.1rem;margin:0}
+.svc-grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+@media(min-width:1000px){.svc-n2,.svc-n4{grid-template-columns:repeat(2,1fr)}.svc-n3,.svc-n5,.svc-n6,.svc-n9{grid-template-columns:repeat(3,1fr)}.svc-n7,.svc-n8{grid-template-columns:repeat(4,1fr)}
+.svc-n5 .svc:nth-child(n+4),.svc-n7 .svc:nth-child(n+5){grid-column:span 1}}
+@media(min-width:1000px){.svc-n5{grid-template-columns:repeat(6,1fr)}.svc-n5 .svc{grid-column:span 2}.svc-n5 .svc:nth-child(n+4){grid-column:span 3}
+.svc-n7{grid-template-columns:repeat(12,1fr)}.svc-n7 .svc{grid-column:span 3}.svc-n7 .svc:nth-child(n+5){grid-column:span 4}}
+.svc{background:#ffffff;border:1px solid #dcebe5;border-radius:18px;padding:26px;transition:transform .2s,box-shadow .2s,border-color .2s}
+.svc:hover{transform:translateY(-3px);box-shadow:0 20px 40px -24px rgba(15,23,42,.35);border-color:transparent}
+.svc-ico{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:#dff5ef;color:#0f766e;margin-bottom:18px}
+.svc-ico .ico{width:26px;height:26px}
+.svc h3{font-size:1.22rem;margin-bottom:8px}
+.svc p{margin:0;color:#4b635b;font-size:.98rem}
+.about{display:grid;gap:44px;align-items:center}
+@media(min-width:900px){.about{grid-template-columns:1.1fr .9fr}}
+.about-copy p{color:#4b635b;font-size:1.06rem}
+.ticks{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:10px}
+.ticks li{display:flex;gap:10px;align-items:center;font-weight:600}
+.ticks .ico{color:#fff;background:#0d9488;border-radius:50%;padding:3px}
+.about-fig{margin:0;border-radius:calc(18px + 6px);overflow:hidden;box-shadow:0 30px 60px -30px rgba(0,0,0,.45);aspect-ratio:4/3.4}
+.about-fig img{width:100%;height:100%;object-fit:cover}
+.about-mono{aspect-ratio:1/1;max-width:420px;width:100%;justify-self:center;border-radius:calc(18px + 10px);background:radial-gradient(circle at 30% 20%,#14b8a6,#06302b);display:grid;place-content:center;text-align:center;color:#fff;box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}
+.about-mono span{font-family:'Outfit',serif;font-size:7rem;font-weight:700;line-height:1;opacity:.95}
+.about-mono p{margin:10px 24px 0;font-weight:600;opacity:.8}
+.gallery{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
+@media(min-width:800px){.gallery{grid-template-columns:repeat(3,1fr)}.gallery.g2{grid-template-columns:repeat(2,1fr)}.gallery.g4{grid-template-columns:repeat(4,1fr)}}
+.gallery figure{margin:0;border-radius:18px;overflow:hidden;aspect-ratio:1/1;background:#dcebe5}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.gallery figure:hover img{transform:scale(1.04)}
+.cta-band{display:flex;flex-wrap:wrap;gap:22px;align-items:center;justify-content:space-between;background:linear-gradient(135deg,#06302b,#0f766e);color:#fff;border-radius:calc(18px + 8px);padding:36px clamp(24px,4vw,48px);margin-bottom:44px}
+.cta-band h2{margin:0 0 6px;font-size:clamp(1.5rem,3vw,2.1rem)}
+.cta-band p{margin:0;color:rgba(255,255,255,.82)}
+.contact-grid{display:grid;gap:22px}
+@media(min-width:900px){.contact-grid{grid-template-columns:1.2fr .8fr}}
+.contact-list{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.ci{display:flex;gap:16px;background:#ffffff;border:1px solid #dcebe5;border-radius:18px;padding:22px;word-break:break-word}
+.ci>.ico{color:#0f766e;background:#dff5ef;padding:10px;width:44px;height:44px;border-radius:12px}
+.ci h3{font-family:'DM Sans',sans-serif;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:#4b635b;margin:2px 0 6px;font-weight:700}
+.ci p{margin:0}.ci a{font-weight:600;text-decoration:none;color:#0f2620}
+.ci .maplink{display:inline-flex;align-items:center;gap:6px;margin-top:8px;color:#0d9488;font-size:.92rem}
+.hours-card{background:#ffffff;border:1px solid #dcebe5;border-radius:18px;padding:26px}
+.hours-card h3{display:flex;gap:10px;align-items:center;font-size:1.2rem}
+.hours-card table{width:100%;border-collapse:collapse}
+.hours-card th,.hours-card td{padding:10px 0;border-bottom:1px dashed #dcebe5;text-align:left;font-weight:500}
+.hours-card td{text-align:right;color:#4b635b}
+.hours-card .note{color:#4b635b;font-size:.9rem;margin:12px 0 0}
+.getlive{background:#0b1020;color:#e5e7eb;padding:72px 0}
+.gl-inner{display:grid;gap:32px;align-items:center}
+@media(min-width:900px){.gl-inner{grid-template-columns:1.3fr .7fr}}
+.getlive h2{color:#fff}
+.getlive p{color:#cbd5e1}
+.gl-list{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:8px}
+.gl-list li{display:flex;gap:10px;align-items:center}.gl-list .ico{color:#fbbf24}
+.gl-card{background:#111a33;border:1px solid #23304f;border-radius:18px;padding:28px;text-align:center}
+.gl-price{font-weight:700;color:#fff!important;margin:0 0 16px;font-size:1.1rem}
+.gl-small{font-size:.85rem;margin:14px 0 0}
+.foot{background:#06302b;color:rgba(255,255,255,.8);padding:40px 0 24px;font-size:.95rem}
+.foot a{color:#fff}
+.foot-inner{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between}
+.foot-social{display:flex;gap:16px}
+.foot-legal{border-top:1px solid rgba(255,255,255,.12);margin-top:26px;padding-top:18px;font-size:.8rem;color:rgba(255,255,255,.6)}
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:55;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid #dcebe5;backdrop-filter:blur(8px)}
+.mbar .btn{width:100%}
+@media(min-width:900px){.mbar{display:none}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body class="cat-retail">
+<div class="topbar">
+<div class="pl-banner" role="note">Concept preview by PrizenLabs for Superdeal. Not the official site. <a href="#get-it-live">Like it? Get it live in 48h&nbsp;→</a></div>
+<header class="hdr">
+  <div class="wrap hdr-inner">
+    <a href="#top" class="brand"><img src="img/logo.webp" alt="Superdeal logo" class="logo-img"></a>
+    <nav class="nav"><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+    <a class="btn btn-accent btn-sm hdr-cta" href="tel:092728263"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg><span>09-272 8263</span></a>
+  </div>
+</header>
+</div>
+<main>
+
+<section class="hero hero-grad" id="top">
+  <div class="hero-pattern"></div>
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow">East Tāmaki, Auckland</p>
+      <h1>3500 product lines for your store</h1>
+      <p class="lead">Super Deal Trading Company provides wholesaling services to over 700 retail stores nationwide, with more than 3500 product lines on the catalogue.</p>
+      <div class="btns"><a class="btn btn-accent" href="tel:092728263"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>Call 09-272 8263</a><a class="btn btn-ghost" href="#services">Our services</a></div>
+      <ul class="chips"><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Over 700 retail stores supplied</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>More than 3500 product lines</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Established in 2005</li></ul>
+    </div>
+    <div class="quick-card"><a href="tel:092728263"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg><span><small>Call</small>09-272 8263</span></a><a href="mailto:info@superdealnz.co.nz"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2" /> <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg><span><small>Email</small>info@superdealnz.co.nz</span></a><a href="https://www.google.com/maps/search/?api=1&amp;query=Superdeal%2C+80+Harris+Road%2C+East+T%C4%81maki%2C+Auckland+2013" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></svg><span><small>Find us</small>80 Harris Road, East Tāmaki, Auckland 2013</span></a></div>
+  </div>
+</section>
+
+
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">What we do</p>
+      <h2>What we supply</h2>
+      <p class="sub">Browse a catalogue of everyday household products, plasticware, stationery, party essentials and more.</p>
+    </div>
+    <div class="svc-grid svc-n8">
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /> <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></svg></div>
+        <h3>Household Goods</h3>
+        <p>Everyday household products including cleaning, kitchen products, batteries, and bathroom and personal products.</p>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z" /> <path d="M12 22V12" /> <path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7" /> <path d="m7.5 4.27 9 5.15" /></svg></div>
+        <h3>Plasticware</h3>
+        <p>Basins, trays, buckets, baskets, containers, colanders and flower pots for your shelves.</p>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" /> <path d="M14 2v4a2 2 0 0 0 2 2h4" /> <path d="M10 9H8" /> <path d="M16 13H8" /> <path d="M16 17H8" /></svg></div>
+        <h3>Stationery &amp; Shop Supplies</h3>
+        <p>Notebooks, labels, pens, pencils, glues, tapes, and drawing and craft gear.</p>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1" /> <path d="M12 8v13" /> <path d="M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7" /> <path d="M7.5 8a2.5 2.5 0 0 1 0-5A4.8 8 0 0 1 12 8a4.8 8 0 0 1 4.5-5 2.5 2.5 0 0 1 0 5" /></svg></div>
+        <h3>Party Items</h3>
+        <p>Balloons, gift bags and boxes, costumes, decorations, cutlery and consumables, ribbons, bows and wrappings.</p>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12l4 6-10 13L2 9Z" /> <path d="M11 3 8 9l4 13 4-13-3-6" /> <path d="M2 9h20" /></svg></div>
+        <h3>Jewellery &amp; Accessories</h3>
+        <p>Bracelets, necklaces and rings, plus bags, wallets, hair accessories and sunglasses.</p>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" /> <path d="M20 3v4" /> <path d="M22 5h-4" /> <path d="M4 17v2" /> <path d="M5 18H3" /></svg></div>
+        <h3>Cosmetics &amp; Hair Care</h3>
+        <p>Cosmetics, nail polishes and accessories, hair care, clips, pins, ties and head bands.</p>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11.25 16.25h1.5L12 17z" /> <path d="M16 14v.5" /> <path d="M4.42 11.247A13.152 13.152 0 0 0 4 14.556C4 18.728 7.582 21 12 21s8-2.272 8-6.444a11.702 11.702 0 0 0-.493-3.309" /> <path d="M8 14v.5" /> <path d="M8.5 8.5c-.384 1.05-1.083 2.028-2.344 2.5-1.931.722-3.576-.297-3.656-1-.113-.994 1.177-6.53 4-7 1.923-.321 3.651.845 3.651 2.235A7.497 7.497 0 0 1 14 5.277c0-1.39 1.844-2.598 3.767-2.277 2.823.47 4.113 6.006 4 7-.08.703-1.725 1.722-3.656 1-1.261-.472-1.855-1.45-2.239-2.5" /></svg></div>
+        <h3>Pet Accessories</h3>
+        <p>Bowls and containers, brushes, harnesses, leashes, chains, collars and toys.</p>
+      </article>
+      <article class="svc">
+        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22v-5" /> <path d="M9 8V2" /> <path d="M15 8V2" /> <path d="M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z" /></svg></div>
+        <h3>Electronics</h3>
+        <p>Cellphone accessories, clocks, earphones and audio accessories, lights and torches.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt" id="about">
+  <div class="wrap about">
+    <div class="about-copy">
+      <p class="kicker">About us</p>
+      <h2>About Super Deal</h2>
+      <p>Super Deal Trading Company provides wholesaling services to over 700 retail stores nationwide, with more than 3500 product lines on the catalogue.</p><p>Since our establishment in 2005, we have focused on ongoing improvement in product quality, price, customer services and the warehouse facilities, with one goal in mind: to ensure customers&#x27; satisfaction.</p>
+      <ul class="ticks"><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Over 700 retail stores supplied</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>More than 3500 product lines</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Established in 2005</li></ul>
+    </div>
+    <div class="about-mono"><span>S</span><p>nationwide</p></div>
+  </div>
+</section>
+
+
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="cta-band">
+      <div><h2>Get in touch with Super Deal</h2><p>Please get in touch with us by phone or visit our office, or fill in the contact form.</p></div>
+      <a class="btn btn-accent btn-lg" href="tel:092728263"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>Call 09-272 8263</a>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-list"><div class="ci"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg><div><h3>Phone</h3><a href="tel:092728263">09-272 8263</a></div></div><div class="ci"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2" /> <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg><div><h3>Email</h3><a href="mailto:info@superdealnz.co.nz">info@superdealnz.co.nz</a></div></div><div class="ci"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></svg><div><h3>Address</h3><p>80 Harris Road, East Tāmaki, Auckland 2013</p><a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Superdeal%2C+80+Harris+Road%2C+East+T%C4%81maki%2C+Auckland+2013" target="_blank" rel="noopener">Open in Google Maps <svg class="ico ico-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></a></div></div><div class="ci"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /> <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></svg><div><h3>Areas covered</h3><p>nationwide</p></div></div></div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="getlive" id="get-it-live">
+  <div class="wrap gl-inner">
+    <div>
+      <p class="kicker kicker-light">PrizenLabs · concept preview</p>
+      <h2>Like this new look for Superdeal?</h2>
+      <p>This concept was built from the content on your current website. We can make it your real site, on your own domain, in 48 hours.</p>
+      <ul class="gl-list">
+        <li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Mobile-first, fast-loading design</li>
+        <li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Your wording, photos and details reviewed with you before launch</li>
+        <li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Hosted on your existing domain</li>
+      </ul>
+    </div>
+    <div class="gl-card">
+      <p class="gl-price">Pricing &amp; next steps</p>
+      <a class="btn btn-accent btn-lg" href="https://buy.stripe.com/eVqdR87kl8JH055b2efYY00">Get it live in 48h <svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></a>
+      <p class="gl-small">No obligation. Nothing changes on your current site unless you say so.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <div><strong>Superdeal</strong><br>80 Harris Road, East Tāmaki, Auckland 2013<br><a href="tel:092728263">09-272 8263</a></div>
+    <div class="foot-social"></div>
+  </div>
+  <div class="wrap foot-legal">
+    <p>Concept preview created by PrizenLabs on 2026-11-25 using content and images from the public website
+    <a href="http://superdealnz.co.nz/c.aspx" rel="nofollow noopener" target="_blank">superdealnz.co.nz</a>. Not affiliated with or endorsed by Superdeal.
+    All business names, text and photos belong to their owner.</p>
+  </div>
+</footer>
+<div class="mbar"><a class="btn btn-accent" href="tel:092728263"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>Call 09-272 8263</a></div>
+</body>
+</html>
