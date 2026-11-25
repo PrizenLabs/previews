@@ -2,264 +2,348 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
 <title>Noodle Canteen | Fresh Noodles Made to Order · Concept preview</title>
 <meta name="description" content="Freshly cooked noodles, fast in a box. Made to order before your eyes with fresh and natural ingredients and no MSG. Order online or enquire about catering.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://preview.prizenlabs.com/noodle-canteen-auckland/">
 <meta property="og:title" content="Concept preview: a new homepage for Noodle Canteen">
 <meta property="og:description" content="A free redesign concept by PrizenLabs, built from noodlecanteen.co.nz.">
-<meta property="og:image" content="img/hero.webp">
-<meta name="theme-color" content="#3b1d0e">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#2e0f11">
+<link rel="icon" type="image/png" href="img/favicon.png"><link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400&family=DM+Sans:wght@400;700&display=swap">
+
+<script>document.documentElement.classList.add('js')</script>
+<style>:root{--brand:#e41a23;--accent:#e41a23;--accent-ink:#ffffff;--ink:#261213;--muted:#675152;--paper:#fbf7f7;--surface:#ffffff;--line:#e5dcdc;--soft:#f7e3e4;--deep:#2e0f11;--deep2:#411618;--kicker:#db1922;--on-deep:#ed8287;--fh:'DM Serif Display';--fb:'DM Sans';--track:-.01em;--hw:400;--tt:none}
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:110px}
-body{margin:0;font-family:'DM Sans',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#2b1d14;background:#fbf7f1;line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:76px}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--fb),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:1.0625rem;color:var(--ink);background:var(--paper);line-height:1.62;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;padding-bottom:84px}
 @media(min-width:900px){body{padding-bottom:0}}
 img{max-width:100%;display:block}
-a{color:inherit}
-h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:700;line-height:1.12;margin:0 0 .5em;letter-spacing:-.01em}
-.cat-auto h1,.cat-auto h2{text-transform:uppercase;letter-spacing:.01em}
-.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
-.ico{width:22px;height:22px;flex:none}.ico-sm{width:18px;height:18px}.ico-xs{width:14px;height:14px}
-.topbar{position:sticky;top:0;z-index:60}
-.pl-banner{background:#111827;color:#e5e7eb;font:500 12.5px/1.3 Inter,system-ui,sans-serif;text-align:center;padding:8px 12px}
-.pl-banner a{color:#fbbf24;font-weight:700;text-decoration:none;white-space:nowrap}
-.hdr{background:rgba(255,255,255,.92);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid #eadfd2}
-.hdr-inner{display:flex;align-items:center;gap:20px;min-height:68px}
-.brand{text-decoration:none;display:flex;align-items:center;min-width:0}
-.logo-img{max-height:48px;width:auto;max-width:190px;object-fit:contain}
-.wordmark{font-family:'Fraunces',serif;font-weight:700;font-size:1.25rem;color:#7c2d12;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.nav{display:none;gap:26px;margin-left:auto}
-.nav a{text-decoration:none;font-weight:500;color:#6b5646;font-size:.95rem}.nav a:hover{color:#7c2d12}
-.hdr-cta{margin-left:auto}
-@media(min-width:900px){.nav{display:flex}.hdr-cta{margin-left:8px}}
-@media(max-width:520px){.hdr-cta span{display:none}.hdr-cta{padding:10px 12px}.eyebrow{border-radius:12px;letter-spacing:.1em;font-size:.72rem}}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:700;font-size:1rem;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease,background .15s;border:2px solid transparent;cursor:pointer}
-.btn:hover{transform:translateY(-1px)}
-.btn-accent{background:#c2410c;color:#ffffff;box-shadow:0 8px 24px -10px #c2410c}
-.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff;background:rgba(255,255,255,.06)}
-.btn-ghost:hover{background:rgba(255,255,255,.16)}
-.btn-sm{padding:9px 16px;font-size:.92rem}.btn-lg{padding:16px 28px;font-size:1.05rem}
-.hero{position:relative;color:#fff;overflow:hidden;isolation:isolate}
-.hero-inner{position:relative;display:grid;gap:36px;padding:72px 0 64px;align-items:end}
-@media(min-width:960px){.hero-inner{grid-template-columns:1.35fr .9fr;padding:112px 0 96px;align-items:center}}
-.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
-.hero-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,#3b1d0ef0 0%,#3b1d0ebb 48%,#3b1d0e40 100%)}
-@media(max-width:959px){.hero-shade{background:linear-gradient(180deg,#3b1d0ecc,#3b1d0ef2 70%)}}
-.hero-grad{background:radial-gradient(1200px 500px at 85% -10%,#b4530988,transparent 60%),linear-gradient(135deg,#3b1d0e,#8a3b12)}
-.hero-pattern{position:absolute;inset:0;z-index:-1;opacity:.12;background-image:radial-gradient(#fff 1px,transparent 1.2px);background-size:22px 22px;mask-image:linear-gradient(180deg,#000,transparent)}
-.eyebrow{display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:6px 12px;border-radius:999px;margin:0 0 18px}
-.hero h1{font-size:clamp(2.2rem,5.6vw,4rem);margin-bottom:18px;text-wrap:balance}
-.lead{font-size:clamp(1.05rem,1.6vw,1.25rem);color:rgba(255,255,255,.88);max-width:40ch;margin:0 0 28px}
+html,body{overflow-x:clip}
+body{overflow-wrap:break-word}
+.ct>*,.foot-in>*,.ab>*,.gl>*,.he-grid>*,.hs>*,.ledge-in>*{min-width:0}
+.cl a,.foot-meta a,.ct-lines a{overflow-wrap:anywhere}
+a{color:inherit;text-underline-offset:.18em}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--fh),Georgia,serif;font-weight:var(--hw);line-height:1.04;margin:0 0 .45em;letter-spacing:var(--track);text-transform:var(--tt)}
+h1,h2{text-wrap:balance}
+h1{font-size:clamp(2.6rem,6.4vw,5.6rem)}
+.long-h1 .hero h1{font-size:clamp(2.4rem,5.4vw,5rem);max-width:17ch}
+h2{font-size:clamp(2rem,4.2vw,3.5rem)}
+h3{font-size:1.3rem;line-height:1.2;letter-spacing:-.005em}
+.wrap{width:min(1200px,100% - 40px);margin-inline:auto}
+.wrap-wide{width:min(1320px,100% - 24px);margin-inline:auto}
+.ico{width:22px;height:22px;flex:none}.ico-sm{width:18px;height:18px}.ico-xs{width:15px;height:15px}
+.dim{opacity:.72}
+.skip{position:absolute;left:-9999px;top:8px;z-index:100;background:#fff;color:#000;padding:8px 14px;border-radius:6px}.skip:focus{left:8px}
+/* PrizenLabs banner */
+.plb{background:#0c0c0e;color:#d4d4d8;font:500 12.5px/1.35 system-ui,-apple-system,'Segoe UI',sans-serif;position:relative;z-index:70}
+.plb-in{display:flex;gap:12px;align-items:center;justify-content:center;min-height:38px;padding:7px 0;flex-wrap:wrap;text-align:center}
+.plb-tag{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;border:1px solid #3f3f46;border-radius:999px;padding:3px 9px;color:#fafafa}
+.plb a{color:#f5d38a;font-weight:600;text-decoration:none;white-space:nowrap;border-bottom:1px solid rgba(245,211,138,.35)}
+.plb a:hover{border-color:#f5d38a}
+@media(max-width:640px){.plb-txt{display:none}}
+/* header */
+.hdr{position:sticky;top:0;z-index:60;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:saturate(1.3) blur(12px);-webkit-backdrop-filter:saturate(1.3) blur(12px);border-bottom:1px solid transparent;transition:background .3s,border-color .3s,color .3s}
+.hdr.scrolled{border-color:var(--line)}
+.hdr-in{display:flex;align-items:center;gap:24px;min-height:74px}
+.brand{text-decoration:none;display:flex;align-items:center;min-width:0;flex:0 1 auto}
+.logo img{height:44px;width:auto;max-width:200px;object-fit:contain;border-radius:4px}
+.logo-plate{background:#fff;padding:6px 10px;border-radius:10px;box-shadow:0 6px 20px -10px rgba(0,0,0,.4)}
+.logo-blend img{mix-blend-mode:multiply}
+.wordmark{font-family:var(--fh),serif;font-weight:var(--hw);font-size:1.3rem;letter-spacing:var(--track);text-transform:var(--tt);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;max-width:58vw}
+.nav{display:none;gap:30px;margin-left:auto}
+.nav a{text-decoration:none;font-weight:500;font-size:.95rem;opacity:.78;position:relative;padding:6px 0}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1.5px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .25s}
+.nav a:hover{opacity:1}.nav a:hover::after{transform:scaleX(1)}
+.hdr-cta{margin-left:auto;flex:none}
+@media(min-width:900px){.nav{display:flex}.hdr-cta{margin-left:6px}}
+@media(max-width:560px){.hdr-cta span{display:none}.hdr-cta{padding:11px;width:44px;height:44px}.logo img{height:38px;max-width:150px}}
+/* buttons */
 .btns{display:flex;flex-wrap:wrap;gap:12px}
-.chips{list-style:none;padding:0;margin:28px 0 0;display:flex;flex-wrap:wrap;gap:10px 18px}
-.chips li{display:flex;align-items:center;gap:7px;font-weight:600;font-size:.95rem;color:rgba(255,255,255,.92)}
-.chips .ico{color:#c2410c;background:#fff;border-radius:50%;padding:2px}
-.hero-fig{position:relative;margin:0;justify-self:end;width:100%;max-width:520px}
-.hero-fig img{width:100%;aspect-ratio:4/3.4;object-fit:cover;border-radius:calc(22px + 8px);box-shadow:0 40px 80px -30px rgba(0,0,0,.6);border:6px solid rgba(255,255,255,.12)}
-.hero-badge{position:absolute;left:-18px;bottom:22px;display:flex;gap:12px;align-items:center;background:#fff;color:#2b1d14;padding:12px 16px;border-radius:14px;box-shadow:0 20px 40px -18px rgba(0,0,0,.5);text-decoration:none;font-weight:600;font-size:.95rem}
-.hero-badge .ico{color:#c2410c}
-.hero-badge small{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#6b5646;font-weight:700}
-@media(max-width:959px){.hero-fig{justify-self:stretch;max-width:none}.hero-badge{left:12px;bottom:12px}}
-.quick-card{background:rgba(255,255,255,.96);color:#2b1d14;border-radius:22px;padding:10px;box-shadow:0 30px 60px -20px rgba(0,0,0,.45);display:grid}
-.quick-card a{display:flex;gap:14px;align-items:flex-start;padding:14px;border-radius:calc(22px - 6px);text-decoration:none;font-weight:600;word-break:break-word}
-.quick-card a:hover{background:#f6e7d6}
-.quick-card .ico{color:#7c2d12;background:#f6e7d6;padding:9px;width:40px;height:40px;border-radius:12px}
-.quick-card small{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:#6b5646;font-weight:700}
-.notice{background:#f6e7d6;border-bottom:1px solid #eadfd2}
-.notice .wrap{display:flex;gap:12px;align-items:flex-start;padding:14px 0;color:#7c2d12;font-weight:500;font-size:.95rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:12px 22px;border-radius:var(--r-btn,999px);font:600 1rem/1.2 var(--fb),system-ui,sans-serif;text-decoration:none;transition:transform .2s cubic-bezier(.2,.7,.2,1),box-shadow .2s,background .2s,color .2s,border-color .2s;border:1.5px solid transparent;cursor:pointer;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+.btn-accent{background:var(--accent);color:var(--accent-ink);box-shadow:0 10px 26px -12px var(--accent)}
+.btn-accent:hover{box-shadow:0 16px 32px -12px var(--accent)}
+.btn-line{border-color:currentColor;color:inherit;background:transparent}
+.btn-line:hover{background:color-mix(in srgb,currentColor 9%,transparent)}
+.btn-line .ico{transition:transform .2s}.btn-line:hover .ico{transform:translateX(3px)}
+.btn-sm{min-height:42px;padding:9px 16px;font-size:.92rem}
+.eyebrow{font:600 .8rem/1.3 var(--fb),sans-serif;letter-spacing:.16em;text-transform:uppercase;margin:0 0 22px}
+.lead{font-size:clamp(1.08rem,1.5vw,1.28rem);max-width:44ch;margin:0 0 30px;line-height:1.55}
+.kicker{font:700 .76rem/1.2 var(--fb),sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--kicker);margin:0 0 14px}
+.sub{color:var(--muted);font-size:1.1rem;margin:0;max-width:52ch}
+.fact-k{display:block;font:700 .7rem/1.2 var(--fb),sans-serif;letter-spacing:.16em;text-transform:uppercase;opacity:.66;margin-bottom:5px}
+/* hero entrance */
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes lift{from{transform:translateY(26px)}to{transform:none}}
+.js .hero .eyebrow,.js .hero .lead,.js .hero .btns{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+.js .hero h1{animation:lift .9s cubic-bezier(.2,.7,.2,1) both}
+.js .hero .lead{animation-delay:.12s}.js .hero .btns{animation-delay:.22s}
+/* scroll reveal */
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.7,.2,1) var(--d,0ms),transform .8s cubic-bezier(.2,.7,.2,1) var(--d,0ms)}
+.js .rv.in{opacity:1;transform:none}
+/* notice + trust */
+.notice{background:var(--soft);border-bottom:1px solid var(--line)}
+.notice .wrap{display:flex;gap:12px;align-items:flex-start;padding:14px 0;color:var(--kicker);font-weight:500;font-size:.97rem}
 .notice p{margin:0}
-.section{padding:84px 0}
-.section-alt{background:#ffffff;border-block:1px solid #eadfd2}
-.sec-head{max-width:640px;margin-bottom:40px}
-.kicker{font-size:.8rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#c2410c;margin:0 0 10px}
-.kicker-light{color:#fbbf24}
-h2{font-size:clamp(1.8rem,3.6vw,2.6rem)}
-.sub{color:#6b5646;font-size:1.1rem;margin:0}
-.svc-grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
-@media(min-width:1000px){.svc-n2,.svc-n4{grid-template-columns:repeat(2,1fr)}.svc-n3,.svc-n5,.svc-n6,.svc-n9{grid-template-columns:repeat(3,1fr)}.svc-n7,.svc-n8{grid-template-columns:repeat(4,1fr)}
-.svc-n5 .svc:nth-child(n+4),.svc-n7 .svc:nth-child(n+5){grid-column:span 1}}
-@media(min-width:1000px){.svc-n5{grid-template-columns:repeat(6,1fr)}.svc-n5 .svc{grid-column:span 2}.svc-n5 .svc:nth-child(n+4){grid-column:span 3}
-.svc-n7{grid-template-columns:repeat(12,1fr)}.svc-n7 .svc{grid-column:span 3}.svc-n7 .svc:nth-child(n+5){grid-column:span 4}}
-.svc{background:#ffffff;border:1px solid #eadfd2;border-radius:22px;padding:26px;transition:transform .2s,box-shadow .2s,border-color .2s}
-.svc:hover{transform:translateY(-3px);box-shadow:0 20px 40px -24px rgba(15,23,42,.35);border-color:transparent}
-.svc-ico{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:#f6e7d6;color:#7c2d12;margin-bottom:18px}
-.svc-ico .ico{width:26px;height:26px}
-.svc h3{font-size:1.22rem;margin-bottom:8px}
-.svc p{margin:0;color:#6b5646;font-size:.98rem}
-.about{display:grid;gap:44px;align-items:center}
-@media(min-width:900px){.about{grid-template-columns:1.1fr .9fr}}
-.about-copy p{color:#6b5646;font-size:1.06rem}
-.ticks{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:10px}
-.ticks li{display:flex;gap:10px;align-items:center;font-weight:600}
-.ticks .ico{color:#fff;background:#c2410c;border-radius:50%;padding:3px}
-.about-fig{margin:0;border-radius:calc(22px + 6px);overflow:hidden;box-shadow:0 30px 60px -30px rgba(0,0,0,.45);aspect-ratio:4/3.4}
-.about-fig img{width:100%;height:100%;object-fit:cover}
-.about-mono{aspect-ratio:1/1;max-width:420px;width:100%;justify-self:center;border-radius:calc(22px + 10px);background:radial-gradient(circle at 30% 20%,#b45309,#3b1d0e);display:grid;place-content:center;text-align:center;color:#fff;box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}
-.about-mono span{font-family:'Fraunces',serif;font-size:7rem;font-weight:700;line-height:1;opacity:.95}
-.about-mono p{margin:10px 24px 0;font-weight:600;opacity:.8}
-.gallery{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
-@media(min-width:800px){.gallery{grid-template-columns:repeat(3,1fr)}.gallery.g2{grid-template-columns:repeat(2,1fr)}.gallery.g4{grid-template-columns:repeat(4,1fr)}}
-.gallery figure{margin:0;border-radius:22px;overflow:hidden;aspect-ratio:1/1;background:#eadfd2}
-.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
-.gallery figure:hover img{transform:scale(1.04)}
-.cta-band{display:flex;flex-wrap:wrap;gap:22px;align-items:center;justify-content:space-between;background:linear-gradient(135deg,#3b1d0e,#8a3b12);color:#fff;border-radius:calc(22px + 8px);padding:36px clamp(24px,4vw,48px);margin-bottom:44px}
-.cta-band h2{margin:0 0 6px;font-size:clamp(1.5rem,3vw,2.1rem)}
-.cta-band p{margin:0;color:rgba(255,255,255,.82)}
-.contact-grid{display:grid;gap:22px}
-@media(min-width:900px){.contact-grid{grid-template-columns:1.2fr .8fr}}
-.contact-list{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-.ci{display:flex;gap:16px;background:#ffffff;border:1px solid #eadfd2;border-radius:22px;padding:22px;word-break:break-word}
-.ci>.ico{color:#7c2d12;background:#f6e7d6;padding:10px;width:44px;height:44px;border-radius:12px}
-.ci h3{font-family:'DM Sans',sans-serif;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:#6b5646;margin:2px 0 6px;font-weight:700}
-.ci p{margin:0}.ci a{font-weight:600;text-decoration:none;color:#2b1d14}
-.ci .maplink{display:inline-flex;align-items:center;gap:6px;margin-top:8px;color:#c2410c;font-size:.92rem}
-.hours-card{background:#ffffff;border:1px solid #eadfd2;border-radius:22px;padding:26px}
-.hours-card h3{display:flex;gap:10px;align-items:center;font-size:1.2rem}
-.hours-card table{width:100%;border-collapse:collapse}
-.hours-card th,.hours-card td{padding:10px 0;border-bottom:1px dashed #eadfd2;text-align:left;font-weight:500}
-.hours-card td{text-align:right;color:#6b5646}
-.hours-card .note{color:#6b5646;font-size:.9rem;margin:12px 0 0}
-.getlive{background:#0b1020;color:#e5e7eb;padding:72px 0}
-.gl-inner{display:grid;gap:32px;align-items:center}
-@media(min-width:900px){.gl-inner{grid-template-columns:1.3fr .7fr}}
-.getlive h2{color:#fff}
-.getlive p{color:#cbd5e1}
-.gl-list{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:8px}
-.gl-list li{display:flex;gap:10px;align-items:center}.gl-list .ico{color:#fbbf24}
-.gl-card{background:#111a33;border:1px solid #23304f;border-radius:18px;padding:28px;text-align:center}
-.gl-price{font-weight:700;color:#fff!important;margin:0 0 16px;font-size:1.1rem}
-.gl-small{font-size:.85rem;margin:14px 0 0}
-.foot{background:#3b1d0e;color:rgba(255,255,255,.8);padding:40px 0 24px;font-size:.95rem}
-.foot a{color:#fff}
-.foot-inner{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between}
-.foot-social{display:flex;gap:16px}
-.foot-legal{border-top:1px solid rgba(255,255,255,.12);margin-top:26px;padding-top:18px;font-size:.8rem;color:rgba(255,255,255,.6)}
-.mbar{position:fixed;left:0;right:0;bottom:0;z-index:55;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid #eadfd2;backdrop-filter:blur(8px)}
-.mbar .btn{width:100%}
+.trust{border-bottom:1px solid var(--line)}
+.trust-list{list-style:none;margin:0;padding:22px 0;display:grid;gap:14px 40px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.trust-list li{display:flex;align-items:center;gap:10px;font-weight:600;font-size:.98rem}
+.trust-list .ico{color:var(--accent-ink);background:var(--accent);border-radius:50%;padding:3px;width:22px;height:22px}
+/* sections */
+.sec{padding:clamp(72px,10vw,136px) 0}
+.sec-head{max-width:720px;margin-bottom:clamp(36px,5vw,64px)}
+.sec-head-row{max-width:none;display:flex;flex-wrap:wrap;gap:12px 40px;align-items:flex-end;justify-content:space-between}
+.sec-head-row h2{margin:0}
+/* bento services */
+.bento{display:grid;gap:16px;grid-template-columns:1fr}
+@media(min-width:700px){.bento{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.bento{grid-template-columns:repeat(3,1fr)}.tile-feature{grid-row:span 2}}
+.tile{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:var(--r,18px);padding:28px;transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s,border-color .3s}
+.tile:hover{transform:translateY(-4px);box-shadow:0 28px 50px -30px color-mix(in srgb,var(--ink) 55%,transparent);border-color:color-mix(in srgb,var(--brand) 35%,var(--line))}
+.tile-h{display:flex;gap:14px;align-items:flex-start;margin-bottom:10px}
+.tile-ico{flex:none;width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:var(--soft);color:var(--kicker)}
+.tile h3{margin:9px 0 0;font-size:1.22rem}
+.tile p{margin:0;color:var(--muted);font-size:.99rem}
+.tile-feature{background:var(--deep);color:#fff;border:0;display:flex;align-items:flex-end;min-height:320px;overflow:hidden;isolation:isolate}
+.tile-feature .kicker{color:var(--on-deep)}
+.tile-feature h3{font-size:clamp(1.7rem,2.6vw,2.3rem);margin:0 0 14px;line-height:1.08}
+.tile-feature p{color:rgba(255,255,255,.8);margin:0 0 22px}
+.tile-feature-in{position:relative;z-index:1}
+.tile-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-1;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.tile-feature.has-img::after{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,transparent 25%,color-mix(in srgb,var(--deep) 92%,transparent))}
+.tile-feature:hover .tile-bg{transform:scale(1.05)}
+/* index services */
+.idx{list-style:none;margin:0;padding:0;display:grid;gap:0 56px}
+@media(min-width:900px){.idx{grid-template-columns:repeat(2,1fr)}}
+.idx-row{display:grid;grid-template-columns:auto 1fr;gap:22px;padding:28px 0;border-top:1px solid var(--line);transition:background .25s}
+.idx-n{font:600 .9rem/1.9 var(--fb),sans-serif;color:var(--kicker);letter-spacing:.06em;min-width:2.2em}
+.idx-row h3{font-size:clamp(1.3rem,1.9vw,1.6rem);margin:0 0 8px}
+.idx-row p{margin:0;color:var(--muted)}
+/* about */
+.ab{display:grid;gap:clamp(40px,6vw,88px);align-items:center}
+@media(min-width:960px){.ab{grid-template-columns:1.05fr .95fr}.no-side .ab{grid-template-columns:minmax(0,760px)}}
+.ab-body p{color:var(--muted);font-size:1.08rem;margin:0 0 1em}
+.ab-fig{margin:0;border-radius:var(--r,18px);overflow:hidden;aspect-ratio:4/5;max-height:640px;background:var(--line)}
+@media(max-width:959px){.ab-fig{aspect-ratio:4/3}}
+.ab-img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.ab-fig:hover .ab-img{transform:scale(1.03)}
+.ab-glance{background:var(--surface);border:1px solid var(--line);border-radius:var(--r,18px);padding:clamp(26px,4vw,44px)}
+.ab-glance dl{margin:0;display:grid;gap:0}
+.ab-glance dl>div{padding:16px 0;border-top:1px solid var(--line)}
+.ab-glance dt{font:700 .72rem/1.2 var(--fb),sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.ab-glance dd{margin:0;font-family:var(--fh),serif;font-size:1.35rem;line-height:1.25;letter-spacing:var(--track)}
+.ab-glance a{text-decoration:none}
+.ticks{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:12px}
+.ticks li{display:flex;gap:12px;align-items:center;font-weight:600}
+.ticks .ico{color:var(--accent-ink);background:var(--accent);border-radius:50%;padding:3px;width:22px;height:22px}
+/* gallery (default mosaic) */
+.gal{display:grid;gap:12px;grid-template-columns:repeat(2,1fr);grid-auto-rows:clamp(150px,34vw,260px)}
+.gi{margin:0;overflow:hidden;border-radius:var(--r,18px);background:var(--line);position:relative}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.gi:hover img{transform:scale(1.05)}
+@media(max-width:699px){.gal-n3 .gi:first-child,.gal-n5 .gi:first-child{grid-column:span 2}}
+@media(min-width:700px){.gal{grid-template-columns:repeat(6,1fr);grid-auto-rows:clamp(180px,20vw,290px)}
+.gal .gi{grid-column:span 2}
+.gal-n2 .gi{grid-column:span 3}
+.gal-n3 .gi:first-child{grid-column:span 4;grid-row:span 2}
+.gal-n4 .gi:nth-child(1),.gal-n4 .gi:nth-child(4){grid-column:span 4}
+.gal-n5 .gi:nth-child(1),.gal-n5 .gi:nth-child(2){grid-column:span 3}
+.gal-n6 .gi:first-child{grid-column:span 4;grid-row:span 2}}
+/* contact */
+.ct{display:grid;gap:clamp(36px,5vw,72px);align-items:start}
+@media(min-width:960px){.ct{grid-template-columns:1.25fr .75fr}}
+.bigphone{display:inline-block;font-family:var(--fh),serif;font-weight:var(--hw);font-size:clamp(2.1rem,5vw,3.8rem);letter-spacing:var(--track);line-height:1.05;text-decoration:none;margin:28px 0 26px;background:linear-gradient(currentColor,currentColor) 0 100%/0 2px no-repeat;transition:background-size .35s}
+.bigphone:hover{background-size:100% 2px}
+.ct-lines{display:grid;gap:22px;margin-top:34px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.cl{word-break:break-word;display:flex;flex-direction:column;align-items:flex-start}
+.cl a{font-weight:600;text-decoration:none}
+.cl .maplink{display:inline-flex;align-items:center;gap:6px;margin-top:8px;font-size:.93rem;text-decoration:underline;text-underline-offset:4px}
+.hours{background:var(--surface);color:var(--ink);border-radius:var(--r,18px);padding:30px;box-shadow:0 30px 60px -40px rgba(0,0,0,.5);border:1px solid var(--line)}
+.hours h3{display:flex;gap:10px;align-items:center;font-size:1.25rem;margin-bottom:14px}
+.hours table{width:100%;border-collapse:collapse;font-size:.98rem}
+.hours th,.hours td{padding:12px 0;border-bottom:1px solid var(--line);text-align:left;font-weight:500;vertical-align:top}
+.hours td{text-align:right;color:var(--muted);padding-left:12px;white-space:nowrap}
+.hours tr:last-child th,.hours tr:last-child td{border-bottom:0}
+.hours tr.today th,.hours tr.today td{color:var(--ink);font-weight:700}
+.today-pill{display:inline-block;font:700 .62rem/1 var(--fb),sans-serif;letter-spacing:.12em;text-transform:uppercase;background:var(--accent);color:var(--accent-ink);border-radius:999px;padding:4px 7px;margin-left:6px;vertical-align:2px}
+.hours .note{color:var(--muted);font-size:.9rem;margin:14px 0 0}
+.map{position:relative;display:block;margin-top:clamp(40px,6vw,72px);border-radius:var(--r,18px);overflow:hidden;height:clamp(300px,30vw,380px);background:var(--soft);color:var(--ink);text-decoration:none;isolation:isolate}
+.map-art{position:absolute;inset:0;width:100%;height:100%;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.map:hover .map-art{transform:scale(1.04)}
+.map-pin{position:absolute;left:62%;top:42%;transform:translate(-50%,-100%);width:56px;height:56px;border-radius:50% 50% 50% 0;rotate:-45deg;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;box-shadow:0 14px 30px -10px rgba(0,0,0,.5)}
+.map-pin .ico{rotate:45deg}
+@media(max-width:699px){.map{height:340px}.map-pin{left:74%;top:30%;width:48px;height:48px}.map-card{padding:16px 18px}}
+.map-pin::after{content:"";position:absolute;inset:-10px;border-radius:inherit;border:2px solid var(--accent);opacity:.35}
+.map-card{position:absolute;left:clamp(16px,3vw,32px);bottom:clamp(16px,3vw,32px);right:clamp(16px,3vw,32px);max-width:420px;background:var(--surface);color:var(--ink);border-radius:calc(var(--r,18px) * .75);padding:20px 22px;box-shadow:0 24px 50px -24px rgba(0,0,0,.45);display:grid;gap:4px}
+.map-card strong{font-weight:600;line-height:1.4}
+.map-go{display:inline-flex;align-items:center;gap:6px;margin-top:8px;color:var(--kicker);font-weight:700;font-size:.93rem}
+.map:hover .map-go .ico{transform:translateX(3px)}.map-go .ico{transition:transform .2s}
+/* get it live */
+.getlive{background:#0c0c0e;color:#d4d4d8;padding:clamp(64px,8vw,104px) 0;position:relative;overflow:hidden}
+.getlive::before{content:"";position:absolute;inset:0;background:radial-gradient(700px 300px at 85% 0%,rgba(245,211,138,.10),transparent 70%);pointer-events:none}
+.gl{position:relative;display:grid;gap:36px;align-items:center}
+@media(min-width:900px){.gl{grid-template-columns:1.35fr .65fr}}
+.gl-mark{display:flex;align-items:center;gap:10px;font:600 .74rem/1 system-ui,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#f5d38a;margin:0 0 18px}
+.gl-dot{width:8px;height:8px;border-radius:50%;background:#f5d38a;box-shadow:0 0 0 4px rgba(245,211,138,.18)}
+.getlive h2{color:#fafafa;font-size:clamp(1.9rem,3.6vw,3rem);text-transform:none;letter-spacing:-.02em}
+.getlive p{color:#a1a1aa;max-width:56ch}
+.gl-list{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:10px;color:#e4e4e7}
+.gl-list li{display:flex;gap:10px;align-items:center}.gl-list .ico{color:#f5d38a}
+.gl-card{border:1px solid #27272a;background:linear-gradient(180deg,#151518,#0f0f12);border-radius:20px;padding:30px;text-align:center}
+.gl-k{font-weight:600;color:#fafafa!important;margin:0 auto 18px!important}
+.btn-gl{background:#f5d38a;color:#18181b;width:100%;border-radius:999px}
+.btn-gl:hover{background:#fbe3ad}
+.gl-small{font-size:.85rem;margin:16px auto 0!important;color:#8b8b94!important}
+/* footer */
+.foot{background:var(--deep);color:rgba(255,255,255,.78);padding:52px 0 28px;font-size:.95rem}
+.foot a{color:#fff;text-decoration:none}.foot a:hover{text-decoration:underline}
+.foot-in{display:grid;gap:22px}
+@media(min-width:860px){.foot-in{grid-template-columns:1.2fr 1.6fr auto;align-items:start}}
+.foot-name strong{display:block;font-family:var(--fh),serif;font-weight:var(--hw);font-size:1.4rem;color:#fff;letter-spacing:var(--track);text-transform:var(--tt);line-height:1.15}
+.foot-name span{font-size:.9rem;opacity:.75}
+.foot-meta{display:flex;flex-direction:column;gap:4px}
+.foot-social{display:flex;flex-wrap:wrap;gap:8px 18px}
+.foot-legal{border-top:1px solid rgba(255,255,255,.12);margin-top:30px;padding-top:20px;font-size:.8rem;color:rgba(255,255,255,.62)}
+.foot-legal p{margin:0;max-width:110ch}.foot-legal a{text-decoration:underline}
+/* mobile action bar */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:65;display:flex;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+.mb-btn{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:50px;padding:0 10px;border-radius:14px;font-weight:700;text-decoration:none;border:1.5px solid var(--ink);color:var(--ink);font-size:.95rem;white-space:nowrap;min-width:0}
+.mb-primary{flex:1.4;background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
 @media(min-width:900px){.mbar{display:none}}
-@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}}
+
+:root{--r:16px}
+.hs{display:grid;grid-template-columns:1fr;background:var(--paper)}
+.hs-copy{padding:56px 20px 48px}
+.hs h1{font-size:clamp(2.5rem,5.4vw,5rem);max-width:14ch}
+.hs .eyebrow{color:var(--kicker)}
+.hs .lead{color:var(--muted)}
+.hs .btn-line{color:var(--ink)}
+.hs-trust{list-style:none;padding:28px 0 0;margin:34px 0 0;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px 26px}
+.hs-trust li{display:flex;align-items:center;gap:8px;font-weight:600;font-size:.95rem}
+.hs-trust .ico{color:var(--kicker)}
+.hs-media{position:relative;min-height:62vw;max-height:560px;overflow:hidden;background:var(--deep)}
+.hs-img,.hs-media .art{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hs-img{animation:kenburns 16s ease-out both}
+@keyframes kenburns{from{transform:scale(1.07)}to{transform:scale(1)}}
+.hs-media.collage{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1.4fr 1fr;gap:6px;background:var(--paper);min-height:92vw}
+.collage>div{position:relative;overflow:hidden}.collage .cl-0{grid-column:span 2}
+@media(max-width:959px){.collage .hs-card{display:none}}
+.collage .hs-img{animation:none;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}.collage>div:hover .hs-img{transform:scale(1.04)}
+.hs-card{position:absolute;left:16px;bottom:16px;display:flex;gap:12px;align-items:center;background:var(--surface);color:var(--ink);padding:14px 18px;border-radius:14px;box-shadow:0 24px 40px -20px rgba(0,0,0,.5);text-decoration:none;font-weight:600;font-size:.95rem;max-width:calc(100% - 32px)}
+.hs-card .ico{color:var(--kicker)}
+@media(min-width:960px){.hs{grid-template-columns:minmax(0,1fr) minmax(0,1fr);min-height:min(88svh,860px)}
+.hs-copy{padding:96px 64px 96px max(20px,calc((100vw - 1200px)/2));align-self:center}
+.hs-media{min-height:100%;max-height:none;border-bottom-left-radius:44px}
+.hs-media.collage{border-radius:0;padding:0 0 0 6px}.collage .cl-0{border-bottom-left-radius:44px}
+.hs-card{left:-1px;bottom:56px;border-radius:0 14px 14px 0;padding:18px 24px}}
+.sec-services{background:var(--surface);border-block:1px solid var(--line)}
+.sec-contact{background:var(--soft)}
+.sec-contact .hours{box-shadow:none}
+.trust{display:none}
 </style>
 </head>
-<body class="cat-food">
-<div class="topbar">
-<div class="pl-banner" role="note">Concept preview by PrizenLabs for Noodle Canteen. Not the official site. <a href="#get-it-live">Like it? Get it live in 48h&nbsp;→</a></div>
-<header class="hdr">
-  <div class="wrap hdr-inner">
-    <a href="#top" class="brand"><img src="img/logo.webp" alt="Noodle Canteen logo" class="logo-img"></a>
-    <nav class="nav"><a href="#services">Services</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></nav>
-    <a class="btn btn-accent btn-sm hdr-cta" href="tel:092820840"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg><span>09-2820840</span></a>
+<body class="f-split cat-food long-h1">
+<a class="skip" href="#main">Skip to content</a>
+<div class="plb" role="note"><div class="wrap plb-in"><span class="plb-tag">Concept preview</span><span class="plb-txt">A redesign idea for Noodle Canteen by PrizenLabs. Not the official site.</span><a href="#get-it-live">Like it? Get it live in 48h&nbsp;→</a></div></div>
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <a href="#top" class="brand" aria-label="Noodle Canteen home"><span class="logo"><img src="img/logo.webp" alt="Noodle Canteen" height="44" width=251></span></a>
+    <nav class="nav" aria-label="Sections"><a href="#services">Services</a><a href="#about">About</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></nav>
+    <a class="btn btn-accent btn-sm hdr-cta" href="tel:092820840" aria-label="Call 09-2820840"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg><span>09-2820840</span></a>
   </div>
 </header>
-</div>
-<main>
+<main id="main">
 
-<section class="hero hero-grad hero-split" id="top">
-  <div class="hero-pattern"></div>
-  <div class="wrap hero-inner">
-    <div class="hero-copy">
-      <p class="eyebrow">Fresh Noodle Takeaway</p>
-      <h1>Freshly cooked noodles, fast in a box</h1>
-      <p class="lead">Delicious, freshly cooked noodles made right in front of you. We only use fresh and natural ingredients, and no MSG is used in our food.</p>
-      <div class="btns"><a class="btn btn-accent" href="tel:092820840"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>Call 09-2820840</a><a class="btn btn-ghost" href="#services">Our services</a></div>
-      <ul class="chips"><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>No MSG used in our food</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Cooked right in front of you</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Fresh and natural ingredients</li></ul>
-    </div>
-    <figure class="hero-fig"><img src="img/hero.webp" alt="Noodle Canteen" fetchpriority="high"><div class="hero-badge"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /> <polyline points="12 6 12 12 16 14" /></svg><span><small>Open</small>Saturday - Wednesday · 11am - 9:30pm</span></div></figure>
+<section class="hero hs" id="top">
+  <div class="hs-copy">
+    <p class="eyebrow">Fresh Noodle Takeaway</p>
+    <h1>Freshly cooked noodles, fast in a box</h1>
+    <p class="lead">Delicious, freshly cooked noodles made right in front of you. We only use fresh and natural ingredients, and no MSG is used in our food.</p>
+    <div class="btns"><a class="btn btn-accent" href="tel:092820840"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg><span>Call 09-2820840</span></a><a class="btn btn-line" href="#services"><span>Our services</span><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></a></div>
+    <ul class="hs-trust"><li><svg class="ico ico-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg><span>No MSG used in our food</span></li><li><svg class="ico ico-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg><span>Cooked right in front of you</span></li><li><svg class="ico ico-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg><span>Fresh and natural ingredients</span></li></ul>
   </div>
+  <div class="hs-media is-art"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice" role="presentation" aria-hidden="true" class="art"><rect width="1200" height="900" fill="#2e0f11"/><radialGradient id="g1" cx="0.62" cy="0.27" r=".8"><stop offset="0" stop-color="#e41a23" stop-opacity=".85"/><stop offset="1" stop-color="#2e0f11" stop-opacity="0"/></radialGradient><rect width="1200" height="900" fill="url(#g1)"/><circle cx="316" cy="551" r="139" fill="#e41a23" fill-opacity="0.13"/><circle cx="668" cy="377" r="329" fill="#f7e3e4" fill-opacity="0.19"/><circle cx="866" cy="773" r="179" fill="#e41a23" fill-opacity="0.25"/><circle cx="619" cy="704" r="144" fill="#e41a23" fill-opacity="0.17"/><circle cx="939" cy="904" r="208" fill="#e41a23" fill-opacity="0.11"/><circle cx="785" cy="634" r="196" fill="#ed8287" fill-opacity="0.26"/><circle cx="1019" cy="831" r="268" fill="#f7e3e4" fill-opacity="0.24"/><circle cx="824" cy="394" r="60" fill="none" stroke="#ed8287" stroke-opacity=".14" stroke-width="1"/><circle cx="824" cy="394" r="94" fill="none" stroke="#ed8287" stroke-opacity=".14" stroke-width="1"/><circle cx="824" cy="394" r="128" fill="none" stroke="#ed8287" stroke-opacity=".14" stroke-width="1"/><circle cx="824" cy="394" r="162" fill="none" stroke="#ed8287" stroke-opacity=".14" stroke-width="1"/><circle cx="824" cy="394" r="196" fill="none" stroke="#ed8287" stroke-opacity=".14" stroke-width="1"/><circle cx="824" cy="394" r="230" fill="none" stroke="#ed8287" stroke-opacity=".14" stroke-width="1"/><circle cx="824" cy="394" r="264" fill="none" stroke="#ed8287" stroke-opacity=".14" stroke-width="1"/><circle cx="824" cy="394" r="298" fill="none" stroke="#ed8287" stroke-opacity=".14" stroke-width="1"/><circle cx="824" cy="394" r="332" fill="none" stroke="#ed8287" stroke-opacity=".14" stroke-width="1"/><circle cx="824" cy="394" r="366" fill="none" stroke="#ed8287" stroke-opacity=".14" stroke-width="1"/><circle cx="824" cy="394" r="400" fill="none" stroke="#ed8287" stroke-opacity=".14" stroke-width="1"/><circle cx="824" cy="394" r="434" fill="none" stroke="#ed8287" stroke-opacity=".14" stroke-width="1"/><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .05 0"/></filter><rect width="1200" height="900" filter="url(#n)"/></svg><div class="hs-card"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /> <polyline points="12 6 12 12 16 14" /></svg><div><span class="fact-k">Open</span><span>Saturday - Wednesday · 11am - 9:30pm</span></div></div></div>
 </section>
 
 
-<section class="section" id="services">
+
+<section class="sec sec-services" id="services">
   <div class="wrap">
-    <div class="sec-head">
+    <div class="sec-head rv">
       <p class="kicker">What we do</p>
       <h2>From the wok to your box</h2>
       <p class="sub">Choose from our wide variety of dishes, order online, or build your own noodle box.</p>
     </div>
-    <div class="svc-grid svc-n6">
-      <article class="svc">
-        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2" /> <path d="M7 2v20" /> <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7" /></svg></div>
-        <h3>Wok Tossed Noodles</h3>
-        <p>Dishes like Vegetarian Soy Noodles: egg noodles mixed with tofu, mushrooms and fresh vegetables in a dark soy sauce.</p>
-      </article>
-      <article class="svc">
-        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21a9 9 0 0 0 9-9H3a9 9 0 0 0 9 9Z" /> <path d="M7 21h10" /> <path d="M19.5 12 22 6" /> <path d="M16.25 3c.27.1.8.53.75 1.36-.06.83-.93 1.2-1 2.02-.05.78.34 1.24.73 1.62" /> <path d="M11.25 3c.27.1.8.53.74 1.36-.05.83-.93 1.2-.98 2.02-.06.78.33 1.24.72 1.62" /> <path d="M6.25 3c.27.1.8.53.75 1.36-.06.83-.93 1.2-1 2.02-.05.78.34 1.24.74 1.62" /></svg></div>
-        <h3>Soup Based Noodles</h3>
-        <p>Try the Combination Soup: egg noodles with prawns, beef, pork and chicken served with fresh vegetables in a chicken soup.</p>
-      </article>
-      <article class="svc">
-        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z" /> <path d="M12 22V12" /> <path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7" /> <path d="m7.5 4.27 9 5.15" /></svg></div>
-        <h3>Create Your Own Noodle Box</h3>
-        <p>If the menu isn&#x27;t to your taste, pick and choose from a wide range of fresh ingredients to make your own unique noodle box.</p>
-      </article>
-      <article class="svc">
-        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16" /></svg></div>
-        <h3>Online Ordering</h3>
-        <p>Order online from the Henderson, Royal Oak, City Branch, Te Aro Wellington and Albany stores.</p>
-      </article>
-      <article class="svc">
-        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <circle cx="9" cy="7" r="4" /> <path d="M22 21v-2a4 4 0 0 0-3-3.87" /> <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg></div>
-        <h3>Group Catering</h3>
-        <p>Custom made menus including finger foods for lunch and dinner, for office or social events. Email us your details and we&#x27;ll be in touch.</p>
-      </article>
-      <article class="svc">
-        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" /> <path d="M3 6h18" /> <path d="M16 10a4 4 0 0 1-8 0" /></svg></div>
-        <h3>Eat In or Take Away</h3>
-        <p>Enjoy your meal straight away at our allocated seating, or take it away to work, home or to share with friends.</p>
-      </article>
+    <div class="bento rv bento-n6"><div class="tile tile-feature has-img"><img class="tile-bg" src="img/gallery-1-900.webp" srcset="img/gallery-1-480.webp 480w, img/gallery-1-900.webp 900w" sizes="(min-width: 960px) 40vw, 100vw" width="900" height="246" alt="" style="object-position:48% 48%" loading="lazy" decoding="async"><div class="tile-feature-in"><p class="kicker">Fresh Noodle Takeaway</p><h3>Hungry? Head to your nearest Noodle Canteen</h3><a class="btn btn-accent btn-sm" href="tel:092820840">Call 09-2820840</a></div></div>
+        <article class="tile"><div class="tile-h"><span class="tile-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2" /> <path d="M7 2v20" /> <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7" /></svg></span><h3>Wok Tossed Noodles</h3></div><p>Dishes like Vegetarian Soy Noodles: egg noodles mixed with tofu, mushrooms and fresh vegetables in a dark soy sauce.</p></article>
+        <article class="tile"><div class="tile-h"><span class="tile-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21a9 9 0 0 0 9-9H3a9 9 0 0 0 9 9Z" /> <path d="M7 21h10" /> <path d="M19.5 12 22 6" /> <path d="M16.25 3c.27.1.8.53.75 1.36-.06.83-.93 1.2-1 2.02-.05.78.34 1.24.73 1.62" /> <path d="M11.25 3c.27.1.8.53.74 1.36-.05.83-.93 1.2-.98 2.02-.06.78.33 1.24.72 1.62" /> <path d="M6.25 3c.27.1.8.53.75 1.36-.06.83-.93 1.2-1 2.02-.05.78.34 1.24.74 1.62" /></svg></span><h3>Soup Based Noodles</h3></div><p>Try the Combination Soup: egg noodles with prawns, beef, pork and chicken served with fresh vegetables in a chicken soup.</p></article>
+        <article class="tile"><div class="tile-h"><span class="tile-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z" /> <path d="M12 22V12" /> <path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7" /> <path d="m7.5 4.27 9 5.15" /></svg></span><h3>Create Your Own Noodle Box</h3></div><p>If the menu isn&#x27;t to your taste, pick and choose from a wide range of fresh ingredients to make your own unique noodle box.</p></article>
+        <article class="tile"><div class="tile-h"><span class="tile-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16" /></svg></span><h3>Online Ordering</h3></div><p>Order online from the Henderson, Royal Oak, City Branch, Te Aro Wellington and Albany stores.</p></article>
+        <article class="tile"><div class="tile-h"><span class="tile-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /> <circle cx="9" cy="7" r="4" /> <path d="M22 21v-2a4 4 0 0 0-3-3.87" /> <path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg></span><h3>Group Catering</h3></div><p>Custom made menus including finger foods for lunch and dinner, for office or social events. Email us your details and we&#x27;ll be in touch.</p></article>
+        <article class="tile"><div class="tile-h"><span class="tile-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" /> <path d="M3 6h18" /> <path d="M16 10a4 4 0 0 1-8 0" /></svg></span><h3>Eat In or Take Away</h3></div><p>Enjoy your meal straight away at our allocated seating, or take it away to work, home or to share with friends.</p></article>
     </div>
   </div>
 </section>
 
-<section class="section section-alt" id="about">
-  <div class="wrap about">
-    <div class="about-copy">
-      <p class="kicker">About us</p>
+<section class="sec sec-about" id="about">
+  <div class="wrap ab">
+    <div class="ab-copy rv">
+      <p class="kicker">About</p>
       <h2>Every meal is an experience</h2>
-      <p>Walk in and you&#x27;ll be greeted by the aroma of delicate spices, sizzling fresh vegetables and the excitement of fast paced traditional Asian wok cooking. Then sit back and enjoy the action from our comfortable bar stools.</p><p>Our food is on display at all times and we prepare your meal right in front of you, so you can see the fresh, high quality ingredients for yourself.</p><p>Our central vision is to provide fresh, tasty, nutritious and affordable meals to all.</p>
-      <ul class="ticks"><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>No MSG used in our food</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Cooked right in front of you</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Fresh and natural ingredients</li></ul>
+      <div class="ab-body"><p>Walk in and you&#x27;ll be greeted by the aroma of delicate spices, sizzling fresh vegetables and the excitement of fast paced traditional Asian wok cooking. Then sit back and enjoy the action from our comfortable bar stools.</p><p>Our food is on display at all times and we prepare your meal right in front of you, so you can see the fresh, high quality ingredients for yourself.</p><p>Our central vision is to provide fresh, tasty, nutritious and affordable meals to all.</p></div>
+      <ul class="ticks"><li><svg class="ico ico-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg><span>No MSG used in our food</span></li><li><svg class="ico ico-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg><span>Cooked right in front of you</span></li><li><svg class="ico ico-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg><span>Fresh and natural ingredients</span></li></ul>
     </div>
-    <figure class="about-fig"><img src="img/about.webp" alt="Noodle Canteen" loading="lazy"></figure>
+    <figure class="ab-fig rv"><img class="ab-img" src="img/about-541.webp" srcset="img/about-480.webp 480w, img/about-541.webp 541w" sizes="(min-width: 960px) 45vw, 100vw" width="541" height="375" alt="Noodle Canteen" style="object-position:50% 43%" loading="lazy" decoding="async"></figure>
   </div>
 </section>
 
-<section class="section" id="gallery">
+<section class="sec sec-gallery" id="gallery">
   <div class="wrap">
-    <div class="sec-head"><p class="kicker">Gallery</p><h2>Take a look</h2></div>
-    <div class="gallery g6"><figure><img src="img/gallery-1.webp" alt="Noodle Canteen photo 1" loading="lazy"></figure><figure><img src="img/gallery-2.webp" alt="Noodle Canteen photo 2" loading="lazy"></figure><figure><img src="img/gallery-3.webp" alt="Noodle Canteen photo 3" loading="lazy"></figure><figure><img src="img/gallery-4.webp" alt="Noodle Canteen photo 4" loading="lazy"></figure><figure><img src="img/gallery-5.webp" alt="Noodle Canteen photo 5" loading="lazy"></figure><figure><img src="img/gallery-6.webp" alt="Noodle Canteen photo 6" loading="lazy"></figure></div>
+    <div class="sec-head sec-head-row rv"><div><p class="kicker">Gallery</p><h2>A closer look</h2></div></div>
+    <div class="gal rv gal-split gal-n5"><figure class="gi"><img class="" src="img/gallery-2-900.webp" srcset="img/gallery-2-480.webp 480w, img/gallery-2-900.webp 900w" sizes="(min-width: 960px) 33vw, 50vw" width="900" height="246" alt="Noodle Canteen — photo 1" style="object-position:40% 52%" loading="lazy" decoding="async"></figure><figure class="gi"><img class="" src="img/gallery-3-900.webp" srcset="img/gallery-3-480.webp 480w, img/gallery-3-900.webp 900w" sizes="(min-width: 960px) 33vw, 50vw" width="900" height="246" alt="Noodle Canteen — photo 2" style="object-position:43% 52%" loading="lazy" decoding="async"></figure><figure class="gi"><img class="" src="img/gallery-4-900.webp" srcset="img/gallery-4-480.webp 480w, img/gallery-4-900.webp 900w" sizes="(min-width: 960px) 33vw, 50vw" width="900" height="246" alt="Noodle Canteen — photo 3" style="object-position:46% 50%" loading="lazy" decoding="async"></figure><figure class="gi"><img class="" src="img/gallery-5-900.webp" srcset="img/gallery-5-480.webp 480w, img/gallery-5-900.webp 900w" sizes="(min-width: 960px) 33vw, 50vw" width="900" height="246" alt="Noodle Canteen — photo 4" style="object-position:46% 47%" loading="lazy" decoding="async"></figure><figure class="gi"><img class="" src="img/gallery-6-900.webp" srcset="img/gallery-6-480.webp 480w, img/gallery-6-900.webp 900w" sizes="(min-width: 960px) 33vw, 50vw" width="900" height="246" alt="Noodle Canteen — photo 5" style="object-position:42% 52%" loading="lazy" decoding="async"></figure></div>
   </div>
 </section>
 
-<section class="section" id="contact">
+<section class="sec sec-contact" id="contact">
   <div class="wrap">
-    <div class="cta-band">
-      <div><h2>Hungry? Head to your nearest Noodle Canteen</h2><p>Order online, or email us your details to arrange group catering for your next event.</p></div>
-      <a class="btn btn-accent btn-lg" href="tel:092820840"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>Call 09-2820840</a>
+    <div class="ct">
+      <div class="ct-main rv">
+        <p class="kicker">Get in touch</p>
+        <h2>Hungry? Head to your nearest Noodle Canteen</h2>
+        <p class="sub">Order online, or email us your details to arrange group catering for your next event.</p>
+        <a class="bigphone" href="tel:092820840">09-2820840</a>
+        
+        <div class="ct-lines"><div class="cl"><span class="fact-k">Email</span><a href="mailto:ben@noodlecanteen.co.nz">ben@noodlecanteen.co.nz</a></div><div class="cl"><span class="fact-k">Areas covered</span><span>Stores include Henderson, Royal Oak, City Branch, Te Aro Wellington and Albany, with new shops opened in Blenheim and Wainuiomata</span></div></div>
+      </div>
+      <div class="hours rv"><h3><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /> <polyline points="12 6 12 12 16 14" /></svg>Opening hours</h3><table><tr data-days="Saturday - Wednesday"><th scope="row">Saturday - Wednesday</th><td>11am - 9:30pm</td></tr><tr data-days="Thursday - Friday"><th scope="row">Thursday - Friday</th><td>11am - 10pm</td></tr></table><p class=note>NZ wide opening hours; all stores open the same hours.</p></div>
     </div>
-    <div class="contact-grid">
-      <div class="contact-list"><div class="ci"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg><div><h3>Phone</h3><a href="tel:092820840">09-2820840</a></div></div><div class="ci"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2" /> <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg><div><h3>Email</h3><a href="mailto:ben@noodlecanteen.co.nz">ben@noodlecanteen.co.nz</a></div></div><div class="ci"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8" /> <path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></svg><div><h3>Areas covered</h3><p>Stores include Henderson, Royal Oak, City Branch, Te Aro Wellington and Albany, with new shops opened in Blenheim and Wainuiomata</p></div></div></div>
-      <div class="hours-card"><h3><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" /> <polyline points="12 6 12 12 16 14" /></svg>Opening hours</h3><table><tr><th>Saturday - Wednesday</th><td>11am - 9:30pm</td></tr><tr><th>Thursday - Friday</th><td>11am - 10pm</td></tr></table><p class=note>NZ wide opening hours; all stores open the same hours.</p></div>
-    </div>
+    
   </div>
 </section>
 
 <section class="getlive" id="get-it-live">
-  <div class="wrap gl-inner">
-    <div>
-      <p class="kicker kicker-light">PrizenLabs · concept preview</p>
+  <div class="wrap gl">
+    <div class="gl-copy">
+      <p class="gl-mark"><span class="gl-dot"></span>PrizenLabs · concept preview</p>
       <h2>Like this new look for Noodle Canteen?</h2>
       <p>This concept was built from the content on your current website. We can make it your real site, on your own domain, in 48 hours.</p>
       <ul class="gl-list">
-        <li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Mobile-first, fast-loading design</li>
-        <li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Your wording, photos and details reviewed with you before launch</li>
-        <li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Hosted on your existing domain</li>
+        <li><svg class="ico ico-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Mobile-first, fast-loading design</li>
+        <li><svg class="ico ico-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Your wording, photos and details reviewed with you before launch</li>
+        <li><svg class="ico ico-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Hosted on your existing domain</li>
       </ul>
     </div>
     <div class="gl-card">
-      <p class="gl-price">Pricing &amp; next steps</p>
-      <a class="btn btn-accent btn-lg" href="https://buy.stripe.com/eVqdR87kl8JH055b2efYY00">Get it live in 48h <svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></a>
+      <p class="gl-k">Pricing &amp; next steps</p>
+      <a class="btn btn-gl" href="https://buy.stripe.com/eVqdR87kl8JH055b2efYY00">Get it live in 48h <svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></a>
       <p class="gl-small">No obligation. Nothing changes on your current site unless you say so.</p>
     </div>
   </div>
@@ -267,16 +351,26 @@ h2{font-size:clamp(1.8rem,3.6vw,2.6rem)}
 </main>
 
 <footer class="foot">
-  <div class="wrap foot-inner">
-    <div><strong>Noodle Canteen</strong><br><a href="tel:092820840">09-2820840</a></div>
-    <div class="foot-social"></div>
+  <div class="wrap foot-in">
+    <div class="foot-name"><strong>Noodle Canteen</strong><span>Fresh Noodle Takeaway</span></div>
+    <div class="foot-meta"><a href="tel:092820840">09-2820840</a><a href="mailto:ben@noodlecanteen.co.nz">ben@noodlecanteen.co.nz</a></div>
+    
   </div>
   <div class="wrap foot-legal">
-    <p>Concept preview created by PrizenLabs on 2026-11-24 using content and images from the public website
+    <p>Concept preview created by PrizenLabs on 2026-11-25 using content and images from the public website
     <a href="https://noodlecanteen.co.nz/" rel="nofollow noopener" target="_blank">noodlecanteen.co.nz</a>. Not affiliated with or endorsed by Noodle Canteen.
     All business names, text and photos belong to their owner.</p>
   </div>
 </footer>
-<div class="mbar"><a class="btn btn-accent" href="tel:092820840"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>Call 09-2820840</a></div>
+<nav class="mbar" aria-label="Quick actions"><a class="mb-btn mb-primary" href="tel:092820840"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg>Call now</a><a class="mb-btn" href="mailto:ben@noodlecanteen.co.nz"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2" /> <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>Email</a></nav>
+<script>(()=>{const h=document.getElementById('hdr');const s=()=>h.classList.toggle('scrolled',scrollY>24);s();addEventListener('scroll',s,{passive:true});
+const els=[...document.querySelectorAll('.rv')];const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(rm||!('IntersectionObserver' in window)){els.forEach(x=>x.classList.add('in'))}else{const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}}),{rootMargin:'0px 0px -6% 0px'});els.forEach(x=>io.observe(x))}
+const D=['sun','mon','tue','wed','thu','fri','sat'],t=new Date().getDay();
+document.querySelectorAll('tr[data-days]').forEach(r=>{let s=r.dataset.days.toLowerCase(),on=new Set();
+if(/daily|every ?day|7 days|seven days/.test(s))D.forEach((_,i)=>on.add(i));if(/weekday/.test(s))[1,2,3,4,5].forEach(i=>on.add(i));if(/weekend/.test(s))[0,6].forEach(i=>on.add(i));
+const re=/(sun|mon|tue|wed|thu|fri|sat)[a-z]*\.?(\s*(?:-|–|—|to|through|thru)\s*(sun|mon|tue|wed|thu|fri|sat)[a-z]*)?/g;let m;
+while((m=re.exec(s))){let a=D.indexOf(m[1]);if(m[3]){let b=D.indexOf(m[3]);for(let i=a;;i=(i+1)%7){on.add(i);if(i===b)break}}else on.add(a)}
+if(on.has(t)){r.classList.add('today');r.querySelector('th').insertAdjacentHTML('beforeend',' <span class="today-pill">Today</span>')}})})();</script>
 </body>
 </html>

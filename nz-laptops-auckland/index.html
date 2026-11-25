@@ -2,263 +2,358 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
 <title>NZLaptops | Refurbished &amp; Ex-Lease Computers · Concept preview</title>
 <meta name="description" content="Specialist refurbished and ex-lease computer wholesaler and retailer. Laptops, PCs, Apple products, peripherals and spare parts for most major brands.">
-<meta property="og:title" content="Concept preview: a new homepage for NZ Laptops">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://preview.prizenlabs.com/nz-laptops-auckland/">
+<meta property="og:title" content="Concept preview: a new homepage for NZLaptops">
 <meta property="og:description" content="A free redesign concept by PrizenLabs, built from nzlaptops.co.nz.">
-
-<meta name="theme-color" content="#06302b">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#231f1a">
+<link rel="icon" type="image/png" href="img/favicon.png"><link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700&family=Work+Sans:wght@400;600&display=swap">
+
+<script>document.documentElement.classList.add('js')</script>
+<style>:root{--brand:#d48411;--accent:#d48411;--accent-ink:#261e12;--ink:#261e12;--muted:#675e51;--paper:#f9f7f3;--surface:#ffffff;--line:#e5e1dc;--soft:#f7efe3;--deep:#231f1a;--deep2:#312c25;--kicker:#9b610c;--on-deep:#edc182;--fh:'Epilogue';--fb:'Work Sans';--track:-.03em;--hw:700;--tt:none}
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:110px}
-body{margin:0;font-family:'DM Sans',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#0f2620;background:#f5faf8;line-height:1.6;-webkit-font-smoothing:antialiased;padding-bottom:76px}
+html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--fb),system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:1.0625rem;color:var(--ink);background:var(--paper);line-height:1.62;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;padding-bottom:84px}
 @media(min-width:900px){body{padding-bottom:0}}
 img{max-width:100%;display:block}
-a{color:inherit}
-h1,h2,h3{font-family:'Outfit',Georgia,serif;font-weight:700;line-height:1.12;margin:0 0 .5em;letter-spacing:-.01em}
-.cat-auto h1,.cat-auto h2{text-transform:uppercase;letter-spacing:.01em}
-.wrap{width:min(1160px,100% - 40px);margin-inline:auto}
-.ico{width:22px;height:22px;flex:none}.ico-sm{width:18px;height:18px}.ico-xs{width:14px;height:14px}
-.topbar{position:sticky;top:0;z-index:60}
-.pl-banner{background:#111827;color:#e5e7eb;font:500 12.5px/1.3 Inter,system-ui,sans-serif;text-align:center;padding:8px 12px}
-.pl-banner a{color:#fbbf24;font-weight:700;text-decoration:none;white-space:nowrap}
-.hdr{background:rgba(255,255,255,.92);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid #dcebe5}
-.hdr-inner{display:flex;align-items:center;gap:20px;min-height:68px}
-.brand{text-decoration:none;display:flex;align-items:center;min-width:0}
-.logo-img{max-height:48px;width:auto;max-width:190px;object-fit:contain}
-.wordmark{font-family:'Outfit',serif;font-weight:700;font-size:1.25rem;color:#0f766e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.nav{display:none;gap:26px;margin-left:auto}
-.nav a{text-decoration:none;font-weight:500;color:#4b635b;font-size:.95rem}.nav a:hover{color:#0f766e}
-.hdr-cta{margin-left:auto}
-@media(min-width:900px){.nav{display:flex}.hdr-cta{margin-left:8px}}
-@media(max-width:520px){.hdr-cta span{display:none}.hdr-cta{padding:10px 12px}.eyebrow{border-radius:12px;letter-spacing:.1em;font-size:.72rem}}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:999px;font-weight:700;font-size:1rem;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease,background .15s;border:2px solid transparent;cursor:pointer}
-.btn:hover{transform:translateY(-1px)}
-.btn-accent{background:#0d9488;color:#ffffff;box-shadow:0 8px 24px -10px #0d9488}
-.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff;background:rgba(255,255,255,.06)}
-.btn-ghost:hover{background:rgba(255,255,255,.16)}
-.btn-sm{padding:9px 16px;font-size:.92rem}.btn-lg{padding:16px 28px;font-size:1.05rem}
-.hero{position:relative;color:#fff;overflow:hidden;isolation:isolate}
-.hero-inner{position:relative;display:grid;gap:36px;padding:72px 0 64px;align-items:end}
-@media(min-width:960px){.hero-inner{grid-template-columns:1.35fr .9fr;padding:112px 0 96px;align-items:center}}
-.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2}
-.hero-shade{position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,#06302bf0 0%,#06302bbb 48%,#06302b40 100%)}
-@media(max-width:959px){.hero-shade{background:linear-gradient(180deg,#06302bcc,#06302bf2 70%)}}
-.hero-grad{background:radial-gradient(1200px 500px at 85% -10%,#14b8a688,transparent 60%),linear-gradient(135deg,#06302b,#0f766e)}
-.hero-pattern{position:absolute;inset:0;z-index:-1;opacity:.12;background-image:radial-gradient(#fff 1px,transparent 1.2px);background-size:22px 22px;mask-image:linear-gradient(180deg,#000,transparent)}
-.eyebrow{display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:6px 12px;border-radius:999px;margin:0 0 18px}
-.hero h1{font-size:clamp(2.2rem,5.6vw,4rem);margin-bottom:18px;text-wrap:balance}
-.lead{font-size:clamp(1.05rem,1.6vw,1.25rem);color:rgba(255,255,255,.88);max-width:40ch;margin:0 0 28px}
+html,body{overflow-x:clip}
+body{overflow-wrap:break-word}
+.ct>*,.foot-in>*,.ab>*,.gl>*,.he-grid>*,.hs>*,.ledge-in>*{min-width:0}
+.cl a,.foot-meta a,.ct-lines a{overflow-wrap:anywhere}
+a{color:inherit;text-underline-offset:.18em}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--fh),Georgia,serif;font-weight:var(--hw);line-height:1.04;margin:0 0 .45em;letter-spacing:var(--track);text-transform:var(--tt)}
+h1,h2{text-wrap:balance}
+h1{font-size:clamp(2.6rem,6.4vw,5.6rem)}
+.long-h1 .hero h1{font-size:clamp(2.4rem,5.4vw,5rem);max-width:17ch}
+h2{font-size:clamp(2rem,4.2vw,3.5rem)}
+h3{font-size:1.3rem;line-height:1.2;letter-spacing:-.005em}
+.wrap{width:min(1200px,100% - 40px);margin-inline:auto}
+.wrap-wide{width:min(1320px,100% - 24px);margin-inline:auto}
+.ico{width:22px;height:22px;flex:none}.ico-sm{width:18px;height:18px}.ico-xs{width:15px;height:15px}
+.dim{opacity:.72}
+.skip{position:absolute;left:-9999px;top:8px;z-index:100;background:#fff;color:#000;padding:8px 14px;border-radius:6px}.skip:focus{left:8px}
+/* PrizenLabs banner */
+.plb{background:#0c0c0e;color:#d4d4d8;font:500 12.5px/1.35 system-ui,-apple-system,'Segoe UI',sans-serif;position:relative;z-index:70}
+.plb-in{display:flex;gap:12px;align-items:center;justify-content:center;min-height:38px;padding:7px 0;flex-wrap:wrap;text-align:center}
+.plb-tag{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;border:1px solid #3f3f46;border-radius:999px;padding:3px 9px;color:#fafafa}
+.plb a{color:#f5d38a;font-weight:600;text-decoration:none;white-space:nowrap;border-bottom:1px solid rgba(245,211,138,.35)}
+.plb a:hover{border-color:#f5d38a}
+@media(max-width:640px){.plb-txt{display:none}}
+/* header */
+.hdr{position:sticky;top:0;z-index:60;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:saturate(1.3) blur(12px);-webkit-backdrop-filter:saturate(1.3) blur(12px);border-bottom:1px solid transparent;transition:background .3s,border-color .3s,color .3s}
+.hdr.scrolled{border-color:var(--line)}
+.hdr-in{display:flex;align-items:center;gap:24px;min-height:74px}
+.brand{text-decoration:none;display:flex;align-items:center;min-width:0;flex:0 1 auto}
+.logo img{height:44px;width:auto;max-width:200px;object-fit:contain;border-radius:4px}
+.logo-plate{background:#fff;padding:6px 10px;border-radius:10px;box-shadow:0 6px 20px -10px rgba(0,0,0,.4)}
+.logo-blend img{mix-blend-mode:multiply}
+.wordmark{font-family:var(--fh),serif;font-weight:var(--hw);font-size:1.3rem;letter-spacing:var(--track);text-transform:var(--tt);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;max-width:58vw}
+.nav{display:none;gap:30px;margin-left:auto}
+.nav a{text-decoration:none;font-weight:500;font-size:.95rem;opacity:.78;position:relative;padding:6px 0}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1.5px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .25s}
+.nav a:hover{opacity:1}.nav a:hover::after{transform:scaleX(1)}
+.hdr-cta{margin-left:auto;flex:none}
+@media(min-width:900px){.nav{display:flex}.hdr-cta{margin-left:6px}}
+@media(max-width:560px){.hdr-cta span{display:none}.hdr-cta{padding:11px;width:44px;height:44px}.logo img{height:38px;max-width:150px}}
+/* buttons */
 .btns{display:flex;flex-wrap:wrap;gap:12px}
-.chips{list-style:none;padding:0;margin:28px 0 0;display:flex;flex-wrap:wrap;gap:10px 18px}
-.chips li{display:flex;align-items:center;gap:7px;font-weight:600;font-size:.95rem;color:rgba(255,255,255,.92)}
-.chips .ico{color:#0d9488;background:#fff;border-radius:50%;padding:2px}
-.hero-fig{position:relative;margin:0;justify-self:end;width:100%;max-width:520px}
-.hero-fig img{width:100%;aspect-ratio:4/3.4;object-fit:cover;border-radius:calc(18px + 8px);box-shadow:0 40px 80px -30px rgba(0,0,0,.6);border:6px solid rgba(255,255,255,.12)}
-.hero-badge{position:absolute;left:-18px;bottom:22px;display:flex;gap:12px;align-items:center;background:#fff;color:#0f2620;padding:12px 16px;border-radius:14px;box-shadow:0 20px 40px -18px rgba(0,0,0,.5);text-decoration:none;font-weight:600;font-size:.95rem}
-.hero-badge .ico{color:#0d9488}
-.hero-badge small{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.1em;color:#4b635b;font-weight:700}
-@media(max-width:959px){.hero-fig{justify-self:stretch;max-width:none}.hero-badge{left:12px;bottom:12px}}
-.quick-card{background:rgba(255,255,255,.96);color:#0f2620;border-radius:18px;padding:10px;box-shadow:0 30px 60px -20px rgba(0,0,0,.45);display:grid}
-.quick-card a{display:flex;gap:14px;align-items:flex-start;padding:14px;border-radius:calc(18px - 6px);text-decoration:none;font-weight:600;word-break:break-word}
-.quick-card a:hover{background:#dff5ef}
-.quick-card .ico{color:#0f766e;background:#dff5ef;padding:9px;width:40px;height:40px;border-radius:12px}
-.quick-card small{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.1em;color:#4b635b;font-weight:700}
-.notice{background:#dff5ef;border-bottom:1px solid #dcebe5}
-.notice .wrap{display:flex;gap:12px;align-items:flex-start;padding:14px 0;color:#0f766e;font-weight:500;font-size:.95rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:12px 22px;border-radius:var(--r-btn,999px);font:600 1rem/1.2 var(--fb),system-ui,sans-serif;text-decoration:none;transition:transform .2s cubic-bezier(.2,.7,.2,1),box-shadow .2s,background .2s,color .2s,border-color .2s;border:1.5px solid transparent;cursor:pointer;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+.btn-accent{background:var(--accent);color:var(--accent-ink);box-shadow:0 10px 26px -12px var(--accent)}
+.btn-accent:hover{box-shadow:0 16px 32px -12px var(--accent)}
+.btn-line{border-color:currentColor;color:inherit;background:transparent}
+.btn-line:hover{background:color-mix(in srgb,currentColor 9%,transparent)}
+.btn-line .ico{transition:transform .2s}.btn-line:hover .ico{transform:translateX(3px)}
+.btn-sm{min-height:42px;padding:9px 16px;font-size:.92rem}
+.eyebrow{font:600 .8rem/1.3 var(--fb),sans-serif;letter-spacing:.16em;text-transform:uppercase;margin:0 0 22px}
+.lead{font-size:clamp(1.08rem,1.5vw,1.28rem);max-width:44ch;margin:0 0 30px;line-height:1.55}
+.kicker{font:700 .76rem/1.2 var(--fb),sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--kicker);margin:0 0 14px}
+.sub{color:var(--muted);font-size:1.1rem;margin:0;max-width:52ch}
+.fact-k{display:block;font:700 .7rem/1.2 var(--fb),sans-serif;letter-spacing:.16em;text-transform:uppercase;opacity:.66;margin-bottom:5px}
+/* hero entrance */
+@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes lift{from{transform:translateY(26px)}to{transform:none}}
+.js .hero .eyebrow,.js .hero .lead,.js .hero .btns{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+.js .hero h1{animation:lift .9s cubic-bezier(.2,.7,.2,1) both}
+.js .hero .lead{animation-delay:.12s}.js .hero .btns{animation-delay:.22s}
+/* scroll reveal */
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.2,.7,.2,1) var(--d,0ms),transform .8s cubic-bezier(.2,.7,.2,1) var(--d,0ms)}
+.js .rv.in{opacity:1;transform:none}
+/* notice + trust */
+.notice{background:var(--soft);border-bottom:1px solid var(--line)}
+.notice .wrap{display:flex;gap:12px;align-items:flex-start;padding:14px 0;color:var(--kicker);font-weight:500;font-size:.97rem}
 .notice p{margin:0}
-.section{padding:84px 0}
-.section-alt{background:#ffffff;border-block:1px solid #dcebe5}
-.sec-head{max-width:640px;margin-bottom:40px}
-.kicker{font-size:.8rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#0d9488;margin:0 0 10px}
-.kicker-light{color:#fbbf24}
-h2{font-size:clamp(1.8rem,3.6vw,2.6rem)}
-.sub{color:#4b635b;font-size:1.1rem;margin:0}
-.svc-grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
-@media(min-width:1000px){.svc-n2,.svc-n4{grid-template-columns:repeat(2,1fr)}.svc-n3,.svc-n5,.svc-n6,.svc-n9{grid-template-columns:repeat(3,1fr)}.svc-n7,.svc-n8{grid-template-columns:repeat(4,1fr)}
-.svc-n5 .svc:nth-child(n+4),.svc-n7 .svc:nth-child(n+5){grid-column:span 1}}
-@media(min-width:1000px){.svc-n5{grid-template-columns:repeat(6,1fr)}.svc-n5 .svc{grid-column:span 2}.svc-n5 .svc:nth-child(n+4){grid-column:span 3}
-.svc-n7{grid-template-columns:repeat(12,1fr)}.svc-n7 .svc{grid-column:span 3}.svc-n7 .svc:nth-child(n+5){grid-column:span 4}}
-.svc{background:#ffffff;border:1px solid #dcebe5;border-radius:18px;padding:26px;transition:transform .2s,box-shadow .2s,border-color .2s}
-.svc:hover{transform:translateY(-3px);box-shadow:0 20px 40px -24px rgba(15,23,42,.35);border-color:transparent}
-.svc-ico{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:#dff5ef;color:#0f766e;margin-bottom:18px}
-.svc-ico .ico{width:26px;height:26px}
-.svc h3{font-size:1.22rem;margin-bottom:8px}
-.svc p{margin:0;color:#4b635b;font-size:.98rem}
-.about{display:grid;gap:44px;align-items:center}
-@media(min-width:900px){.about{grid-template-columns:1.1fr .9fr}}
-.about-copy p{color:#4b635b;font-size:1.06rem}
-.ticks{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:10px}
-.ticks li{display:flex;gap:10px;align-items:center;font-weight:600}
-.ticks .ico{color:#fff;background:#0d9488;border-radius:50%;padding:3px}
-.about-fig{margin:0;border-radius:calc(18px + 6px);overflow:hidden;box-shadow:0 30px 60px -30px rgba(0,0,0,.45);aspect-ratio:4/3.4}
-.about-fig img{width:100%;height:100%;object-fit:cover}
-.about-mono{aspect-ratio:1/1;max-width:420px;width:100%;justify-self:center;border-radius:calc(18px + 10px);background:radial-gradient(circle at 30% 20%,#14b8a6,#06302b);display:grid;place-content:center;text-align:center;color:#fff;box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}
-.about-mono span{font-family:'Outfit',serif;font-size:7rem;font-weight:700;line-height:1;opacity:.95}
-.about-mono p{margin:10px 24px 0;font-weight:600;opacity:.8}
-.gallery{display:grid;gap:12px;grid-template-columns:repeat(2,1fr)}
-@media(min-width:800px){.gallery{grid-template-columns:repeat(3,1fr)}.gallery.g2{grid-template-columns:repeat(2,1fr)}.gallery.g4{grid-template-columns:repeat(4,1fr)}}
-.gallery figure{margin:0;border-radius:18px;overflow:hidden;aspect-ratio:1/1;background:#dcebe5}
-.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
-.gallery figure:hover img{transform:scale(1.04)}
-.cta-band{display:flex;flex-wrap:wrap;gap:22px;align-items:center;justify-content:space-between;background:linear-gradient(135deg,#06302b,#0f766e);color:#fff;border-radius:calc(18px + 8px);padding:36px clamp(24px,4vw,48px);margin-bottom:44px}
-.cta-band h2{margin:0 0 6px;font-size:clamp(1.5rem,3vw,2.1rem)}
-.cta-band p{margin:0;color:rgba(255,255,255,.82)}
-.contact-grid{display:grid;gap:22px}
-@media(min-width:900px){.contact-grid{grid-template-columns:1.2fr .8fr}}
-.contact-list{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-.ci{display:flex;gap:16px;background:#ffffff;border:1px solid #dcebe5;border-radius:18px;padding:22px;word-break:break-word}
-.ci>.ico{color:#0f766e;background:#dff5ef;padding:10px;width:44px;height:44px;border-radius:12px}
-.ci h3{font-family:'DM Sans',sans-serif;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:#4b635b;margin:2px 0 6px;font-weight:700}
-.ci p{margin:0}.ci a{font-weight:600;text-decoration:none;color:#0f2620}
-.ci .maplink{display:inline-flex;align-items:center;gap:6px;margin-top:8px;color:#0d9488;font-size:.92rem}
-.hours-card{background:#ffffff;border:1px solid #dcebe5;border-radius:18px;padding:26px}
-.hours-card h3{display:flex;gap:10px;align-items:center;font-size:1.2rem}
-.hours-card table{width:100%;border-collapse:collapse}
-.hours-card th,.hours-card td{padding:10px 0;border-bottom:1px dashed #dcebe5;text-align:left;font-weight:500}
-.hours-card td{text-align:right;color:#4b635b}
-.hours-card .note{color:#4b635b;font-size:.9rem;margin:12px 0 0}
-.getlive{background:#0b1020;color:#e5e7eb;padding:72px 0}
-.gl-inner{display:grid;gap:32px;align-items:center}
-@media(min-width:900px){.gl-inner{grid-template-columns:1.3fr .7fr}}
-.getlive h2{color:#fff}
-.getlive p{color:#cbd5e1}
-.gl-list{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:8px}
-.gl-list li{display:flex;gap:10px;align-items:center}.gl-list .ico{color:#fbbf24}
-.gl-card{background:#111a33;border:1px solid #23304f;border-radius:18px;padding:28px;text-align:center}
-.gl-price{font-weight:700;color:#fff!important;margin:0 0 16px;font-size:1.1rem}
-.gl-small{font-size:.85rem;margin:14px 0 0}
-.foot{background:#06302b;color:rgba(255,255,255,.8);padding:40px 0 24px;font-size:.95rem}
-.foot a{color:#fff}
-.foot-inner{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between}
-.foot-social{display:flex;gap:16px}
-.foot-legal{border-top:1px solid rgba(255,255,255,.12);margin-top:26px;padding-top:18px;font-size:.8rem;color:rgba(255,255,255,.6)}
-.mbar{position:fixed;left:0;right:0;bottom:0;z-index:55;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid #dcebe5;backdrop-filter:blur(8px)}
-.mbar .btn{width:100%}
+.trust{border-bottom:1px solid var(--line)}
+.trust-list{list-style:none;margin:0;padding:22px 0;display:grid;gap:14px 40px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.trust-list li{display:flex;align-items:center;gap:10px;font-weight:600;font-size:.98rem}
+.trust-list .ico{color:var(--accent-ink);background:var(--accent);border-radius:50%;padding:3px;width:22px;height:22px}
+/* sections */
+.sec{padding:clamp(72px,10vw,136px) 0}
+.sec-head{max-width:720px;margin-bottom:clamp(36px,5vw,64px)}
+.sec-head-row{max-width:none;display:flex;flex-wrap:wrap;gap:12px 40px;align-items:flex-end;justify-content:space-between}
+.sec-head-row h2{margin:0}
+/* bento services */
+.bento{display:grid;gap:16px;grid-template-columns:1fr}
+@media(min-width:700px){.bento{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1040px){.bento{grid-template-columns:repeat(3,1fr)}.tile-feature{grid-row:span 2}}
+.tile{position:relative;background:var(--surface);border:1px solid var(--line);border-radius:var(--r,18px);padding:28px;transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s,border-color .3s}
+.tile:hover{transform:translateY(-4px);box-shadow:0 28px 50px -30px color-mix(in srgb,var(--ink) 55%,transparent);border-color:color-mix(in srgb,var(--brand) 35%,var(--line))}
+.tile-h{display:flex;gap:14px;align-items:flex-start;margin-bottom:10px}
+.tile-ico{flex:none;width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:var(--soft);color:var(--kicker)}
+.tile h3{margin:9px 0 0;font-size:1.22rem}
+.tile p{margin:0;color:var(--muted);font-size:.99rem}
+.tile-feature{background:var(--deep);color:#fff;border:0;display:flex;align-items:flex-end;min-height:320px;overflow:hidden;isolation:isolate}
+.tile-feature .kicker{color:var(--on-deep)}
+.tile-feature h3{font-size:clamp(1.7rem,2.6vw,2.3rem);margin:0 0 14px;line-height:1.08}
+.tile-feature p{color:rgba(255,255,255,.8);margin:0 0 22px}
+.tile-feature-in{position:relative;z-index:1}
+.tile-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-1;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.tile-feature.has-img::after{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(180deg,transparent 25%,color-mix(in srgb,var(--deep) 92%,transparent))}
+.tile-feature:hover .tile-bg{transform:scale(1.05)}
+/* index services */
+.idx{list-style:none;margin:0;padding:0;display:grid;gap:0 56px}
+@media(min-width:900px){.idx{grid-template-columns:repeat(2,1fr)}}
+.idx-row{display:grid;grid-template-columns:auto 1fr;gap:22px;padding:28px 0;border-top:1px solid var(--line);transition:background .25s}
+.idx-n{font:600 .9rem/1.9 var(--fb),sans-serif;color:var(--kicker);letter-spacing:.06em;min-width:2.2em}
+.idx-row h3{font-size:clamp(1.3rem,1.9vw,1.6rem);margin:0 0 8px}
+.idx-row p{margin:0;color:var(--muted)}
+/* about */
+.ab{display:grid;gap:clamp(40px,6vw,88px);align-items:center}
+@media(min-width:960px){.ab{grid-template-columns:1.05fr .95fr}.no-side .ab{grid-template-columns:minmax(0,760px)}}
+.ab-body p{color:var(--muted);font-size:1.08rem;margin:0 0 1em}
+.ab-fig{margin:0;border-radius:var(--r,18px);overflow:hidden;aspect-ratio:4/5;max-height:640px;background:var(--line)}
+@media(max-width:959px){.ab-fig{aspect-ratio:4/3}}
+.ab-img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.ab-fig:hover .ab-img{transform:scale(1.03)}
+.ab-glance{background:var(--surface);border:1px solid var(--line);border-radius:var(--r,18px);padding:clamp(26px,4vw,44px)}
+.ab-glance dl{margin:0;display:grid;gap:0}
+.ab-glance dl>div{padding:16px 0;border-top:1px solid var(--line)}
+.ab-glance dt{font:700 .72rem/1.2 var(--fb),sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.ab-glance dd{margin:0;font-family:var(--fh),serif;font-size:1.35rem;line-height:1.25;letter-spacing:var(--track)}
+.ab-glance a{text-decoration:none}
+.ticks{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:12px}
+.ticks li{display:flex;gap:12px;align-items:center;font-weight:600}
+.ticks .ico{color:var(--accent-ink);background:var(--accent);border-radius:50%;padding:3px;width:22px;height:22px}
+/* gallery (default mosaic) */
+.gal{display:grid;gap:12px;grid-template-columns:repeat(2,1fr);grid-auto-rows:clamp(150px,34vw,260px)}
+.gi{margin:0;overflow:hidden;border-radius:var(--r,18px);background:var(--line);position:relative}
+.gi img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.gi:hover img{transform:scale(1.05)}
+@media(max-width:699px){.gal-n3 .gi:first-child,.gal-n5 .gi:first-child{grid-column:span 2}}
+@media(min-width:700px){.gal{grid-template-columns:repeat(6,1fr);grid-auto-rows:clamp(180px,20vw,290px)}
+.gal .gi{grid-column:span 2}
+.gal-n2 .gi{grid-column:span 3}
+.gal-n3 .gi:first-child{grid-column:span 4;grid-row:span 2}
+.gal-n4 .gi:nth-child(1),.gal-n4 .gi:nth-child(4){grid-column:span 4}
+.gal-n5 .gi:nth-child(1),.gal-n5 .gi:nth-child(2){grid-column:span 3}
+.gal-n6 .gi:first-child{grid-column:span 4;grid-row:span 2}}
+/* contact */
+.ct{display:grid;gap:clamp(36px,5vw,72px);align-items:start}
+@media(min-width:960px){.ct{grid-template-columns:1.25fr .75fr}}
+.bigphone{display:inline-block;font-family:var(--fh),serif;font-weight:var(--hw);font-size:clamp(2.1rem,5vw,3.8rem);letter-spacing:var(--track);line-height:1.05;text-decoration:none;margin:28px 0 26px;background:linear-gradient(currentColor,currentColor) 0 100%/0 2px no-repeat;transition:background-size .35s}
+.bigphone:hover{background-size:100% 2px}
+.ct-lines{display:grid;gap:22px;margin-top:34px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.cl{word-break:break-word;display:flex;flex-direction:column;align-items:flex-start}
+.cl a{font-weight:600;text-decoration:none}
+.cl .maplink{display:inline-flex;align-items:center;gap:6px;margin-top:8px;font-size:.93rem;text-decoration:underline;text-underline-offset:4px}
+.hours{background:var(--surface);color:var(--ink);border-radius:var(--r,18px);padding:30px;box-shadow:0 30px 60px -40px rgba(0,0,0,.5);border:1px solid var(--line)}
+.hours h3{display:flex;gap:10px;align-items:center;font-size:1.25rem;margin-bottom:14px}
+.hours table{width:100%;border-collapse:collapse;font-size:.98rem}
+.hours th,.hours td{padding:12px 0;border-bottom:1px solid var(--line);text-align:left;font-weight:500;vertical-align:top}
+.hours td{text-align:right;color:var(--muted);padding-left:12px;white-space:nowrap}
+.hours tr:last-child th,.hours tr:last-child td{border-bottom:0}
+.hours tr.today th,.hours tr.today td{color:var(--ink);font-weight:700}
+.today-pill{display:inline-block;font:700 .62rem/1 var(--fb),sans-serif;letter-spacing:.12em;text-transform:uppercase;background:var(--accent);color:var(--accent-ink);border-radius:999px;padding:4px 7px;margin-left:6px;vertical-align:2px}
+.hours .note{color:var(--muted);font-size:.9rem;margin:14px 0 0}
+.map{position:relative;display:block;margin-top:clamp(40px,6vw,72px);border-radius:var(--r,18px);overflow:hidden;height:clamp(300px,30vw,380px);background:var(--soft);color:var(--ink);text-decoration:none;isolation:isolate}
+.map-art{position:absolute;inset:0;width:100%;height:100%;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.map:hover .map-art{transform:scale(1.04)}
+.map-pin{position:absolute;left:62%;top:42%;transform:translate(-50%,-100%);width:56px;height:56px;border-radius:50% 50% 50% 0;rotate:-45deg;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;box-shadow:0 14px 30px -10px rgba(0,0,0,.5)}
+.map-pin .ico{rotate:45deg}
+@media(max-width:699px){.map{height:340px}.map-pin{left:74%;top:30%;width:48px;height:48px}.map-card{padding:16px 18px}}
+.map-pin::after{content:"";position:absolute;inset:-10px;border-radius:inherit;border:2px solid var(--accent);opacity:.35}
+.map-card{position:absolute;left:clamp(16px,3vw,32px);bottom:clamp(16px,3vw,32px);right:clamp(16px,3vw,32px);max-width:420px;background:var(--surface);color:var(--ink);border-radius:calc(var(--r,18px) * .75);padding:20px 22px;box-shadow:0 24px 50px -24px rgba(0,0,0,.45);display:grid;gap:4px}
+.map-card strong{font-weight:600;line-height:1.4}
+.map-go{display:inline-flex;align-items:center;gap:6px;margin-top:8px;color:var(--kicker);font-weight:700;font-size:.93rem}
+.map:hover .map-go .ico{transform:translateX(3px)}.map-go .ico{transition:transform .2s}
+/* get it live */
+.getlive{background:#0c0c0e;color:#d4d4d8;padding:clamp(64px,8vw,104px) 0;position:relative;overflow:hidden}
+.getlive::before{content:"";position:absolute;inset:0;background:radial-gradient(700px 300px at 85% 0%,rgba(245,211,138,.10),transparent 70%);pointer-events:none}
+.gl{position:relative;display:grid;gap:36px;align-items:center}
+@media(min-width:900px){.gl{grid-template-columns:1.35fr .65fr}}
+.gl-mark{display:flex;align-items:center;gap:10px;font:600 .74rem/1 system-ui,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#f5d38a;margin:0 0 18px}
+.gl-dot{width:8px;height:8px;border-radius:50%;background:#f5d38a;box-shadow:0 0 0 4px rgba(245,211,138,.18)}
+.getlive h2{color:#fafafa;font-size:clamp(1.9rem,3.6vw,3rem);text-transform:none;letter-spacing:-.02em}
+.getlive p{color:#a1a1aa;max-width:56ch}
+.gl-list{list-style:none;padding:0;margin:22px 0 0;display:grid;gap:10px;color:#e4e4e7}
+.gl-list li{display:flex;gap:10px;align-items:center}.gl-list .ico{color:#f5d38a}
+.gl-card{border:1px solid #27272a;background:linear-gradient(180deg,#151518,#0f0f12);border-radius:20px;padding:30px;text-align:center}
+.gl-k{font-weight:600;color:#fafafa!important;margin:0 auto 18px!important}
+.btn-gl{background:#f5d38a;color:#18181b;width:100%;border-radius:999px}
+.btn-gl:hover{background:#fbe3ad}
+.gl-small{font-size:.85rem;margin:16px auto 0!important;color:#8b8b94!important}
+/* footer */
+.foot{background:var(--deep);color:rgba(255,255,255,.78);padding:52px 0 28px;font-size:.95rem}
+.foot a{color:#fff;text-decoration:none}.foot a:hover{text-decoration:underline}
+.foot-in{display:grid;gap:22px}
+@media(min-width:860px){.foot-in{grid-template-columns:1.2fr 1.6fr auto;align-items:start}}
+.foot-name strong{display:block;font-family:var(--fh),serif;font-weight:var(--hw);font-size:1.4rem;color:#fff;letter-spacing:var(--track);text-transform:var(--tt);line-height:1.15}
+.foot-name span{font-size:.9rem;opacity:.75}
+.foot-meta{display:flex;flex-direction:column;gap:4px}
+.foot-social{display:flex;flex-wrap:wrap;gap:8px 18px}
+.foot-legal{border-top:1px solid rgba(255,255,255,.12);margin-top:30px;padding-top:20px;font-size:.8rem;color:rgba(255,255,255,.62)}
+.foot-legal p{margin:0;max-width:110ch}.foot-legal a{text-decoration:underline}
+/* mobile action bar */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:65;display:flex;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:color-mix(in srgb,var(--paper) 94%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+.mb-btn{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:50px;padding:0 10px;border-radius:14px;font-weight:700;text-decoration:none;border:1.5px solid var(--ink);color:var(--ink);font-size:.95rem;white-space:nowrap;min-width:0}
+.mb-primary{flex:1.4;background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
 @media(min-width:900px){.mbar{display:none}}
-@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}}
+
+:root{--r:4px;--r-btn:4px}
+h1,h2{font-weight:var(--hw)}
+.he{padding:clamp(40px,6vw,80px) 0 0}
+.he-top{display:flex;justify-content:space-between;gap:20px;align-items:center;border-bottom:1px solid var(--ink);padding-bottom:14px;margin-bottom:clamp(28px,4vw,52px)}
+.he .eyebrow{margin:0;color:var(--ink)}
+.he-date{margin:0;font-size:.85rem;color:var(--muted);text-align:right}
+.he-grid{display:grid;gap:24px 64px;align-items:end}
+@media(min-width:960px){.he-grid{grid-template-columns:1.5fr .8fr}}
+.he h1{font-size:clamp(2.8rem,7.4vw,7rem);line-height:.98;margin:0;max-width:13ch}
+.he .lead{color:var(--muted);font-size:1.12rem}
+.he .btn-line{color:var(--ink)}
+.he-fig{margin-top:clamp(40px,5vw,72px);margin-bottom:0;position:relative;overflow:hidden;aspect-ratio:4/3;background:var(--deep)}
+@media(min-width:800px){.he-fig{aspect-ratio:21/9}}
+.he-img,.he-fig .art{width:100%;height:100%;object-fit:cover;display:block}
+.he-img{animation:kenburns 18s ease-out both}
+@keyframes kenburns{from{transform:scale(1.06)}to{transform:scale(1)}}
+.he-fig.strip{aspect-ratio:auto;background:transparent;overflow:visible;display:grid;gap:10px;grid-template-columns:1fr 1fr}
+.strip>div{position:relative;overflow:hidden;aspect-ratio:1/1}.strip .st-0{grid-column:span 2;aspect-ratio:4/3}
+.strip .he-img{position:absolute;inset:0;animation:none;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}.strip>div:hover .he-img{transform:scale(1.04)}
+@media(min-width:800px){.he-fig.strip{grid-template-columns:1fr 1.3fr 1fr;align-items:end;gap:14px}.strip .st-0{grid-column:auto;aspect-ratio:1/1}.strip .st-1{aspect-ratio:4/3;order:-1}.strip .st-2{aspect-ratio:4/5;transform:translateY(-40px)}}
+.strip figcaption{grid-column:1/-1;position:static;background:none;padding:4px 0 0;text-align:right}
+.he-fig figcaption{position:absolute;right:0;bottom:0;background:var(--paper);padding:10px 16px;font-size:.82rem;letter-spacing:.06em;color:var(--muted);font-style:italic}
+.trust-list{justify-content:center;gap:12px 48px}
+.trust-list .ico{background:transparent;color:var(--kicker);padding:0}
+.sec-head{display:grid;gap:8px 56px;max-width:none}
+@media(min-width:960px){.sec-services .sec-head,.sec-gallery .sec-head{grid-template-columns:auto 1fr}.sec-services .sec-head .kicker{grid-row:span 2;padding-top:14px;width:120px}.sec-services .sec-head .sub{grid-column:2}}
+.sec-head h2{max-width:18ch}
+.idx-row h3{font-weight:var(--hw)}
+.idx-n{font-family:var(--fh),serif;font-style:italic;font-size:1.25rem;line-height:1.3;color:var(--kicker)}
+.idx-row:hover{background:linear-gradient(90deg,var(--soft),transparent)}
+.sec-about{background:var(--deep);color:#f4efe9}
+.sec-about .kicker{color:var(--on-deep)}
+.sec-about .ab-body p{color:rgba(255,255,255,.82)}
+.sec-about .ab-body p:first-child::first-letter{font-family:var(--fh),serif;float:left;font-size:4.4em;line-height:.82;padding:6px 12px 0 0;color:var(--on-deep)}
+.sec-about .ab-glance{background:transparent;border-color:rgba(255,255,255,.18);color:#fff}
+.sec-about .ab-glance dl>div{border-color:rgba(255,255,255,.14)}
+.sec-about .ab-glance dt{color:rgba(255,255,255,.65)}
+.ab-fig{aspect-ratio:3/4}
+.gal-editorial{grid-auto-rows:clamp(160px,40vw,300px)}
+@media(min-width:700px){.gal-editorial{grid-auto-rows:clamp(200px,22vw,330px)}}
+.gi{border-radius:0}
+.sec-contact{border-top:1px solid var(--ink)}
+.hours{box-shadow:none;border:1px solid var(--ink);border-radius:0}
+.map{border-radius:0}
 </style>
 </head>
-<body class="cat-retail">
-<div class="topbar">
-<div class="pl-banner" role="note">Concept preview by PrizenLabs for NZ Laptops. Not the official site. <a href="#get-it-live">Like it? Get it live in 48h&nbsp;→</a></div>
-<header class="hdr">
-  <div class="wrap hdr-inner">
-    <a href="#top" class="brand"><img src="img/logo.webp" alt="NZ Laptops logo" class="logo-img"></a>
-    <nav class="nav"><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+<body class="f-editorial cat-retail long-h1">
+<a class="skip" href="#main">Skip to content</a>
+<div class="plb" role="note"><div class="wrap plb-in"><span class="plb-tag">Concept preview</span><span class="plb-txt">A redesign idea for NZLaptops by PrizenLabs. Not the official site.</span><a href="#get-it-live">Like it? Get it live in 48h&nbsp;→</a></div></div>
+<header class="hdr" id="hdr">
+  <div class="wrap hdr-in">
+    <a href="#top" class="brand" aria-label="NZLaptops home"><span class="logo"><img src="img/logo.webp" alt="NZLaptops" height="44" width=99></span></a>
+    <nav class="nav" aria-label="Sections"><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
     <a class="btn btn-accent btn-sm hdr-cta" href="#contact" target="_blank" rel="noopener">Browse laptops</a>
   </div>
 </header>
-</div>
-<main>
+<main id="main">
 
-<section class="hero hero-grad" id="top">
-  <div class="hero-pattern"></div>
-  <div class="wrap hero-inner">
-    <div class="hero-copy">
-      <p class="eyebrow">Refurbished &amp; Ex-Lease Computers</p>
+<section class="hero he" id="top">
+  <div class="wrap">
+    <div class="he-top"><p class="eyebrow">Refurbished &amp; Ex-Lease Computers</p></div>
+    <div class="he-grid">
       <h1>Refurbished and ex-lease computers, working perfectly</h1>
-      <p class="lead">We are a specialist refurbished and ex-lease computer wholesaler and retailer with an extensive supply of laptops, PCs, peripherals and spare parts for most major brands.</p>
-      <div class="btns"><a class="btn btn-accent" href="#contact" target="_blank" rel="noopener"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></svg>Browse laptops</a><a class="btn btn-ghost" href="#services">Our services</a></div>
-      <ul class="chips"><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Hard drives wiped, clean install</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Full time technicians</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>G.S.T. tax invoices provided</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Custom made boxes for transit</li></ul>
+      <div class="he-aside"><p class="lead">We are a specialist refurbished and ex-lease computer wholesaler and retailer with an extensive supply of laptops, PCs, peripherals and spare parts for most major brands.</p><div class="btns"><a class="btn btn-accent" href="#contact" target="_blank" rel="noopener"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></svg><span>Browse laptops</span></a><a class="btn btn-line" href="#contact"><span>Contact details</span><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></a></div></div>
+    </div>
+  </div>
+  <figure class="he-fig wrap-wide is-art"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice" role="presentation" aria-hidden="true" class="art"><rect width="1200" height="900" fill="#231f1a"/><radialGradient id="g1" cx="0.62" cy="0.32" r=".8"><stop offset="0" stop-color="#d48411" stop-opacity=".85"/><stop offset="1" stop-color="#231f1a" stop-opacity="0"/></radialGradient><rect width="1200" height="900" fill="url(#g1)"/><path transform="rotate(0 60.0 780.0)" d="M0 720h120a120 120 0 0 1-120 120z" fill="#312c25" fill-opacity="0.55"/><path transform="rotate(180 60.0 900.0)" d="M0 840h120a120 120 0 0 1-120 120z" fill="#312c25" fill-opacity="0.55"/><path transform="rotate(0 180.0 780.0)" d="M120 720h120a120 120 0 0 1-120 120z" fill="#d48411" fill-opacity="0.55"/><path transform="rotate(180 300.0 60.0)" d="M240 0h120a120 120 0 0 1-120 120z" fill="#edc182" fill-opacity="0.18"/><path transform="rotate(0 300.0 180.0)" d="M240 120h120a120 120 0 0 1-120 120z" fill="#d48411" fill-opacity="0.55"/><path transform="rotate(270 300.0 300.0)" d="M240 240h120a120 120 0 0 1-120 120z" fill="#312c25" fill-opacity="0.55"/><path transform="rotate(0 300.0 420.0)" d="M240 360h120a120 120 0 0 1-120 120z" fill="#312c25" fill-opacity="0.55"/><path transform="rotate(270 300.0 660.0)" d="M240 600h120a120 120 0 0 1-120 120z" fill="#edc182" fill-opacity="0.18"/><path transform="rotate(270 300.0 900.0)" d="M240 840h120a120 120 0 0 1-120 120z" fill="#edc182" fill-opacity="0.18"/><path transform="rotate(270 420.0 180.0)" d="M360 120h120a120 120 0 0 1-120 120z" fill="#edc182" fill-opacity="0.18"/><path transform="rotate(0 420.0 780.0)" d="M360 720h120a120 120 0 0 1-120 120z" fill="#312c25" fill-opacity="0.55"/><path transform="rotate(180 540.0 420.0)" d="M480 360h120a120 120 0 0 1-120 120z" fill="#edc182" fill-opacity="0.18"/><path transform="rotate(180 540.0 780.0)" d="M480 720h120a120 120 0 0 1-120 120z" fill="#d48411" fill-opacity="0.55"/><path transform="rotate(270 660.0 60.0)" d="M600 0h120a120 120 0 0 1-120 120z" fill="#312c25" fill-opacity="0.55"/><path transform="rotate(180 660.0 300.0)" d="M600 240h120a120 120 0 0 1-120 120z" fill="#d48411" fill-opacity="0.55"/><path transform="rotate(180 660.0 420.0)" d="M600 360h120a120 120 0 0 1-120 120z" fill="#d48411" fill-opacity="0.55"/><path transform="rotate(0 660.0 780.0)" d="M600 720h120a120 120 0 0 1-120 120z" fill="#312c25" fill-opacity="0.55"/><path transform="rotate(180 660.0 900.0)" d="M600 840h120a120 120 0 0 1-120 120z" fill="#312c25" fill-opacity="0.55"/><path transform="rotate(180 780.0 180.0)" d="M720 120h120a120 120 0 0 1-120 120z" fill="#312c25" fill-opacity="0.55"/><path transform="rotate(0 780.0 420.0)" d="M720 360h120a120 120 0 0 1-120 120z" fill="#312c25" fill-opacity="0.55"/><path transform="rotate(90 780.0 900.0)" d="M720 840h120a120 120 0 0 1-120 120z" fill="#312c25" fill-opacity="0.55"/><path transform="rotate(0 900.0 60.0)" d="M840 0h120a120 120 0 0 1-120 120z" fill="#312c25" fill-opacity="0.55"/><path transform="rotate(90 900.0 180.0)" d="M840 120h120a120 120 0 0 1-120 120z" fill="#d48411" fill-opacity="0.55"/><path transform="rotate(0 900.0 300.0)" d="M840 240h120a120 120 0 0 1-120 120z" fill="#d48411" fill-opacity="0.55"/><path transform="rotate(0 900.0 420.0)" d="M840 360h120a120 120 0 0 1-120 120z" fill="#d48411" fill-opacity="0.55"/><path transform="rotate(0 900.0 660.0)" d="M840 600h120a120 120 0 0 1-120 120z" fill="#edc182" fill-opacity="0.18"/><path transform="rotate(90 900.0 780.0)" d="M840 720h120a120 120 0 0 1-120 120z" fill="#d48411" fill-opacity="0.55"/><path transform="rotate(90 1020.0 60.0)" d="M960 0h120a120 120 0 0 1-120 120z" fill="#312c25" fill-opacity="0.55"/><path transform="rotate(90 1020.0 300.0)" d="M960 240h120a120 120 0 0 1-120 120z" fill="#312c25" fill-opacity="0.55"/><path transform="rotate(90 1020.0 540.0)" d="M960 480h120a120 120 0 0 1-120 120z" fill="#312c25" fill-opacity="0.55"/><path transform="rotate(180 1020.0 900.0)" d="M960 840h120a120 120 0 0 1-120 120z" fill="#edc182" fill-opacity="0.18"/><path transform="rotate(90 1140.0 180.0)" d="M1080 120h120a120 120 0 0 1-120 120z" fill="#312c25" fill-opacity="0.55"/><path transform="rotate(180 1140.0 300.0)" d="M1080 240h120a120 120 0 0 1-120 120z" fill="#312c25" fill-opacity="0.55"/><path transform="rotate(270 1140.0 420.0)" d="M1080 360h120a120 120 0 0 1-120 120z" fill="#edc182" fill-opacity="0.18"/><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .05 0"/></filter><rect width="1200" height="900" filter="url(#n)"/></svg></figure>
+</section>
+
+<section class="trust" aria-label="Highlights"><div class="wrap"><ul class="trust-list rv"><li><svg class="ico ico-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg><span>Hard drives wiped, clean install</span></li><li><svg class="ico ico-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg><span>Full time technicians</span></li><li><svg class="ico ico-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg><span>G.S.T. tax invoices provided</span></li><li><svg class="ico ico-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg><span>Custom made boxes for transit</span></li></ul></div></section>
+
+<section class="sec sec-services" id="services">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="kicker">What we do</p>
+      <h2>What we supply</h2>
+      <p class="sub">From laptops and PCs to Apple products and spare parts, we deal with almost anything computer related.</p>
+    </div>
+    <ol class="idx rv idx-n7">
+        <li class="idx-row"><span class="idx-n">01</span><div><h3>Refurbished &amp; Ex-Lease Laptops</h3><p>Browse laptops and notebooks across home office, business, gaming, ultrabooks, 2 in 1 convertibles, mobile workstations and Chromebooks.</p></div></li>
+        <li class="idx-row"><span class="idx-n">02</span><div><h3>Desktops &amp; Workstations</h3><p>Choose from all in one desktops, gaming desktops, business PCs, home office PCs, ultra compact PCs and workstations.</p></div></li>
+        <li class="idx-row"><span class="idx-n">03</span><div><h3>Apple Products</h3><p>We stock a full range of Apple products including Macbooks, iMacs, iPads, and iPhones.</p></div></li>
+        <li class="idx-row"><span class="idx-n">04</span><div><h3>Spare Parts</h3><p>Notebook LCD screens, batteries, notebook adapters, DVD drives, keyboards, memory and power supplies, so we can repair your laptop for its foreseeable life.</p></div></li>
+        <li class="idx-row"><span class="idx-n">05</span><div><h3>Laptop Repairs</h3><p>Our full time technicians can solve just about any computer problem.</p></div></li>
+        <li class="idx-row"><span class="idx-n">06</span><div><h3>Peripherals &amp; Networking</h3><p>Docking stations, keyboards and mice, external hard drives, printers, switches, routers and more.</p></div></li>
+        <li class="idx-row"><span class="idx-n">07</span><div><h3>Phones &amp; Tablets</h3><p>Samsung tablets and smartphones, plus mobile phone repairs, accessories and parts.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec sec-about no-side" id="about">
+  <div class="wrap ab">
+    <div class="ab-copy rv">
+      <p class="kicker">About</p>
+      <h2>About NZLaptops</h2>
+      <div class="ab-body"><p>We source product locally as well as overseas. Every laptop has its hard drive permanently wiped of any data, then receives a total clean install with the correct drivers, service packs, updates and anti virus protection, so you receive a computer that is virus free and working perfectly.</p><p>Before dispatch, computers are cleaned and packaged professionally in our own custom made boxes to minimise the chance of damage during transit.</p><p>Because our technicians work on laptops day in day out, they offer that knowledge as after sales support. We want our clients fully satisfied with a problem free purchase.</p></div>
+      
     </div>
     
   </div>
 </section>
 
 
-<section class="section" id="services">
+<section class="sec sec-contact" id="contact">
   <div class="wrap">
-    <div class="sec-head">
-      <p class="kicker">What we do</p>
-      <h2>What we supply</h2>
-      <p class="sub">From laptops and PCs to Apple products and spare parts, we deal with almost anything computer related.</p>
-    </div>
-    <div class="svc-grid svc-n7">
-      <article class="svc">
-        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16" /></svg></div>
-        <h3>Refurbished &amp; Ex-Lease Laptops</h3>
-        <p>Browse laptops and notebooks across home office, business, gaming, ultrabooks, 2 in 1 convertibles, mobile workstations and Chromebooks.</p>
-      </article>
-      <article class="svc">
-        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z" /> <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" /> <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2" /> <path d="M10 6h4" /> <path d="M10 10h4" /> <path d="M10 14h4" /> <path d="M10 18h4" /></svg></div>
-        <h3>Desktops &amp; Workstations</h3>
-        <p>Choose from all in one desktops, gaming desktops, business PCs, home office PCs, ultra compact PCs and workstations.</p>
-      </article>
-      <article class="svc">
-        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7" /> <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8" /> <path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4" /> <path d="M2 7h20" /> <path d="M22 7v3a2 2 0 0 1-2 2a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7" /></svg></div>
-        <h3>Apple Products</h3>
-        <p>We stock a full range of Apple products including Macbooks, iMacs, iPads, and iPhones.</p>
-      </article>
-      <article class="svc">
-        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z" /> <path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" /> <path d="M12 2v2" /> <path d="M12 22v-2" /> <path d="m17 20.66-1-1.73" /> <path d="M11 10.27 7 3.34" /> <path d="m20.66 17-1.73-1" /> <path d="m3.34 7 1.73 1" /> <path d="M14 12h8" /> <path d="M2 12h2" /> <path d="m20.66 7-1.73 1" /> <path d="m3.34 17 1.73-1" /> <path d="m17 3.34-1 1.73" /> <path d="m11 13.73-4 6.93" /></svg></div>
-        <h3>Spare Parts</h3>
-        <p>Notebook LCD screens, batteries, notebook adapters, DVD drives, keyboards, memory and power supplies, so we can repair your laptop for its foreseeable life.</p>
-      </article>
-      <article class="svc">
-        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" /></svg></div>
-        <h3>Laptop Repairs</h3>
-        <p>Our full time technicians can solve just about any computer problem.</p>
-      </article>
-      <article class="svc">
-        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22v-5" /> <path d="M9 8V2" /> <path d="M15 8V2" /> <path d="M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z" /></svg></div>
-        <h3>Peripherals &amp; Networking</h3>
-        <p>Docking stations, keyboards and mice, external hard drives, printers, switches, routers and more.</p>
-      </article>
-      <article class="svc">
-        <div class="svc-ico"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></svg></div>
-        <h3>Phones &amp; Tablets</h3>
-        <p>Samsung tablets and smartphones, plus mobile phone repairs, accessories and parts.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="section section-alt" id="about">
-  <div class="wrap about">
-    <div class="about-copy">
-      <p class="kicker">About us</p>
-      <h2>About NZLaptops</h2>
-      <p>We source product locally as well as overseas. Every laptop has its hard drive permanently wiped of any data, then receives a total clean install with the correct drivers, service packs, updates and anti virus protection, so you receive a computer that is virus free and working perfectly.</p><p>Before dispatch, computers are cleaned and packaged professionally in our own custom made boxes to minimise the chance of damage during transit.</p><p>Because our technicians work on laptops day in day out, they offer that knowledge as after sales support. We want our clients fully satisfied with a problem free purchase.</p>
-      <ul class="ticks"><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Hard drives wiped, clean install</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Full time technicians</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>G.S.T. tax invoices provided</li><li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Custom made boxes for transit</li></ul>
-    </div>
-    <div class="about-mono"><span>NL</span></div>
-  </div>
-</section>
-
-
-<section class="section" id="contact">
-  <div class="wrap">
-    <div class="cta-band">
-      <div><h2>Looking for something in particular?</h2><p>Feel free to contact us if there is something in particular you are looking for.</p></div>
-      <a class="btn btn-accent btn-lg" href="#contact" target="_blank" rel="noopener"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></svg>Browse laptops</a>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-list"></div>
+    <div class="ct">
+      <div class="ct-main rv">
+        <p class="kicker">Get in touch</p>
+        <h2>Looking for something in particular?</h2>
+        <p class="sub">Feel free to contact us if there is something in particular you are looking for.</p>
+        
+        <div class="btns"><a class="btn btn-accent" href="#contact" target="_blank" rel="noopener"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></svg><span>Browse laptops</span></a></div>
+        <div class="ct-lines"></div>
+      </div>
       
     </div>
+    
   </div>
 </section>
 
 <section class="getlive" id="get-it-live">
-  <div class="wrap gl-inner">
-    <div>
-      <p class="kicker kicker-light">PrizenLabs · concept preview</p>
-      <h2>Like this new look for NZ Laptops?</h2>
+  <div class="wrap gl">
+    <div class="gl-copy">
+      <p class="gl-mark"><span class="gl-dot"></span>PrizenLabs · concept preview</p>
+      <h2>Like this new look for NZLaptops?</h2>
       <p>This concept was built from the content on your current website. We can make it your real site, on your own domain, in 48 hours.</p>
       <ul class="gl-list">
-        <li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Mobile-first, fast-loading design</li>
-        <li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Your wording, photos and details reviewed with you before launch</li>
-        <li><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Hosted on your existing domain</li>
+        <li><svg class="ico ico-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Mobile-first, fast-loading design</li>
+        <li><svg class="ico ico-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Your wording, photos and details reviewed with you before launch</li>
+        <li><svg class="ico ico-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>Hosted on your existing domain</li>
       </ul>
     </div>
     <div class="gl-card">
-      <p class="gl-price">Pricing &amp; next steps</p>
-      <a class="btn btn-accent btn-lg" href="https://buy.stripe.com/eVqdR87kl8JH055b2efYY00">Get it live in 48h <svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></a>
+      <p class="gl-k">Pricing &amp; next steps</p>
+      <a class="btn btn-gl" href="https://buy.stripe.com/eVqdR87kl8JH055b2efYY00">Get it live in 48h <svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></svg></a>
       <p class="gl-small">No obligation. Nothing changes on your current site unless you say so.</p>
     </div>
   </div>
@@ -266,16 +361,26 @@ h2{font-size:clamp(1.8rem,3.6vw,2.6rem)}
 </main>
 
 <footer class="foot">
-  <div class="wrap foot-inner">
-    <div><strong>NZ Laptops</strong></div>
+  <div class="wrap foot-in">
+    <div class="foot-name"><strong>NZLaptops</strong><span>Refurbished &amp; Ex-Lease Computers</span></div>
+    <div class="foot-meta"></div>
     <div class="foot-social"><a href="http://www.facebook.com/nzlaptops" target="_blank" rel="noopener">Facebook</a></div>
   </div>
   <div class="wrap foot-legal">
-    <p>Concept preview created by PrizenLabs on 2026-11-24 using content and images from the public website
-    <a href="https://www.nzlaptops.co.nz/" rel="nofollow noopener" target="_blank">nzlaptops.co.nz</a>. Not affiliated with or endorsed by NZ Laptops.
+    <p>Concept preview created by PrizenLabs on 2026-11-25 using content and images from the public website
+    <a href="https://www.nzlaptops.co.nz/" rel="nofollow noopener" target="_blank">nzlaptops.co.nz</a>. Not affiliated with or endorsed by NZLaptops.
     All business names, text and photos belong to their owner.</p>
   </div>
 </footer>
-<div class="mbar"><a class="btn btn-accent" href="#contact" target="_blank" rel="noopener"><svg class="ico ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></svg>Browse laptops</a></div>
+
+<script>(()=>{const h=document.getElementById('hdr');const s=()=>h.classList.toggle('scrolled',scrollY>24);s();addEventListener('scroll',s,{passive:true});
+const els=[...document.querySelectorAll('.rv')];const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(rm||!('IntersectionObserver' in window)){els.forEach(x=>x.classList.add('in'))}else{const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}}),{rootMargin:'0px 0px -6% 0px'});els.forEach(x=>io.observe(x))}
+const D=['sun','mon','tue','wed','thu','fri','sat'],t=new Date().getDay();
+document.querySelectorAll('tr[data-days]').forEach(r=>{let s=r.dataset.days.toLowerCase(),on=new Set();
+if(/daily|every ?day|7 days|seven days/.test(s))D.forEach((_,i)=>on.add(i));if(/weekday/.test(s))[1,2,3,4,5].forEach(i=>on.add(i));if(/weekend/.test(s))[0,6].forEach(i=>on.add(i));
+const re=/(sun|mon|tue|wed|thu|fri|sat)[a-z]*\.?(\s*(?:-|–|—|to|through|thru)\s*(sun|mon|tue|wed|thu|fri|sat)[a-z]*)?/g;let m;
+while((m=re.exec(s))){let a=D.indexOf(m[1]);if(m[3]){let b=D.indexOf(m[3]);for(let i=a;;i=(i+1)%7){on.add(i);if(i===b)break}}else on.add(a)}
+if(on.has(t)){r.classList.add('today');r.querySelector('th').insertAdjacentHTML('beforeend',' <span class="today-pill">Today</span>')}})})();</script>
 </body>
 </html>
